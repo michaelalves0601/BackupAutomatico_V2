@@ -42,6 +42,7 @@ namespace BackupNuvemSBuild_Runtime
 
         private void StartTime()
         {
+            //TESTANDO
             try
             {
                 try
