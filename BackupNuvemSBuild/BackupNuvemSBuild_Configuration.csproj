@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD43E425-C29E-4E55-A718-D992DCB170B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BackupNuvemSBuild_Configuration</RootNamespace>
+    <AssemblyName>BackupNuvemSBuild_Configuration</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_Blue_Backup_B_66548.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BackupNuvemSBuild_Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BackupNuvemSBuild_Models.dll</HintPath>
+    </Reference>
+    <Reference Include="ButtonCircle.FormsPlugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Plugins.Forms.ButtonCircle.2.0.3\lib\netstandard2.0\ButtonCircle.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="circle_progressbar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircleProgressBar.1.0.1\lib\circle_progressbar.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer, Version=2.8.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Humanizer.Core.2.8.26\lib\netstandard2.0\Humanizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="OpcLabs.BaseLib, Version=5.58.451.1, Culture=neutral, PublicKeyToken=6faddca41dacb409" />
+    <Reference Include="OpcLabs.BaseLibForms, Version=5.58.451.1, Culture=neutral, PublicKeyToken=6faddca41dacb409" />
+    <Reference Include="OpcLabs.EasyOpcClassic, Version=5.58.451.1, Culture=neutral, PublicKeyToken=6faddca41dacb409" />
+    <Reference Include="OpcLabs.EasyOpcForms, Version=5.58.451.1, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL" />
+    <Reference Include="OpcLabs.EasyOpcUA, Version=5.58.451.1, Culture=neutral, PublicKeyToken=6faddca41dacb409" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="timerBackup\Tick.cs" />
+    <Compile Include="TimerBackup_Tick.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoPng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSBuildFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSBuildFundoOld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSBuildFundoOld2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-101-folder-search_314678.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlanoDeFundoVM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlanoDeFundoVM_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlanoDeFundoVM_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Blue_Backup_B_66548.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_document-save_118916.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_50_61514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconfinder_Blue_Backup_B_66548.ico" />
+    <None Include="Resources\abreOlho.png" />
+    <None Include="Resources\fechaOlho.png" />
+    <None Include="Resources\6138068-20.png" />
+    <None Include="Resources\6138070-20.png" />
+    <None Include="Resources\SeePassword1.png" />
+    <None Include="Resources\DontSeePassword.png" />
+    <None Include="Resources\SeePassword.png" />
+    <None Include="Resources\linkError.gif" />
+    <None Include="Resources\loading1.gif" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\PlayBackupDiferencial2.png" />
+    <None Include="Resources\PlayBackupFull2.png" />
+    <None Include="Resources\PauseBackup.png" />
+    <None Include="Resources\PlayBackupFull.png" />
+    <None Include="Resources\PlayBackupDiferencial.png" />
+    <None Include="Resources\PlayBackup.png" />
+    <None Include="Resources\1894657-32.png" />
+    <None Include="Resources\SyncEspelho3.png" />
+    <None Include="Resources\2955257-64 %281%29.png" />
+    <None Include="Resources\BkpFull1.png" />
+    <None Include="Resources\BkpDiferencial2.png" />
+    <None Include="Resources\MirrorEspelho2.png" />
+    <None Include="Resources\SyncEspelho.png" />
+    <None Include="Resources\BkpFull.png" />
+    <None Include="Resources\BkpDiferencial1.png" />
+    <None Include="Resources\BkpDiferencial.png" />
+    <None Include="Resources\GS20201225232615.gif" />
+    <None Include="Resources\RepentantSizzlingCoot-small2.gif" />
+    <None Include="Resources\aba3a62234d58f9e42deb9c5cb56e9951.gif" />
+    <None Include="Resources\352582-321.png" />
+    <None Include="Resources\430096-241.png" />
+    <None Include="Resources\430096-321.png" />
+    <None Include="Resources\646197-481.png" />
+    <None Include="Resources\646197-321.png" />
+    <None Include="Resources\646197-48 %281%291.png" />
+    <None Include="Resources\6900246-481.png" />
+    <None Include="Resources\646197-48 %282%291.png" />
+    <None Include="Resources\344691-481.png" />
+    <None Include="Resources\344691-48 %281%291.png" />
+    <None Include="Resources\RepentantSizzlingCoot-small1.gif" />
+    <None Include="Resources\294398-481.png" />
+    <None Include="Resources\294398-48 %281%291.png" />
+    <None Include="Resources\aba3a62234d58f9e42deb9c5cb56e995.gif" />
+    <None Include="Resources\294398-48 %281%29.png" />
+    <None Include="Resources\294398-48.png" />
+    <None Include="Resources\RepentantSizzlingCoot-small.gif" />
+    <None Include="Resources\344691-48 %281%29.png" />
+    <None Include="Resources\344691-48.png" />
+    <None Include="Resources\646197-48 %282%29.png" />
+    <None Include="Resources\6900246-48.png" />
+    <None Include="Resources\646197-48 %281%29.png" />
+    <None Include="Resources\646197-32.png" />
+    <None Include="Resources\646197-48.png" />
+    <None Include="Resources\430096-32.png" />
+    <None Include="Resources\430096-24.png" />
+    <None Include="Resources\352582-32.png" />
+    <None Include="Resources\SbuildLogo3.png" />
+    <None Include="Resources\circulo yellow.png" />
+    <None Include="Resources\circulo green2.png" />
+    <None Include="Resources\circulo gray.png" />
+    <None Include="Resources\circulo blue.png" />
+    <None Include="Resources\circulo green1.png" />
+    <None Include="Resources\circulo green.png" />
+    <None Include="Resources\circulo1.png" />
+    <None Include="Resources\green-circle-apple.png" />
+    <None Include="Resources\circulo.png" />
+    <None Include="Resources\2205232-32 %281%29.png" />
+    <None Include="Resources\2205230-32.png" />
+    <None Include="Resources\2205232-16.png" />
+    <None Include="Resources\2205230-16.png" />
+    <None Include="Resources\2305609-32.png" />
+    <None Include="Resources\4213447-24 %281%29.png" />
+    <None Include="Resources\6065134-24 %281%29.png" />
+    <None Include="Resources\4075935-32.png" />
+    <None Include="Resources\4075935-24.png" />
+    <None Include="Resources\3209280-24.png" />
+    <None Include="Resources\3209280-24 %281%29.png" />
+    <None Include="Resources\2124300-24.png" />
+    <None Include="Resources\2124311-24.png" />
+    <None Include="Resources\4243316-24.png" />
+    <None Include="Resources\4243317-24 %282%29.png" />
+    <None Include="Resources\4243317-24 %281%29.png" />
+    <None Include="Resources\314785-241.png" />
+    <None Include="Resources\314785-24.png" />
+    <None Include="Resources\314467-24.png" />
+    <None Include="Resources\4243317-24.png" />
+    <None Include="Resources\4213447-24.png" />
+    <None Include="Resources\4634558-241.png" />
+    <None Include="Resources\6065134-24.png" />
+    <None Include="Resources\3209257-24.png" />
+    <None Include="Resources\4634558-24.png" />
+    <None Include="Resources\290115-24 %282%29.png" />
+    <None Include="Resources\290115-32.png" />
+    <None Include="Resources\290115-241.png" />
+    <None Include="Resources\290115-20.png" />
+    <None Include="Resources\290115-20 %281%29.png" />
+    <None Include="Resources\290115-24.png" />
+    <None Include="Resources\290115-24 %281%29.png" />
+    <None Include="Resources\2205232-32.png" />
+    <None Include="Resources\on_azul.png" />
+    <None Include="Resources\restart.png" />
+    <None Include="Resources\restart_cinza.png" />
+    <None Include="Resources\stop_cinza.png" />
+    <None Include="Resources\play_cinza.png" />
+    <None Include="Resources\pause_cinza.png" />
+    <None Include="Resources\funcionando.png" />
+    <None Include="Resources\desligado_.png" />
+    <None Include="Resources\desligado.png" />
+    <None Include="Resources\Warning.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\deletefolder.png" />
+    <None Include="Resources\searchfolder.png" />
+    <None Include="Resources\email x.png" />
+    <None Include="Resources\emaill.png" />
+    <None Include="Resources\remove email.png" />
+    <None Include="Resources\add email1.png" />
+    <None Include="Resources\addemail.png" />
+    <None Include="Resources\add email.png" />
+    <None Include="Resources\SbuildLogo2.png" />
+    <None Include="Resources\SbuildLogo11.png" />
+    <None Include="Resources\SbuildLogo1.png" />
+    <None Include="Resources\SbuildLogo.png" />
+    <None Include="Resources\On4.png" />
+    <None Include="Resources\On3.png" />
+    <None Include="Resources\On1.png" />
+    <None Include="Resources\Off1.png" />
+    <None Include="Resources\Timer.png" />
+    <None Include="Resources\1303882-64.png" />
+    <None Include="Resources\Fechar3.png" />
+    <None Include="Resources\logocinza.png" />
+    <None Include="Resources\emailmano.png" />
+    <None Include="Resources\FOLDER.png" />
+    <None Include="Resources\iconfinder_folder-2_430096.png" />
+    <None Include="Resources\emial dendieni1.png" />
+    <None Include="Resources\email_off.png" />
+    <None Include="Resources\iconfinder_Tilda_Icons_1ed_mail_3586360 %285%29.png" />
+    <None Include="Resources\serviço.png" />
+    <None Include="Resources\serviço_on.png" />
+    <None Include="Resources\HOME.png" />
+    <None Include="Resources\home_on.png" />
+    <None Include="Resources\folder_o.png" />
+    <None Include="Resources\email_on.png" />
+    <None Include="Resources\agenda_on.png" />
+    <None Include="Resources\LogoBlack-removebg-preview.png" />
+    <None Include="Resources\emial dendieni.png" />
+    <None Include="Resources\agenda.png" />
+    <None Include="Resources\fundo21.jpg" />
+    <None Include="Resources\fundo2.jpg" />
+    <None Include="Resources\fnudo.png" />
+    <None Include="Resources\email1.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\iconfinder_Tilda_Icons_1ed_mail_3586360.png" />
+    <None Include="Resources\iconfinder_User_Interface-37_2044251.png" />
+    <None Include="Resources\iconfinder_resolutions-04_897245.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

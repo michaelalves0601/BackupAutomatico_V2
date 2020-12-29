@@ -1,0 +1,17 @@
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.CoreCompileInputs.cache
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.exe.config
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.exe
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.pdb
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.ProjectInstaller.resources
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.GenerateResource.cache
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.exe
+D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.pdb
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.exe.config
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.exe
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.pdb
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csprojAssemblyReference.cache
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.ProjectInstaller.resources
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.GenerateResource.cache
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.CoreCompileInputs.cache
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.exe
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.pdb

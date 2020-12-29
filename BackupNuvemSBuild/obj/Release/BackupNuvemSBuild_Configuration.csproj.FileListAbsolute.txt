@@ -1,0 +1,4 @@
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\obj\Release\BackupNuvemSBuild_Configuration.csprojAssemblyReference.cache
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\obj\Release\BackupNuvemSBuild.Form1.resources
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\obj\Release\BackupNuvemSBuild_Configuration.Properties.Resources.resources
+C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\obj\Release\BackupNuvemSBuild_Configuration.csproj.GenerateResource.cache
