@@ -136,6 +136,7 @@ namespace BackupNuvemSBuild_Configuration
             this.lblLastTipoBackup = new System.Windows.Forms.Label();
             this.lblLastBackup = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlDiretorios2.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -1597,6 +1598,17 @@ namespace BackupNuvemSBuild_Configuration
             this.label14.TabIndex = 52;
             this.label14.Text = "Email (Origem):";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.label15.ForeColor = System.Drawing.Color.Gray;
+            this.label15.Location = new System.Drawing.Point(425, 149);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(77, 13);
+            this.label15.TabIndex = 53;
+            this.label15.Text = "Email (Origem):";
+            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1605,6 +1617,7 @@ namespace BackupNuvemSBuild_Configuration
             this.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.SbuildLogo3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(510, 456);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pnlEmail2);
             this.Controls.Add(this.pnlServico2);
@@ -1785,5 +1798,6 @@ namespace BackupNuvemSBuild_Configuration
         private System.Windows.Forms.PictureBox pcbLoading;
         private System.Windows.Forms.Button btnSeePassword;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
