@@ -135,6 +135,7 @@ namespace BackupNuvemSBuild_Configuration
             this.lblLastBackupSizeTitulo = new System.Windows.Forms.Label();
             this.lblLastTipoBackup = new System.Windows.Forms.Label();
             this.lblLastBackup = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlDiretorios2.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -1585,6 +1586,17 @@ namespace BackupNuvemSBuild_Configuration
             this.lblLastBackup.Text = "26/12/2020";
             this.lblLastBackup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.label14.ForeColor = System.Drawing.Color.Gray;
+            this.label14.Location = new System.Drawing.Point(412, 90);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(77, 13);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "Email (Origem):";
+            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1593,6 +1605,7 @@ namespace BackupNuvemSBuild_Configuration
             this.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.SbuildLogo3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(510, 456);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.pnlEmail2);
             this.Controls.Add(this.pnlServico2);
             this.Controls.Add(this.pnlDiretorios2);
@@ -1771,5 +1784,6 @@ namespace BackupNuvemSBuild_Configuration
         private System.Windows.Forms.Label lblLastBackup;
         private System.Windows.Forms.PictureBox pcbLoading;
         private System.Windows.Forms.Button btnSeePassword;
+        private System.Windows.Forms.Label label14;
     }
 }
