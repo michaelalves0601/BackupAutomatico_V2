@@ -59,6 +59,11 @@ namespace BackupNuvemSBuild
             }
         }
 
+        internal void LogError(string v)
+        {
+           // throw new NotImplementedException();
+        }
+
         public void LogInfo(string mensagem)
         {
             ValidaTxt();

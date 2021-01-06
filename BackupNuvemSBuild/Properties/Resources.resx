@@ -154,9 +154,6 @@
   <data name="SeePassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SeePassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6138070-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6138070-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="290115-241" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\290115-241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -205,8 +202,8 @@
   <data name="circulo green1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circulo green1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="290115-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\290115-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6138070-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6138070-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2124300-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2124300-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,6 +289,9 @@
   <data name="On1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\On1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="abreOlho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abreOlho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="remove email" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -328,8 +328,8 @@
   <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogoPng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoPng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save cinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circulo green2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circulo green2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -366,6 +366,9 @@
   </data>
   <data name="On4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\On4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fechaOlho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fechaOlho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3209280-24 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3209280-24 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -481,6 +484,9 @@
   <data name="emial dendieni1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emial dendieni1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="loading1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fundo21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -535,6 +541,9 @@
   <data name="PlanoDeFundoVM_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlanoDeFundoVM_21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="savecinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\savecinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HOME" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HOME.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -553,8 +562,11 @@
   <data name="on_azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\on_azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loading1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="290115-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\290115-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoPng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoPng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agenda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agenda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -598,6 +610,9 @@
   <data name="aba3a62234d58f9e42deb9c5cb56e9951" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aba3a62234d58f9e42deb9c5cb56e9951.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="play_cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play_cinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -622,10 +637,7 @@
   <data name="restart_cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restart_cinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fechaOlho" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fechaOlho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abreOlho" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abreOlho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loading_service" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading_service1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

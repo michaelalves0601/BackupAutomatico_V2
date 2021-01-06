@@ -12,6 +12,7 @@ namespace BackupNuvemSBuild
     class Email
     {
         public string SmtpServerString { get; set; }
+        public int Port { get; set; }
         public string Origem { get; set; }
         public string Password { get; set; }
         public string[] Destinos { get; set; }
@@ -29,6 +30,7 @@ namespace BackupNuvemSBuild
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient(SmtpServerString);
 
+
                 mail.From = new MailAddress(Origem);
 
                 foreach (string destino in Destinos)
@@ -41,7 +43,7 @@ namespace BackupNuvemSBuild
                     mail.Attachments.Add(anexo);
 
 
-                SmtpServer.Port = 587;
+                SmtpServer.Port = Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Origem, Password);
                 SmtpServer.EnableSsl = true;
 

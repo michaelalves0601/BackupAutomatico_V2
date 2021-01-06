@@ -3978,3 +3978,220 @@ Nome do parâmetro: addresses
  | INFO |
  | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio_20201216_144342.xlsx
 
+1/4/2021 3:39:22 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:44:15 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:49:41 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:50:56 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:50:58 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:51:50 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:51:51 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:53:01 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:53:03 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:53:16 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:53:18 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:57:34 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:57:36 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:58:29 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:58:31 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:58:50 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:58:51 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:59:02 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 3:59:04 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 4:05:00 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 4:05:01 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 4:05:20 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/4/2021 4:05:21 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/5/2021 12:10:14 PM
+ | ERROR |
+ | Descrição: Comando de STOP Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot stop OPC Labs Kit Server service on computer 'localhost'.
+
+1/5/2021 12:10:39 PM
+ | ERROR |
+ | Descrição: Comando de RESTART Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot stop OPC Labs Kit Server service on computer 'localhost'.
+
+1/5/2021 1:21:57 PM
+ | ERROR |
+ | Descrição: Comando de RESTART Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot stop OPC Labs Kit Server service on computer 'localhost'.
+
+1/5/2021 1:28:20 PM
+ | ERROR |
+ | Descrição: Comando de STOP Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot stop OPC Labs Kit Server service on computer 'localhost'.
+
+1/5/2021 1:28:28 PM
+ | ERROR |
+ | Descrição: Comando de STOP Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot stop OPC Labs Kit Server service on computer 'localhost'.
+
+1/5/2021 1:28:43 PM
+ | ERROR |
+ | Descrição: Comando de RESTART Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot stop OPC Labs Kit Server service on computer 'localhost'.
+
+1/5/2021 1:28:52 PM
+ | ERROR |
+ | Descrição: Comando de RESTART Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot stop OPC Labs Kit Server service on computer 'localhost'.
+
+1/5/2021 1:38:43 PM
+ | ERROR |
+ | Descrição: Comando de START Negado para o Serviço: OPC Labs Kit Server - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Cannot start service OPC Labs Kit Server on computer 'localhost'.
+

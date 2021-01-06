@@ -823,6 +823,16 @@ namespace BackupNuvemSBuild_Configuration.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Check {
+            get {
+                object obj = ResourceManager.GetObject("Check", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circulo {
             get {
                 object obj = ResourceManager.GetObject("circulo", resourceCulture);
@@ -1263,6 +1273,16 @@ namespace BackupNuvemSBuild_Configuration.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loading_service {
+            get {
+                object obj = ResourceManager.GetObject("loading_service", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loading1 {
             get {
                 object obj = ResourceManager.GetObject("loading1", resourceCulture);
@@ -1596,6 +1616,26 @@ namespace BackupNuvemSBuild_Configuration.Properties {
         internal static System.Drawing.Bitmap restart_cinza {
             get {
                 object obj = ResourceManager.GetObject("restart_cinza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_cinza {
+            get {
+                object obj = ResourceManager.GetObject("save cinza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap savecinza {
+            get {
+                object obj = ResourceManager.GetObject("savecinza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

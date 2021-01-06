@@ -1,0 +1,3846 @@
+14/04/2020 16:03:37
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200101' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.DateTime)
+ | Exception: 
+
+14/04/2020 16:10:25
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200125' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.DateTime)
+ | Exception: 
+
+15/04/2020 09:41:19
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200423' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 09:48:43
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200425' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 09:52:25
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200426' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 09:53:23
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200427' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:01:12
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200427' já existe!
+ | Classe: <AssyncBackup>b__0
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: 
+
+15/04/2020 10:01:39
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200428' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:05:29
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200429' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:10:39
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200430' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:15:25
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200501' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:27:14
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200503' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:29:58
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200504' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:32:48
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200506' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 10:33:57
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200507' já existe!
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String)
+ | Exception: 
+
+15/04/2020 11:52:24
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Semanais
+ | Classe: OrganizaBackupSemanais
+ | Método: Void OrganizaBackupSemanais(System.String, System.String)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TESTEEEE\SEMANAL'.
+
+15/04/2020 11:53:17
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Semanais
+ | Classe: OrganizaBackupSemanais
+ | Método: Void OrganizaBackupSemanais(System.String, System.String)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TESTEEEE\SEMANAL'.
+
+15/04/2020 14:12:56
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Semanais
+ | Classe: OrganizaBackupSemanais
+ | Método: Void OrganizaBackupSemanais(System.String, System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\SEMANAL'.
+
+15/04/2020 14:23:16
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\DIARIO\20200112
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: O índice estava fora dos limites da matriz.
+
+15/04/2020 16:24:13
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: <>c__DisplayClass32_1
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: A pasta não está vazia.
+
+
+15/04/2020 16:24:19
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: <>c__DisplayClass32_1
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: A pasta não está vazia.
+
+
+15/04/2020 16:24:20
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: <>c__DisplayClass32_1
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: A pasta não está vazia.
+
+
+15/04/2020 16:24:21
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: <>c__DisplayClass32_1
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: A pasta não está vazia.
+
+
+15/04/2020 16:24:33
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: <>c__DisplayClass32_1
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: A pasta não está vazia.
+
+
+15/04/2020 16:28:54
+ | ATENÇÃO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\DIARIO\20200123' já existe!
+ | Classe: <AssyncBackup>b__0
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: 
+
+20/05/2020 16:06:30
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\DIARIO\20200520\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\DIARIO\20200520\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 12:49:19
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini'.
+
+21/05/2020 12:49:19
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 12:49:19
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf'.
+
+21/05/2020 12:49:19
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf'.
+
+21/05/2020 12:49:19
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf'.
+
+21/05/2020 12:49:26
+ | ERROR |
+ | Descrição: Falha ao Copiar a pasta: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 12:51:53
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini'.
+
+21/05/2020 12:52:02
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 12:52:24
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini'.
+
+21/05/2020 14:35:28
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 15:02:44
+ | ERROR |
+ | Descrição: Falha ao Copiar a pasta: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 15:06:07
+ | ERROR |
+ | Descrição: Falha ao Copiar a pasta: D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 15:13:46
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: C:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 15:13:49
+ | ERROR |
+ | Descrição: Falha ao Copiar a pasta: C:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 15:13:49
+ | ERROR |
+ | Descrição: Falha ao Deletar as pastas antigas do Espelho.
+ | Classe: Form1
+ | Método: Void DeleteOldPath(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'C:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 15:16:47
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo: C:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 15:16:49
+ | ERROR |
+ | Descrição: Falha ao Copiar a pasta: C:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Void CopyAll(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 15:17:34
+ | ERROR |
+ | Descrição: Falha ao Deletar as pastas antigas do Espelho.
+ | Classe: Form1
+ | Método: Void DeleteOldPath(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'C:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 15:32:11
+ | ERROR |
+ | Descrição: Falha ao Deletar as pastas antigas do Espelho.
+ | Classe: Form1
+ | Método: Void DeleteOldPath(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 15:33:30
+ | ERROR |
+ | Descrição: Falha ao Deletar as pastas antigas do Espelho.
+ | Classe: Form1
+ | Método: Void DeleteOldPath(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 15:33:30
+ | ERROR |
+ | Descrição: Falha ao Deletar as pastas antigas do Espelho.
+ | Classe: Form1
+ | Método: Void DeleteOldPath(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.txt'.
+
+21/05/2020 15:39:15
+ | ERROR |
+ | Descrição: Falha ao Deletar as pastas antigas do Espelho.
+ | Classe: Form1
+ | Método: Void DeleteOldPath(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'C:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+21/05/2020 15:39:15
+ | ERROR |
+ | Descrição: Falha ao Deletar as pastas antigas do Espelho.
+ | Classe: Form1
+ | Método: Void DeleteOldPath(System.IO.DirectoryInfo, System.IO.DirectoryInfo)
+ | Exception: Não foi possível localizar uma parte do caminho 'C:\TesteBackupSBUILD\D\20200522\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 09:25:49
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200529
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 09:28:46
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200530
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 09:39:08
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200602
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 10:37:16
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200603
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 10:54:50
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200609
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 11:10:05
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200611
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 11:10:33
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200612
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 11:15:33
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200613
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 11:18:42
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200614
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 11:21:28
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200615
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+26/05/2020 13:33:25
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Diarios, para o diretorio: D:\TesteBackupSBUILD\D\20200616
+ | Classe: OrganizaBackupDiarios
+ | Método: Void OrganizaBackupDiarios(System.String, System.DateTime)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\TesteBackupSBUILD\D\20200521\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk'.
+
+28/05/2020 08:56:45
+ | INFO |
+ | Descrição: Iniciando Backup: 20200702
+28/05/2020 08:56:45
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 08:57:10
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 08:57:18
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+28/05/2020 09:01:50
+ | INFO |
+ | Descrição: Finalizando Backup: 20200702
+28/05/2020 09:09:03
+ | INFO |
+ | Descrição: Iniciando Backup: 20200703
+28/05/2020 09:09:03
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 09:09:25
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 09:09:31
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+28/05/2020 09:13:12
+ | INFO |
+ | Descrição: Finalizando Backup: 20200703
+28/05/2020 09:17:42
+ | INFO |
+ | Descrição: Iniciando Backup: 20200704
+28/05/2020 09:17:42
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 09:18:03
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 09:18:09
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+28/05/2020 09:22:46
+ | INFO |
+ | Descrição: Iniciando Backup: 20200705
+28/05/2020 09:22:46
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 09:23:08
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 09:23:47
+ | INFO |
+ | Descrição: Iniciando Backup: 20200706
+28/05/2020 09:23:47
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 09:24:08
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 09:24:28
+ | INFO |
+ | Descrição: Iniciando Backup: 20200707
+28/05/2020 09:24:28
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 09:24:50
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 09:24:56
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+28/05/2020 09:30:51
+ | INFO |
+ | Descrição: Iniciando Backup: 20200708
+28/05/2020 09:30:51
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 09:31:14
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 09:31:21
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+28/05/2020 09:37:22
+ | INFO |
+ | Descrição: Finalizando Backup: 20200708
+28/05/2020 12:08:56
+ | INFO |
+ | Descrição: Iniciando Backup: 20200710
+28/05/2020 12:08:56
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+28/05/2020 12:09:19
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+28/05/2020 12:09:26
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+28/05/2020 12:13:38
+ | INFO |
+ | Descrição: Finalizando Backup: 20200710
+08/06/2020 21:51:30
+ | INFO |
+ | Descrição: Iniciando Backup: 20200608
+08/06/2020 21:51:30
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+08/06/2020 21:51:32
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+08/06/2020 21:51:32
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+14/06/2020 12:17:32
+ | INFO |
+ | Descrição: Iniciando Backup: 20200614
+14/06/2020 12:17:32
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+14/06/2020 12:18:15
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+14/06/2020 12:20:25
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Semanais
+ | Classe: OrganizaBackupSemanais
+ | Método: Void OrganizaBackupSemanais(System.String, System.String, System.DateTime)
+ | Exception: O índice e o comprimento devem se referir a um local dentro da cadeia de caracteres.
+Nome do parâmetro: length
+
+14/06/2020 12:20:34
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+14/06/2020 12:26:40
+ | INFO |
+ | Descrição: Iniciando Backup: 20200615
+14/06/2020 12:26:40
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+14/06/2020 12:27:13
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+14/06/2020 12:27:22
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+14/06/2020 12:43:36
+ | INFO |
+ | Descrição: Finalizando Backup: 20200615
+14/06/2020 13:50:42
+ | INFO |
+ | Descrição: Iniciando Backup: 20200614
+14/06/2020 13:50:42
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+14/06/2020 13:51:18
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:52:32
+ | INFO |
+ | Descrição: Iniciando Backup: 20200615
+15/06/2020 07:52:32
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:52:34
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:52:34
+ | INFO |
+ | Descrição: Finalizando Backup: 20200615
+15/06/2020 07:52:59
+ | INFO |
+ | Descrição: Iniciando Backup: 20200616
+15/06/2020 07:52:59
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:53:01
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:53:01
+ | INFO |
+ | Descrição: Finalizando Backup: 20200616
+15/06/2020 07:53:03
+ | INFO |
+ | Descrição: Iniciando Backup: 20200617
+15/06/2020 07:53:03
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:53:05
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:53:05
+ | INFO |
+ | Descrição: Finalizando Backup: 20200617
+15/06/2020 07:53:07
+ | INFO |
+ | Descrição: Iniciando Backup: 20200618
+15/06/2020 07:53:07
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:53:09
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:53:09
+ | INFO |
+ | Descrição: Finalizando Backup: 20200618
+15/06/2020 07:53:11
+ | INFO |
+ | Descrição: Iniciando Backup: 20200619
+15/06/2020 07:53:11
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:53:14
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:53:14
+ | INFO |
+ | Descrição: Finalizando Backup: 20200619
+15/06/2020 07:53:16
+ | INFO |
+ | Descrição: Iniciando Backup: 20200620
+15/06/2020 07:53:16
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:53:18
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:53:19
+ | INFO |
+ | Descrição: Finalizando Backup: 20200620
+15/06/2020 07:54:12
+ | INFO |
+ | Descrição: Iniciando Backup: 20200621
+15/06/2020 07:54:12
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:14
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:15
+ | INFO |
+ | Descrição: Finalizando Backup: 20200621
+15/06/2020 07:54:19
+ | INFO |
+ | Descrição: Iniciando Backup: 20200622
+15/06/2020 07:54:19
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:21
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:22
+ | INFO |
+ | Descrição: Finalizando Backup: 20200622
+15/06/2020 07:54:36
+ | INFO |
+ | Descrição: Iniciando Backup: 20200623
+15/06/2020 07:54:36
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:39
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:39
+ | INFO |
+ | Descrição: Finalizando Backup: 20200623
+15/06/2020 07:54:41
+ | INFO |
+ | Descrição: Iniciando Backup: 20200624
+15/06/2020 07:54:41
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:42
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:43
+ | INFO |
+ | Descrição: Finalizando Backup: 20200624
+15/06/2020 07:54:44
+ | INFO |
+ | Descrição: Iniciando Backup: 20200625
+15/06/2020 07:54:44
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:46
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:46
+ | INFO |
+ | Descrição: Finalizando Backup: 20200625
+15/06/2020 07:54:47
+ | INFO |
+ | Descrição: Iniciando Backup: 20200626
+15/06/2020 07:54:47
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:49
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:49
+ | INFO |
+ | Descrição: Finalizando Backup: 20200626
+15/06/2020 07:54:50
+ | INFO |
+ | Descrição: Iniciando Backup: 20200627
+15/06/2020 07:54:50
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:52
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:52
+ | INFO |
+ | Descrição: Finalizando Backup: 20200627
+15/06/2020 07:54:55
+ | INFO |
+ | Descrição: Iniciando Backup: 20200628
+15/06/2020 07:54:55
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:54:56
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:54:57
+ | INFO |
+ | Descrição: Finalizando Backup: 20200628
+15/06/2020 07:54:59
+ | INFO |
+ | Descrição: Iniciando Backup: 20200629
+15/06/2020 07:54:59
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:01
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:01
+ | INFO |
+ | Descrição: Finalizando Backup: 20200629
+15/06/2020 07:55:03
+ | INFO |
+ | Descrição: Iniciando Backup: 20200630
+15/06/2020 07:55:03
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:04
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:05
+ | INFO |
+ | Descrição: Finalizando Backup: 20200630
+15/06/2020 07:55:07
+ | INFO |
+ | Descrição: Iniciando Backup: 20200701
+15/06/2020 07:55:07
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:08
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:09
+ | INFO |
+ | Descrição: Finalizando Backup: 20200701
+15/06/2020 07:55:11
+ | INFO |
+ | Descrição: Iniciando Backup: 20200702
+15/06/2020 07:55:11
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:12
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:12
+ | INFO |
+ | Descrição: Finalizando Backup: 20200702
+15/06/2020 07:55:14
+ | INFO |
+ | Descrição: Iniciando Backup: 20200703
+15/06/2020 07:55:14
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:15
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:15
+ | INFO |
+ | Descrição: Finalizando Backup: 20200703
+15/06/2020 07:55:16
+ | INFO |
+ | Descrição: Iniciando Backup: 20200704
+15/06/2020 07:55:16
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:18
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:18
+ | INFO |
+ | Descrição: Finalizando Backup: 20200704
+15/06/2020 07:55:20
+ | INFO |
+ | Descrição: Iniciando Backup: 20200705
+15/06/2020 07:55:20
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:21
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:22
+ | INFO |
+ | Descrição: Finalizando Backup: 20200705
+15/06/2020 07:55:23
+ | INFO |
+ | Descrição: Iniciando Backup: 20200706
+15/06/2020 07:55:23
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:24
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:25
+ | INFO |
+ | Descrição: Finalizando Backup: 20200706
+15/06/2020 07:55:28
+ | INFO |
+ | Descrição: Iniciando Backup: 20200707
+15/06/2020 07:55:28
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:29
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:30
+ | INFO |
+ | Descrição: Finalizando Backup: 20200707
+15/06/2020 07:55:32
+ | INFO |
+ | Descrição: Iniciando Backup: 20200708
+15/06/2020 07:55:32
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:33
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:33
+ | INFO |
+ | Descrição: Finalizando Backup: 20200708
+15/06/2020 07:55:36
+ | INFO |
+ | Descrição: Iniciando Backup: 20200709
+15/06/2020 07:55:36
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:37
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:37
+ | INFO |
+ | Descrição: Finalizando Backup: 20200709
+15/06/2020 07:55:39
+ | INFO |
+ | Descrição: Iniciando Backup: 20200710
+15/06/2020 07:55:39
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:40
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:41
+ | INFO |
+ | Descrição: Finalizando Backup: 20200710
+15/06/2020 07:55:42
+ | INFO |
+ | Descrição: Iniciando Backup: 20200711
+15/06/2020 07:55:42
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:43
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:44
+ | INFO |
+ | Descrição: Finalizando Backup: 20200711
+15/06/2020 07:55:45
+ | INFO |
+ | Descrição: Iniciando Backup: 20200712
+15/06/2020 07:55:45
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:46
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:47
+ | INFO |
+ | Descrição: Finalizando Backup: 20200712
+15/06/2020 07:55:49
+ | INFO |
+ | Descrição: Iniciando Backup: 20200713
+15/06/2020 07:55:49
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:50
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:51
+ | INFO |
+ | Descrição: Finalizando Backup: 20200713
+15/06/2020 07:55:53
+ | INFO |
+ | Descrição: Iniciando Backup: 20200714
+15/06/2020 07:55:53
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:54
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:54
+ | INFO |
+ | Descrição: Finalizando Backup: 20200714
+15/06/2020 07:55:56
+ | INFO |
+ | Descrição: Iniciando Backup: 20200715
+15/06/2020 07:55:56
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:55:57
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:55:58
+ | INFO |
+ | Descrição: Finalizando Backup: 20200715
+15/06/2020 07:55:59
+ | INFO |
+ | Descrição: Iniciando Backup: 20200716
+15/06/2020 07:55:59
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:00
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:01
+ | INFO |
+ | Descrição: Finalizando Backup: 20200716
+15/06/2020 07:56:02
+ | INFO |
+ | Descrição: Iniciando Backup: 20200717
+15/06/2020 07:56:02
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:03
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:03
+ | INFO |
+ | Descrição: Finalizando Backup: 20200717
+15/06/2020 07:56:05
+ | INFO |
+ | Descrição: Iniciando Backup: 20200718
+15/06/2020 07:56:05
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:06
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:06
+ | INFO |
+ | Descrição: Finalizando Backup: 20200718
+15/06/2020 07:56:08
+ | INFO |
+ | Descrição: Iniciando Backup: 20200719
+15/06/2020 07:56:08
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:09
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:10
+ | INFO |
+ | Descrição: Finalizando Backup: 20200719
+15/06/2020 07:56:12
+ | INFO |
+ | Descrição: Iniciando Backup: 20200720
+15/06/2020 07:56:12
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:13
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:13
+ | INFO |
+ | Descrição: Finalizando Backup: 20200720
+15/06/2020 07:56:15
+ | INFO |
+ | Descrição: Iniciando Backup: 20200721
+15/06/2020 07:56:15
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:16
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:16
+ | INFO |
+ | Descrição: Finalizando Backup: 20200721
+15/06/2020 07:56:18
+ | INFO |
+ | Descrição: Iniciando Backup: 20200722
+15/06/2020 07:56:18
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:19
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:19
+ | INFO |
+ | Descrição: Finalizando Backup: 20200722
+15/06/2020 07:56:21
+ | INFO |
+ | Descrição: Iniciando Backup: 20200723
+15/06/2020 07:56:21
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:22
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:22
+ | INFO |
+ | Descrição: Finalizando Backup: 20200723
+15/06/2020 07:56:24
+ | INFO |
+ | Descrição: Iniciando Backup: 20200724
+15/06/2020 07:56:24
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:25
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:25
+ | INFO |
+ | Descrição: Finalizando Backup: 20200724
+15/06/2020 07:56:28
+ | INFO |
+ | Descrição: Iniciando Backup: 20200725
+15/06/2020 07:56:28
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:29
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:29
+ | INFO |
+ | Descrição: Finalizando Backup: 20200725
+15/06/2020 07:56:31
+ | INFO |
+ | Descrição: Iniciando Backup: 20200726
+15/06/2020 07:56:31
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:32
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:34
+ | INFO |
+ | Descrição: Finalizando Backup: 20200726
+15/06/2020 07:56:35
+ | INFO |
+ | Descrição: Iniciando Backup: 20200727
+15/06/2020 07:56:35
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:37
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:37
+ | INFO |
+ | Descrição: Finalizando Backup: 20200727
+15/06/2020 07:56:39
+ | INFO |
+ | Descrição: Iniciando Backup: 20200728
+15/06/2020 07:56:39
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:40
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:41
+ | INFO |
+ | Descrição: Finalizando Backup: 20200728
+15/06/2020 07:56:46
+ | INFO |
+ | Descrição: Iniciando Backup: 20200729
+15/06/2020 07:56:46
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:47
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:47
+ | INFO |
+ | Descrição: Finalizando Backup: 20200729
+15/06/2020 07:56:50
+ | INFO |
+ | Descrição: Iniciando Backup: 20200730
+15/06/2020 07:56:50
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:51
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:52
+ | INFO |
+ | Descrição: Finalizando Backup: 20200730
+15/06/2020 07:56:55
+ | INFO |
+ | Descrição: Iniciando Backup: 20200731
+15/06/2020 07:56:55
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:56:56
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:56:56
+ | INFO |
+ | Descrição: Finalizando Backup: 20200731
+15/06/2020 07:57:00
+ | INFO |
+ | Descrição: Iniciando Backup: 20200801
+15/06/2020 07:57:00
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 07:57:02
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 07:57:02
+ | INFO |
+ | Descrição: Finalizando Backup: 20200801
+15/06/2020 08:26:16
+ | INFO |
+ | Descrição: Iniciando Backup: 20200615
+15/06/2020 08:26:16
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\01-Documentos Recebidos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\01-Documentos Recebidos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\01-Documentos Recebidos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf\01-Documentos Recebidos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\01-Documentos Recebidos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini\02-Backups
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini\2.1 - PLC
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.1 - PLC' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt\2.1 - PLC
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.1 - PLC' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini\2.1.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.1 - PLC\2.1.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini\2.2 - IHM
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip\2.2 - IHM
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt\2.2 - IHM
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip\2.2.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.2 - IHM\2.2.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini\2.3 - Supervisório
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.3 - Supervisório' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt\2.3 - Supervisório
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.3 - Supervisório' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini\2.3.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini\2.4 - Banco de dados
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.4 - Banco de dados' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt\2.4 - Banco de dados
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.4 - Banco de dados' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini\2.4.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini\2.5 - Inversores
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.5 - Inversores' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini\2.6 - Relatórios
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\02-Backups\2.6 - Relatórios' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini\03-Budget
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\03-Budget' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini\04-Informações técnicas
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\04-Informações técnicas' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini\05-Desenhos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\05-Desenhos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini\5.1 - Esquema Eletrico
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\05-Desenhos\5.1 - Esquema Eletrico' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini\5.2 - Arquitetura Automação
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\05-Desenhos\5.2 - Arquitetura Automação' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini\06-Lista IO
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\06-Lista IO' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini\6.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\06-Lista IO\6.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini\07-Cronograma
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\07-Cronograma' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini\7.1 - Obsoletos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\07-Cronograma\7.1 - Obsoletos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini\08-Atas
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\08-Atas' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini\09-Caderno de Encargos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\09-Caderno de Encargos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini\10-Fotos e Videos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\10-Fotos e Videos' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini\11-VM
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\11-VM' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini\12-Manual de operação
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\12-Manual de operação' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini\13-Outros
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\13-Outros' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini\14-Relatórios de atividades
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\14-Relatórios de atividades' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini\15-Softwares
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\15-Softwares' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini\16-Screenshots
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\16-Screenshots' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini\16.1 - PLC
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\16-Screenshots\16.1 - PLC' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini\16.2 - IHM
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\16-Screenshots\16.2 - IHM' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx\16.2 - IHM
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\16-Screenshots\16.2 - IHM' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf\16.2 - IHM
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\16-Screenshots\16.2 - IHM' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini\16.3 - Supervisório
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\16-Screenshots\16.3 - Supervisório' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini\17-Case
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\17-Case' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini\18-Emails
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\18-Emails' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini\19-Pesquisa de satisfação
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\19-Pesquisa de satisfação' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini\20-Medição
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\20-Medição' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini\21-Gerenciamento
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\21-Gerenciamento' foi negado.
+
+15/06/2020 08:26:17
+ | ERROR |
+ | Descrição: Falha ao Copiar o arquivo do Buffer: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini\22-Projetos mecânicos
+ | Classe: Form1
+ | Método: Boolean CopyArquive(System.String, System.String)
+ | Exception: O acesso ao caminho 'D:\TesteBackupSBUILD\D\200615\22-Projetos mecânicos' foi negado.
+
+15/06/2020 08:26:18
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 08:26:18
+ | INFO |
+ | Descrição: Finalizando Backup: 20200615
+15/06/2020 08:26:59
+ | INFO |
+ | Descrição: Iniciando Backup: 20200616
+15/06/2020 08:26:59
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 08:28:26
+ | INFO |
+ | Descrição: Iniciando Backup: 20200617
+15/06/2020 08:28:26
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 08:34:12
+ | INFO |
+ | Descrição: Iniciando Backup: 20200618
+15/06/2020 08:34:12
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 08:42:29
+ | INFO |
+ | Descrição: Iniciando Backup: 20200619
+15/06/2020 08:42:29
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 08:44:18
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 08:44:19
+ | INFO |
+ | Descrição: Finalizando Backup: 20200619
+15/06/2020 16:31:47
+ | INFO |
+ | Descrição: Iniciando Backup: 20200620
+15/06/2020 16:31:47
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:31:48
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:33:37
+ | INFO |
+ | Descrição: Iniciando Backup: 20200621
+15/06/2020 16:33:37
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:33:50
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Iniciando Backup: 20200622
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:38:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:38:01
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:38:35
+ | INFO |
+ | Descrição: Iniciando Backup: 20200623
+15/06/2020 16:38:35
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:38:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:38:37
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:39:50
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:39:51
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:44:14
+ | INFO |
+ | Descrição: Iniciando Backup: 20200625
+15/06/2020 16:44:14
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:44:15
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Iniciando Backup: 20200626
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:46:00
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:46:01
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Iniciando Backup: 20200627
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:47:36
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:47:37
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:49:34
+ | INFO |
+ | Descrição: Iniciando Backup: 20200628
+15/06/2020 16:49:34
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+15/06/2020 16:49:35
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+15/06/2020 16:49:36
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 16:49:36
+ | INFO |
+ | Descrição: Finalizando Backup: 20200628
+15/06/2020 17:05:33
+ | INFO |
+ | Descrição: Iniciando Backup: 20200629
+15/06/2020 17:05:33
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 17:05:34
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 17:05:35
+ | INFO |
+ | Descrição: Finalizando Backup: 20200629
+15/06/2020 17:07:10
+ | INFO |
+ | Descrição: Iniciando Backup: 20200630
+15/06/2020 17:07:10
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+15/06/2020 17:07:12
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+15/06/2020 17:07:12
+ | INFO |
+ | Descrição: Finalizando Backup: 20200630
+22/06/2020 14:54:27
+ | INFO |
+ | Descrição: Iniciando Backup: 20200622
+
+22/06/2020 14:54:27
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 14:55:48
+ | INFO |
+ | Descrição: Iniciando Backup: 20200623
+
+22/06/2020 14:55:48
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 14:56:00
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 14:56:01
+ | INFO |
+ | Descrição: Finalizando Backup: 20200623
+
+22/06/2020 14:56:12
+ | INFO |
+ | Descrição: Iniciando Backup: 20200623
+
+22/06/2020 14:56:12
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 15:01:45
+ | INFO |
+ | Descrição: Iniciando Backup: 20200622
+
+22/06/2020 15:01:45
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:10:38
+ | INFO |
+ | Descrição: Iniciando Backup: 20200623
+
+22/06/2020 16:10:38
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:10:39
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:10:40
+ | INFO |
+ | Descrição: Finalizando Backup: 20200623
+
+22/06/2020 16:11:15
+ | INFO |
+ | Descrição: Iniciando Backup: 20200625
+
+22/06/2020 16:11:15
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:11:17
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:11:17
+ | INFO |
+ | Descrição: Finalizando Backup: 20200625
+
+22/06/2020 16:14:43
+ | INFO |
+ | Descrição: Iniciando Backup: 20200627
+
+22/06/2020 16:14:43
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:14:44
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:14:45
+ | INFO |
+ | Descrição: Finalizando Backup: 20200627
+
+22/06/2020 16:15:31
+ | INFO |
+ | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio - Modelo S. Build.xlsx
+
+22/06/2020 16:16:54
+ | INFO |
+ | Descrição: Iniciando Backup: 20200628
+
+22/06/2020 16:16:54
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:16:55
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:16:55
+ | INFO |
+ | Descrição: Finalizando Backup: 20200628
+
+22/06/2020 16:17:39
+ | INFO |
+ | Descrição: Iniciando Backup: 20200629
+
+22/06/2020 16:17:39
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:17:40
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:17:40
+ | INFO |
+ | Descrição: Finalizando Backup: 20200629
+
+22/06/2020 16:18:26
+ | INFO |
+ | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio - Modelo S. Build.xlsx
+
+22/06/2020 16:19:57
+ | INFO |
+ | Descrição: Iniciando Backup: 20200630
+
+22/06/2020 16:19:57
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:19:58
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:19:59
+ | INFO |
+ | Descrição: Finalizando Backup: 20200630
+
+22/06/2020 16:20:04
+ | INFO |
+ | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio - Modelo S. Build.xlsx
+
+22/06/2020 16:31:08
+ | INFO |
+ | Descrição: Iniciando Backup: 20200622
+
+22/06/2020 16:31:08
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:31:09
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:31:10
+ | INFO |
+ | Descrição: Finalizando Backup: 20200622
+
+22/06/2020 16:31:10
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: <>c__DisplayClass43_1
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: Não foi possível localizar uma parte do caminho 'D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Templete\Relatorio - Modelo S. Build.xlsx'.
+
+22/06/2020 16:34:20
+ | INFO |
+ | Descrição: Iniciando Backup: 20200623
+
+22/06/2020 16:34:20
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:34:21
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:34:21
+ | INFO |
+ | Descrição: Finalizando Backup: 20200623
+
+22/06/2020 16:35:25
+ | INFO |
+ | Descrição: Iniciando Backup: 20200624
+
+22/06/2020 16:35:25
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:35:26
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:35:27
+ | INFO |
+ | Descrição: Finalizando Backup: 20200624
+
+22/06/2020 16:35:34
+ | INFO |
+ | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio_2020622_163527.xlsx
+
+22/06/2020 16:35:34
+ | ERROR |
+ | Descrição: Falha na monstagem do email.
+ | Classe: NotificacaoEmail
+ | Método: Void NotificacaoEmail(System.DateTime, Boolean)
+ | Exception: O parâmetro 'fileName' não pode ser uma cadeia de caracteres vazia.
+Nome do parâmetro: fileName
+
+22/06/2020 16:39:02
+ | INFO |
+ | Descrição: Iniciando Backup: 20200625
+
+22/06/2020 16:39:02
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:39:03
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:39:04
+ | INFO |
+ | Descrição: Finalizando Backup: 20200625
+
+22/06/2020 16:39:06
+ | INFO |
+ | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio_2020622_16394.xlsx
+
+22/06/2020 16:39:06
+ | ERROR |
+ | Descrição: Falha na monstagem do email.
+ | Classe: NotificacaoEmail
+ | Método: Void NotificacaoEmail(System.DateTime, Boolean)
+ | Exception: O parâmetro 'fileName' não pode ser uma cadeia de caracteres vazia.
+Nome do parâmetro: fileName
+
+22/06/2020 16:41:10
+ | INFO |
+ | Descrição: Iniciando Backup: 20200626
+
+22/06/2020 16:41:10
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:41:11
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:41:12
+ | INFO |
+ | Descrição: Finalizando Backup: 20200626
+
+22/06/2020 16:41:27
+ | INFO |
+ | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio_2020622_164112.xlsx
+
+22/06/2020 16:42:45
+ | INFO |
+ | Descrição: Iniciando Backup: 20200627
+
+22/06/2020 16:42:45
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+22/06/2020 16:42:46
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+22/06/2020 16:42:47
+ | INFO |
+ | Descrição: Finalizando Backup: 20200627
+
+22/06/2020 16:42:52
+ | INFO |
+ | Descrição: Exportação para excel realisado com sucesso. Diretório de destino: D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\bin\Debug\Relatorio\Relatorio_2020622_164247.xlsx
+
+30/07/2020 13:47:28
+ | INFO |
+ | Descrição: Iniciando Backup: 20200730
+
+30/07/2020 13:47:28
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+30/07/2020 13:47:29
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+30/07/2020 13:47:30
+ | INFO |
+ | Descrição: Finalizando Backup: 20200730
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Iniciando Backup: 20200801
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\22-Projetos mecânicos\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\21-Gerenciamento\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\20-Medição\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\19-Pesquisa de satisfação\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\18-Emails\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\17-Case\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.3 - Supervisório\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.pdf
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\Prints_IHM_RPL_CACAPAVA.docx
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.2 - IHM\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\16.1 - PLC\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\16-Screenshots\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\15-Softwares\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\14-Relatórios de atividades\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\13-Outros\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\12-Manual de operação\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\11-VM\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\10-Fotos e Videos\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\09-Caderno de Encargos\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\08-Atas\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\7.1 - Obsoletos\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\07-Cronograma\desktop.ini
+
+30/07/2020 13:50:33
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\6.1 - Obsoletos\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\06-Lista IO\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.2 - Arquitetura Automação\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\5.1 - Esquema Eletrico\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\05-Desenhos\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\04-Informações técnicas\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\03-Budget\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.6 - Relatórios\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.5 - Inversores\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\2.4.1 - Obsoletos\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\senha.txt
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.4 - Banco de dados\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\2.3.1 - Obsoletos\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\senha.txt
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.3 - Supervisório\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1533.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1403.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_1208.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200409_0715.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1802.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1707.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200408_1144.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_1808.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\RPL_CACAPAVA_TANQUE_SOJA_20200407_0903.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\2.2.1 - Obsoletos\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\senha.txt
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\RPL_CACAPAVA_TANQUE_SOJA_20200409_1759.zip
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.2 - IHM\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\2.1.1 - Obsoletos\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\senha.txt
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\2.1 - PLC\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\02-Backups\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-ITU-202-08_Sete Lagoas_Tanque de óleo de soja_Painel_Força_Comando....pdf
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\PE-DE-CWB-202-08_Curitiba_Tanque de óleo de soja_Painel_Força_Comando_Re....pdf
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\MODELO DE INSTALAÇÃO IFM.pdf
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Copiado do Buffer o Arquivo: D:\P2001032-RPL Caçapava-Automação Tanques de Soja\01-Documentos Recebidos\desktop.ini
+
+30/07/2020 13:50:34
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+30/07/2020 13:50:35
+ | INFO |
+ | Descrição: Finalizando Backup: 20200801
+
+01/11/2020 11:04:41
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: Valor não pode ser nulo.
+Nome do parâmetro: addresses
+
+01/11/2020 11:06:04
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: Valor não pode ser nulo.
+Nome do parâmetro: addresses
+
+01/11/2020 11:09:45
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: Valor não pode ser nulo.
+Nome do parâmetro: addresses
+

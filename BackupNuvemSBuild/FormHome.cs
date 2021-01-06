@@ -1,5 +1,4 @@
-﻿using BackupNuvemSBuild_Configuration.Properties;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +14,17 @@ using System.Globalization;
 using BackupNuvemSBuild_Models;
 using Microsoft.VisualBasic;
 using System.Reflection;
+using BCrypt.Net;
+using static BCrypt.Net.BCrypt;
+using System.Net.Mail;
+using System.ServiceProcess;
+using BackupNuvemSBuild_Configuration.Properties;
 
 namespace BackupNuvemSBuild_Configuration
 {
     public partial class FormHome : Form
     {
+
 
         #region Global
 
@@ -33,14 +38,34 @@ namespace BackupNuvemSBuild_Configuration
         string statusDiretorio = "";
         int statusTempoRestante = 0;
 
+
         bool vendoPassword = false;
 
         Configuration configuration = new Configuration();
         Email email = new Email();
-        Log log = new Log();
+        Log log = new Log("Configuration");
+        Encrypt encrypt = new Encrypt("cenouras", "abacaxis");
 
         string pathConfiguration = @"Config/Configuration.ini";
+        string pathPastasRestritas = @"Config/PastasRestritas.ini";
+        string pathEmails = @"Config\email.ini";
 
+        string machineName = "localhost";
+        string serviceName = "OPC Labs Kit Server";
+
+        string comandoSTART = "START";
+        string comandoSTOP = "STOP";
+        string comandoRESTART = "RESTART";
+        string comando = "";
+
+        double timeoutCommandService = 5000;
+
+        BackgroundWorker bwService = null;
+
+        BackgroundWorker bwTCPIP = null;
+
+        string messageRespostaGlobal = "";
+        string messageEnvioGlobal = "";
 
         #endregion
 
@@ -87,6 +112,14 @@ namespace BackupNuvemSBuild_Configuration
             pnlDiretorios2.Visible = false;
             pnlServico2.Visible = false;
 
+            //check
+            
+
+            ptbCheckService.BackColor = Color.FromArgb(35, 35, 35);
+            ptbCheckAgendamento.BackColor = Color.FromArgb(35, 35, 35);
+            ptbCheckDiretorio.BackColor = Color.FromArgb(35, 35, 35);
+            ptbCheckEmail.BackColor = Color.FromArgb(35, 35, 35);
+
             switch (botaoMenu)
             {
                 case 0:
@@ -103,6 +136,9 @@ namespace BackupNuvemSBuild_Configuration
                     pnlAgendamento.Visible = true;
                     btn_agendamento.FlatAppearance.BorderSize = 0;
                     pnlAgendamento2.Visible = true;
+                    //check
+                    ptbCheckAgendamento.BackColor = Color.Black;
+
                     break;
                 case 2:
                     btn_email.BackColor = Color.Black;
@@ -111,6 +147,9 @@ namespace BackupNuvemSBuild_Configuration
                     pnlEmail.Visible = true;
                     btn_email.FlatAppearance.BorderSize = 0;
                     pnlEmail2.Visible = true;
+                    //check
+                    ptbCheckEmail.BackColor = Color.Black;
+
                     break;
                 case 3:
                     btn_pastas.BackColor = Color.Black;
@@ -119,6 +158,9 @@ namespace BackupNuvemSBuild_Configuration
                     pnlDiretorios.Visible = true;
                     btn_pastas.FlatAppearance.BorderSize = 0;
                     pnlDiretorios2.Visible = true;
+                    //check
+                    ptbCheckDiretorio.BackColor = Color.Black;
+
                     break;
                 case 4:
                     btn_service.BackColor = Color.Black;
@@ -127,6 +169,9 @@ namespace BackupNuvemSBuild_Configuration
                     pnlServico.Visible = true;
                     btn_service.FlatAppearance.BorderSize = 0;
                     pnlServico2.Visible = true;
+                    //check
+                    ptbCheckService.BackColor = Color.Black;
+
                     break;
                 default:
                     break;
@@ -163,7 +208,6 @@ namespace BackupNuvemSBuild_Configuration
 
         #endregion
 
-
         #region Menu Superior
         private void btnFechar_Enter(object sender, EventArgs e)
         {
@@ -177,8 +221,23 @@ namespace BackupNuvemSBuild_Configuration
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Environment.Exit(0);
+            if (btn_save.Enabled == true)
+            {
+                DialogResult botaoAcionado = MessageBox.Show("Deseja sair sem salvar ?", "Sair sem salvar", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                if (botaoAcionado == DialogResult.OK)
+                {
+                    this.Close();
+                    Environment.Exit(0);
+                }
+
+            }
+            else
+            {
+                this.Close();
+                Environment.Exit(0);
+            }
+
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -187,10 +246,11 @@ namespace BackupNuvemSBuild_Configuration
         }
         #endregion
 
-
         #region Mover Tela
         private bool mouseIsDown = false;
         private Point firstPoint;
+
+        public string ServiceName { get => serviceName; set => serviceName = value; }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -223,19 +283,22 @@ namespace BackupNuvemSBuild_Configuration
 
         #endregion
 
-
+        #region Inicialização e Restauração
         private void FormHome_Load(object sender, EventArgs e)
         {
             AtualizaStatusBackup();
 
-            TcpClient("Status");
+            AssyncTCPClient("Status");
+            //timer
 
             timerBackup.Tick += TimerBackup_Tick;
             timerBackup.Enabled = true;
             timerBackup.Interval = 1000;
             timerBackup.Start();
 
-            configuration.RestauraConfiguracao(pathConfiguration);
+            bool restaurou = configuration.RestauraConfiguracao(pathConfiguration, pathPastasRestritas);
+            
+            
 
             //Restauração do menu Diretórios
             txbDrive.Text = configuration.PastaDrive;
@@ -247,6 +310,7 @@ namespace BackupNuvemSBuild_Configuration
                 txbPastaEspelho.Enabled = false;
                 btn_searchEspelho.Enabled = false;
                 txbPastaEspelho.Text = configuration.PastaEspelho;
+
             }
             else
             {
@@ -256,11 +320,18 @@ namespace BackupNuvemSBuild_Configuration
                 btn_searchEspelho.Enabled = true;
                 txbPastaEspelho.Text = configuration.PastaEspelho;
             }
-            //ltvExclusao.Items = configuration. Listview ainda para ser colocada.
+
+            foreach (var item in configuration.PastasRestritas)
+                ltvExclusao.Items.Add(item);
+
+            SaveDesabilitado();
 
             //Restauração do menu Email
             txtOrigem.Text = configuration.EmailOrigem;
-            txtSenha.Text = configuration.SenhaOrigem; //adicionar criptografia à senha
+            txtSenha.Text = encrypt.Decrypto(configuration.SenhaOrigem);
+
+
+
 
 
             email.RetornaEmails();
@@ -268,7 +339,7 @@ namespace BackupNuvemSBuild_Configuration
                 ltvEmail.Items.Add(destino);
 
 
-
+            SaveDesabilitado();
 
             // Restauração do menu Agendamentos
             if (configuration.BackupDiferencialHabilitado)
@@ -286,6 +357,21 @@ namespace BackupNuvemSBuild_Configuration
 
             }
 
+            if (configuration.BackupFULLHabilitado)
+            {
+                btnDesabilitadoBkpfull.Visible = false;
+                btnHabilitadoBkpfull.Visible = true;
+                dtpBkFull.Enabled = true;
+
+            }
+            else
+            {
+                btnDesabilitadoBkpfull.Visible = true;
+                btnHabilitadoBkpfull.Visible = false;
+                dtpBkFull.Enabled = false;
+
+            }
+
             int horaBackupDif = Convert.ToInt32(configuration.HorarioDiferencial.Substring(0, 2));
             int minBackupDif = Convert.ToInt32(configuration.HorarioDiferencial.Substring(3, 2));
             dtpBkDif.Value = new DateTime(1970, 1, 1, horaBackupDif, minBackupDif, 0);
@@ -294,11 +380,12 @@ namespace BackupNuvemSBuild_Configuration
             int minBackupFull = Convert.ToInt32(configuration.HorarioFull.Substring(3, 2));
             dtpBkFull.Value = new DateTime(1970, 1, 1, horaBackupFull, minBackupFull, 0);
 
-            txbdiasFull.Text = configuration.BackupsFull.ToString();
+            txbdiasFull.Text = configuration.IntervaloBackupsFull.ToString();
+            txbLimiteBkFull.Text = configuration.LimiteBackupsFull.ToString();
 
-
+            SaveDesabilitado();
         }
-
+        #endregion
 
         #region Animações Tela
 
@@ -490,15 +577,21 @@ namespace BackupNuvemSBuild_Configuration
 
         #endregion
 
-
         #region Agendamento
         private void btnOffBkpDif_Click(object sender, EventArgs e)
         {
+
             btnOffBkpDif.Visible = false;
             btnOnBkpDif.Visible = true;
             dtpBkDif.Enabled = true;
 
             configuration.BackupDiferencialHabilitado = true;
+
+            DateTimePicker dtpBkFull = new DateTimePicker();
+            Controls.AddRange(new Control[] { dtpBkFull });
+            dtpBkFull.CalendarMonthBackground = Color.FromArgb(13, 13, 13);
+
+            HabilitaSave();
         }
         private void btnOnBkpDif_Click(object sender, EventArgs e)
         {
@@ -507,6 +600,12 @@ namespace BackupNuvemSBuild_Configuration
             dtpBkDif.Enabled = false;
 
             configuration.BackupDiferencialHabilitado = false;
+
+            DateTimePicker dtpBkFull = new DateTimePicker();
+            Controls.AddRange(new Control[] { dtpBkFull });
+            dtpBkFull.CalendarMonthBackground = Color.FromArgb(13, 13, 13);
+
+            HabilitaSave();
         }
         private void txbdiasFull_TextChanged(object sender, EventArgs e)
         {
@@ -529,27 +628,88 @@ namespace BackupNuvemSBuild_Configuration
                 textNew = "1";
             }
             txbdiasFull.Text = textNew;
+
+            configuration.IntervaloBackupsFull = Convert.ToInt32(txbdiasFull.Text);
+
+            HabilitaSave();
         }
 
+        private void txbLimiteBkFull_TextChanged(object sender, EventArgs e)
+        {
+            string textOld = txbLimiteBkFull.Text;
+            string textNew = "";
+            string caracter;
+            string[] caracteresValidos = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+
+            for (int i = 0; i < textOld.Length; i++)
+            {
+                caracter = textOld.Substring(i, 1);
+
+                if (caracteresValidos.Contains(caracter))
+                {
+                    textNew += caracter;
+                }
+            }
+            if (textNew == "" || textNew == "0")
+            {
+                textNew = "1";
+            }
+            txbLimiteBkFull.Text = textNew;
+
+            configuration.LimiteBackupsFull = Convert.ToInt32(txbLimiteBkFull.Text);
+
+            HabilitaSave();
+        }
+
+        private void btnDesabilitadoBkpfull_Click(object sender, EventArgs e)
+        {
+            btnDesabilitadoBkpfull.Visible = false;
+            btnHabilitadoBkpfull.Visible = true;
+            dtpBkFull.Enabled = true;
+            txbdiasFull.Enabled = true;
+            txbLimiteBkFull.Enabled = true;
+            btnOffBkpDif.Enabled = true;
+            btnOnBkpDif.Enabled = true;
+            dtpBkDif.Enabled = true;
+
+            configuration.BackupFULLHabilitado = true;
+            HabilitaSave();
+            
+        }
+
+        private void btnHabilitadoBkpfull_Click(object sender, EventArgs e)
+        {
+
+            btnDesabilitadoBkpfull.Visible = true;
+            btnHabilitadoBkpfull.Visible = false;
+            dtpBkFull.Enabled = false;
+            txbdiasFull.Enabled = false;
+            txbLimiteBkFull.Enabled = false;
+            btnOffBkpDif.Enabled = false;
+            btnOffBkpDif.Visible = true;
+            btnOnBkpDif.Visible = false;
+            dtpBkDif.Enabled = false;
+
+            configuration.BackupFULLHabilitado = false;
+            HabilitaSave();
+            
+        }
         private void dtpBkDif_ValueChanged(object sender, EventArgs e)
         {
             configuration.HorarioDiferencial = dtpBkDif.Value.ToString("HH:mm");
+            HabilitaSave();
         }
 
-        private void txbdiasFull_TextChanged_1(object sender, EventArgs e)
-        {
-            configuration.BackupsFull = Convert.ToInt32(txbdiasFull.Text);
-        }
 
         private void dtpBkFull_ValueChanged(object sender, EventArgs e)
         {
             configuration.HorarioFull = dtpBkFull.Value.ToString("HH:mm");
+            HabilitaSave();
         }
 
 
 
         #endregion
-
 
         #region Email
 
@@ -569,8 +729,119 @@ namespace BackupNuvemSBuild_Configuration
                 vendoPassword = false;
             }
         }
-        #endregion
+        private void txtOrigem_TextChanged(object sender, EventArgs e)
+        {
+            configuration.EmailOrigem = txtOrigem.Text;
+            HabilitaSave();
 
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+            configuration.SenhaOrigem = encrypt.Encrypto(txtSenha.Text);
+            HabilitaSave();
+        }
+
+        private void btn_addemail_Click(object sender, EventArgs e)
+        {
+
+            string emailAux = Interaction.InputBox("Informe o email desejado:", "Email de Destino", "");
+
+            if (emailAux.Trim().Length > 0)
+            {
+                ltvEmail.Items.Add(emailAux);
+
+                string[] listaEmail = new string[ltvEmail.Items.Count];
+
+                for (int i = 0; i < ltvEmail.Items.Count; i++)
+                {
+                    listaEmail[i] = ltvEmail.Items[i].Text;
+                }
+                email.Destinos = listaEmail;
+            }
+            HabilitaSave();
+        }
+
+        private void bnt_excluiremail_Click(object sender, EventArgs e)
+        {
+            if (ltvEmail.SelectedItems.Count > 0)
+            {
+                int emailSelecionadoIndex = ltvEmail.SelectedItems[0].Index;
+                string emailSelecionado = ltvEmail.SelectedItems[0].Text;
+
+                DialogResult botaoAcionado = MessageBox.Show("Deseja mesmo excluir o email: " + emailSelecionado + " ?", "Excluir Email", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (botaoAcionado == DialogResult.OK)
+                {
+                    ltvEmail.Items.RemoveAt(emailSelecionadoIndex);
+
+                    string[] listaEmail = new string[ltvEmail.Items.Count];
+
+                    for (int i = 0; i < ltvEmail.Items.Count; i++)
+                    {
+                        listaEmail[i] = ltvEmail.Items[i].Text;
+                    }
+                    email.Destinos = listaEmail;
+
+                    bnt_excluiremail.Enabled = false;
+                }
+            }
+            HabilitaSave();
+        }
+        private void ltvEmail_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ltvEmail.SelectedItems.Count == 0)
+                bnt_excluiremail.Enabled = false;
+            else
+                bnt_excluiremail.Enabled = true;
+
+            HabilitaSave();
+        }
+
+        private void btnTesteEmail_Click(object sender, EventArgs e)
+        {
+            if (NotificacaoEmail())
+            {
+                MessageBox.Show("Email conectado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MessageBox.Show("Email não conectado", "Falha", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+
+        }
+
+        private bool NotificacaoEmail()
+        {
+            bool validaEmail = false;
+            try
+            {
+
+                email.SmtpServerString = "smtp.gmail.com";
+                email.Origem = configuration.EmailOrigem;
+                email.Password = encrypt.Decrypto(configuration.SenhaOrigem);
+                email.Assunto = "Backup Drive Servidor: teste ";
+
+                email.Anexos = new Attachment[0];
+                email.CorpoEmail = "Backup Foi Inicializado!" + Environment.NewLine;
+
+                email.SendEmail();
+
+                validaEmail = email.SendEmail();
+            }
+            catch (Exception ex)
+            {
+                log.LogError("Falha não envio do email.",
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
+            }
+            return validaEmail;
+
+
+        }
+
+        #endregion
 
         #region Diretórios
 
@@ -580,6 +851,8 @@ namespace BackupNuvemSBuild_Configuration
             btn_onEspelho.Visible = true;
             txbPastaEspelho.Enabled = true;
             btn_searchEspelho.Enabled = true;
+
+            HabilitaSave();
         }
         private void btn_onEspelho_Click_1(object sender, EventArgs e)
         {
@@ -587,6 +860,8 @@ namespace BackupNuvemSBuild_Configuration
             btn_onEspelho.Visible = false;
             txbPastaEspelho.Enabled = false;
             btn_searchEspelho.Enabled = false;
+
+            HabilitaSave();
         }
 
 
@@ -598,6 +873,24 @@ namespace BackupNuvemSBuild_Configuration
             configuration.PastaDrive = SearchPathFolder(configuration.PastaDrive);
 
             txbDrive.Text = configuration.PastaDrive;
+
+            HabilitaSave();
+        }
+        private void btn_searchDestino_Click(object sender, EventArgs e)
+        {
+            configuration.PastaBackup = SearchPathFolder(configuration.PastaBackup);
+
+            txbPastaDestino.Text = configuration.PastaBackup;
+
+            HabilitaSave();
+        }
+        private void btn_searchEspelho_Click(object sender, EventArgs e)
+        {
+            configuration.PastaEspelho = SearchPathFolder(configuration.PastaEspelho);
+
+            txbPastaEspelho.Text = configuration.PastaEspelho;
+
+            HabilitaSave();
         }
 
         private string SearchPathFolder(string pastaAtual)
@@ -641,7 +934,55 @@ namespace BackupNuvemSBuild_Configuration
 
         #endregion
 
+        #region Exclusão de diretórios
+        private void btn_adicionarPasta_Click(object sender, EventArgs e)
+        {
+            string pastaSelecionada = SearchPathFolder(configuration.PastaDrive);
 
+            if (pastaSelecionada == "OK")
+            {
+                if (pastaSelecionada.Trim().Length > 0)
+                {
+                    ltvExclusao.Items.Add(pastaSelecionada);
+
+                    configuration.PastasRestritas.Add(pastaSelecionada);
+                }
+            }
+            HabilitaSave();
+        }
+
+
+        private void btn_removerPasta_Click(object sender, EventArgs e)
+        {
+            if (ltvExclusao.SelectedItems.Count > 0)
+            {
+                int FolderSelecionadoIndex = ltvExclusao.SelectedItems[0].Index;
+                string FolderSelecionado = ltvExclusao.SelectedItems[0].Text;
+
+                DialogResult botaoAcionado = MessageBox.Show("Deseja mesmo retirar da lista de exclusão o diretório:  " + FolderSelecionado + " ?", "Retirar diretório", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (botaoAcionado == DialogResult.OK)
+                {
+                    ltvExclusao.Items.RemoveAt(FolderSelecionadoIndex);
+
+                    configuration.PastasRestritas.RemoveAt(FolderSelecionadoIndex);
+                    btn_removerPasta.Enabled = false;
+                }
+            }
+            HabilitaSave();
+        }
+
+        private void ltvExclusao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            {
+                if (ltvExclusao.SelectedItems.Count == 0)
+                    btn_removerPasta.Enabled = false;
+                else
+                    btn_removerPasta.Enabled = true;
+            }
+            HabilitaSave();
+        }
+        #endregion
         #endregion
 
         #region Botao Circular
@@ -674,52 +1015,27 @@ namespace BackupNuvemSBuild_Configuration
 
         private void btnPauseBackup_Click_1(object sender, EventArgs e)
         {
-            string messageResposta = TcpClient("Comando;Pause");
-
-            string[] respostaArray = messageResposta.Split(';');
-
-            atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
-
+            AssyncTCPClient("Comando;Pause");
         }
 
         private void btnAbortBackup_Click(object sender, EventArgs e)
         {
-            string messageResposta = TcpClient("Comando;Abort");
-
-            string[] respostaArray = messageResposta.Split(';');
-
-            atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
-
+            AssyncTCPClient("Comando; Abort");
         }
 
         private void btnNewBackupDiferencial_Click(object sender, EventArgs e)
         {
-            string messageResposta = TcpClient("Comando;BkpDiferencial");
-
-            string[] respostaArray = messageResposta.Split(';');
-
-            atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
-
-
+            AssyncTCPClient("Comando;BkpDiferencial");
         }
 
         private void btnNewBackupFull_Click(object sender, EventArgs e)
         {
-            string messageResposta = TcpClient("Comando;BkpFull");
-
-            string[] respostaArray = messageResposta.Split(';');
-
-            atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
-
+            AssyncTCPClient("Comando;BkpFull");
         }
 
         private void btnNewBackupEspelho_Click(object sender, EventArgs e)
         {
-            string messageResposta = TcpClient("Comando;SyncEspelho");
-
-            string[] respostaArray = messageResposta.Split(';');
-
-            atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
+            AssyncTCPClient("Comando;SyncEspelho");
         }
 
         #endregion
@@ -727,58 +1043,147 @@ namespace BackupNuvemSBuild_Configuration
         #region TCP
         public string TcpClient(string messageEnvio)
         {
+
+            String mensagemResposta = String.Empty;
+
+            try
+            {
+                // Create a TcpClient.
+                // Note, for this client to work you need to have a TcpServer 
+                // connected to the same address as specified by the server, port
+                // combination.                
+                TcpClient client = new TcpClient(server, port);
+
+
+                // Translate the passed message into ASCII and store it as a Byte array.
+
+
+                Byte[] data = Encoding.ASCII.GetBytes(messageEnvio);
+
+                // Get a client stream for reading and writing.
+                //  Stream stream = client.GetStream();
+
+                NetworkStream stream = client.GetStream();
+
+                // Send the message to the connected TcpServer. 
+                stream.Write(data, 0, data.Length);
+
+                // Receive the TcpServer.response.
+
+                // Buffer to store the response bytes.
+                data = new Byte[256];
+
+                // String to store the response ASCII representation.
+
+                // Read the first batch of the TcpServer response bytes.
+                Int32 bytes = stream.Read(data, 0, data.Length);
+                mensagemResposta = Encoding.ASCII.GetString(data, 0, bytes);
+
+
+
+                // Close everything.
+                stream.Close();
+                client.Close();
+            }
+            catch (Exception ex)
+            {
+                mensagemResposta = "Erro 404";
+            }
+
+            isAlive = false;
+            return mensagemResposta;
+
+        }
+        private void AssyncTCPClient(string messageEnvio)
+        {
             if (!isAlive)
             {
-                String mensagemResposta = String.Empty;
                 isAlive = true;
-                try
+
+                messageEnvioGlobal = messageEnvio;
+
+                //Inicia objeto assincrono UNICO para roda apenas uma vez
+                bwTCPIP = new BackgroundWorker();
+
+                ////Declara auxiliares para o processo assincrono
+                //bwConfigSQL.ProgressChanged +=
+                //    new ProgressChangedEventHandler(bwConfigSQL_ProgressChanged);
+
+                ////habilita propriedade de acompanhar progressão do processo
+                //bwConfigSQL.WorkerReportsProgress = true;
+
+                bwTCPIP.RunWorkerCompleted +=
+                    new RunWorkerCompletedEventHandler(bwTCPIP_RunWorkerCompleted);
+
+                //inicia processo assincrono
+                bwTCPIP.DoWork += (Senderbw, args) =>
                 {
-                    // Create a TcpClient.
-                    // Note, for this client to work you need to have a TcpServer 
-                    // connected to the same address as specified by the server, port
-                    // combination.                
-                    TcpClient client = new TcpClient(server, port);
+                    try
+                    {
+                        messageRespostaGlobal = TcpClient(messageEnvioGlobal);
+                    }
+                    catch (Exception ex)
+                    {
+                        log.LogError("Erro durante o Background Worker.",
+                                MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
+                    }
 
-                    // Translate the passed message into ASCII and store it as a Byte array.
+                };
+                //indica função acima como assincrona
+                bwTCPIP.RunWorkerAsync();
 
-
-                    Byte[] data = Encoding.ASCII.GetBytes(messageEnvio);
-
-                    // Get a client stream for reading and writing.
-                    //  Stream stream = client.GetStream();
-
-                    NetworkStream stream = client.GetStream();
-
-                    // Send the message to the connected TcpServer. 
-                    stream.Write(data, 0, data.Length);
-
-                    // Receive the TcpServer.response.
-
-                    // Buffer to store the response bytes.
-                    data = new Byte[256];
-
-                    // String to store the response ASCII representation.
-
-                    // Read the first batch of the TcpServer response bytes.
-                    Int32 bytes = stream.Read(data, 0, data.Length);
-                    mensagemResposta = Encoding.ASCII.GetString(data, 0, bytes);
-
-
-
-                    // Close everything.
-                    stream.Close();
-                    client.Close();
-                }
-                catch (Exception ex)
-                {
-                    mensagemResposta = "Erro 404";
-                }
-                isAlive = false;
-                return mensagemResposta;
             }
-            else
-                return "Busy";
+        }
 
+        private void bwTCPIP_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            bwTCPIP.Dispose();
+
+            try
+            {
+                string[] respostaArray = null;
+
+                if (messageEnvioGlobal == "Status")
+                {
+                    respostaArray = messageRespostaGlobal.Split(';');
+
+                    if (respostaArray[0] == "OK")
+                    {
+                        statusBackup = Convert.ToInt32(respostaArray[1]);
+
+                        if (statusBackup > 0)
+                        {
+
+                            statusPaused = Convert.ToBoolean(respostaArray[2]);
+                            statusPorcentagem = Convert.ToInt32(respostaArray[3]);
+                            statusDiretorio = Convert.ToString(respostaArray[4]);
+                            statusTempoRestante = Convert.ToInt32(respostaArray[5]);
+
+                        }
+                        //terminar porcentagem [3], diretório [4] e tempo restante [5]
+                        AtualizaStatusBackup();
+                    }
+
+                    atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
+                }
+                else
+                {
+                    respostaArray = messageRespostaGlobal.Split(';');
+
+                    atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            messageRespostaGlobal = String.Empty;
+
+            isAlive = false;
         }
         #endregion
 
@@ -787,95 +1192,355 @@ namespace BackupNuvemSBuild_Configuration
         {
             timerBackup.Stop();
 
-            string messageResposta = TcpClient("Status");
 
-            string[] respostaArray = messageResposta.Split(';');
+            AssyncTCPClient("Status");
 
-            if (respostaArray[0] == "OK")
-            {
-                statusBackup = Convert.ToInt32(respostaArray[1]);
-                statusPaused = Convert.ToBoolean(respostaArray[2]);
-                statusPorcentagem = Convert.ToInt32(respostaArray[3]);
-                statusDiretorio = Convert.ToString(respostaArray[4]);
-                statusTempoRestante = Convert.ToInt32(respostaArray[5]);
 
-                //terminar porcentagem [3], diretório [4] e tempo restante [5]
-                AtualizaStatusBackup();
-            }
+            ConfiguracaoServiçoWindows();
 
-            atualizaIconLoading(respostaArray[0] == "OK" ? true : false);
+            CheckConfiguration();
 
             timerBackup.Start();
         }
 
 
+
+
+
         #endregion
 
-        private void txtOrigem_TextChanged(object sender, EventArgs e)
+        #region Botão Save
+        private void btn_save_Click(object sender, EventArgs e)
         {
-            configuration.EmailOrigem = txtOrigem.Text;
+            configuration.SalvaConfiguracao();
+            configuration.SalvaConfiguracoesEmail(email.Destinos, pathEmails);
+            SaveDesabilitado();
         }
 
-        private void txtSenha_TextChanged(object sender, EventArgs e)
+        private void HabilitaSave()
         {
-            configuration.SenhaOrigem = txtSenha.Text;
+            btn_save.BackgroundImage = Resources._2305609_32;
+            btn_save.Enabled = true;
         }
 
-        private void btn_addemail_Click(object sender, EventArgs e)
+        private void SaveDesabilitado()
         {
+            btn_save.BackgroundImage = Resources.savecinza;
+            btn_save.Enabled = false;
+        }
 
-            string emailAux = Interaction.InputBox("Informe o email desejado:", "Email de Destino", "");
+        #endregion
 
-            if (emailAux.Trim().Length > 0)
+        #region Check Configuração
+        private void CheckConfiguration()
+        {
+            ptbCheckAgendamento.Visible = false;
+            ptbCheckDiretorio.Visible = false;
+            ptbCheckEmail.Visible = false;
+
+            //agendamento
+            if (configuration.BackupFULLHabilitado && configuration.LimiteBackupsFull != 0 && configuration.IntervaloBackupsFull != 0)
             {
-                ltvEmail.Items.Add(emailAux);
+                ptbCheckAgendamento.Visible = true;
 
-                string[] listaEmail = new string[ltvEmail.Items.Count];
-
-                for (int i = 0; i < ltvEmail.Items.Count; i++)
-                {
-                    listaEmail[i] = ltvEmail.Items[i].Text;
-                }
-                email.Destinos = listaEmail;
             }
-      }
 
-        private void bnt_excluiremail_Click(object sender, EventArgs e)
-        {
-            if (ltvEmail.SelectedItems.Count > 0)
+            //email
+            if (txtOrigem.Text != "" && txtSenha.Text != "" && ltvEmail.Items.Count > 0)
             {
-                int emailSelecionadoIndex = ltvEmail.SelectedItems[0].Index;
-                string emailSelecionado = ltvEmail.SelectedItems[0].Text;
+                ptbCheckEmail.Visible = true;
 
-                DialogResult botaoAcionado = MessageBox.Show("Deseja mesmo excluir o email: " + emailSelecionado + " ?", "Excluir Email", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            }
 
-                if (botaoAcionado == DialogResult.OK)
+            //diretorios
+            if (txbDrive.Text != "" && txbPastaDestino.Text != "")
+            {
+                ptbCheckDiretorio.Visible = true;
+            }
+
+
+        }
+
+
+        #endregion
+
+        #region Serviço Windows 
+
+        private void ConfiguracaoServiçoWindows()
+        {
+
+            try
+            {
+                ServiceController[] services = ServiceController.GetServices(machineName);
+                var service = services.FirstOrDefault(s => s.ServiceName == serviceName);
+
+                if (service != null)
                 {
-                    ltvEmail.Items.RemoveAt(emailSelecionadoIndex);
 
-                    string[] listaEmail = new string[ltvEmail.Items.Count];
-
-                    for (int i = 0; i < ltvEmail.Items.Count; i++)
+                    switch (service.Status)
                     {
-                        listaEmail[i] = ltvEmail.Items[i].Text;
-                    }
-                    email.Destinos = listaEmail;
 
-                    bnt_excluiremail.Enabled = false;
+
+                        case ServiceControllerStatus.Running:
+                            ptbFuncionando.Visible = true;
+                            ptbLoading.Visible = false;
+                            ptbDesligado.Visible = false;
+                            ptbAviso.Visible = false;
+
+                            ptbCheckService.Image = Resources._3209280_24__1_;
+
+                            btn_replayServico.Enabled = true;
+                            btn_playServico.Enabled = false;
+                            btn_stopServico.Enabled = true;
+
+                            btn_playServico.BackgroundImage = Resources.play_cinza;
+                            btn_replayServico.BackgroundImage = Resources.restart;
+                            btn_stopServico.BackgroundImage = Resources.stop;
+
+
+
+                            break;
+
+                        case ServiceControllerStatus.Stopped:
+                            ptbFuncionando.Visible = false;
+                            ptbDesligado.Visible = true;
+                            ptbAviso.Visible = false;
+                            ptbLoading.Visible = false;
+
+                            ptbCheckService.Image = Resources._3209280_24;
+
+                            btn_replayServico.Enabled = false;
+                            btn_playServico.Enabled = true;
+                            btn_stopServico.Enabled = false;
+
+                            btn_replayServico.BackgroundImage = Resources.restart_cinza;
+                            btn_stopServico.BackgroundImage = Resources.stop_cinza;
+                            btn_playServico.BackgroundImage = Resources.play;
+
+                            break;
+
+
+                        case ServiceControllerStatus.Paused:
+                            ptbFuncionando.Visible = false;
+                            ptbDesligado.Visible = true;
+                            ptbAviso.Visible = false;
+                            ptbLoading.Visible = false;
+
+                            btn_replayServico.Enabled = false;
+                            btn_playServico.Enabled = true;
+                            btn_stopServico.Enabled = false;
+
+                            ptbCheckService.Image = Resources._3209280_24;
+
+
+                            btn_replayServico.BackgroundImage = Resources.restart_cinza;
+                            btn_stopServico.BackgroundImage = Resources.stop_cinza;
+                            btn_playServico.BackgroundImage = Resources.play;
+
+
+                            break;
+
+                        case ServiceControllerStatus.StopPending:
+
+                            ptbLoading.Visible = true;
+                            ptbAviso.Visible = false;
+                            ptbDesligado.Visible = false;
+                            ptbFuncionando.Visible = false;
+
+                            btn_replayServico.Enabled = true;
+                            btn_playServico.Enabled = false;
+                            btn_stopServico.Enabled = false;
+
+                            ptbCheckService.Image = Resources.loading_service;
+
+                            btn_playServico.BackgroundImage = Resources.play_cinza;
+                            btn_stopServico.BackgroundImage = Resources.stop_cinza;
+                            btn_replayServico.BackgroundImage = Resources.restart;
+
+                            break;
+
+                        case ServiceControllerStatus.StartPending:
+                            ptbLoading.Visible = true;
+                            ptbAviso.Visible = false;
+                            ptbDesligado.Visible = false;
+                            ptbFuncionando.Visible = false;
+
+                            btn_replayServico.Enabled = true;
+                            btn_stopServico.Enabled = true;
+                            btn_playServico.Enabled = false;
+
+                            ptbCheckService.Image = Resources.loading_service;
+
+                            btn_playServico.BackgroundImage = Resources.play_cinza;
+                            btn_replayServico.BackgroundImage = Resources.restart;
+                            btn_stopServico.BackgroundImage = Resources.stop;
+
+                            break;
+
+                        default:
+                            ptbDesligado.Visible = false;
+                            ptbFuncionando.Visible = false;
+                            ptbAviso.Visible = false;
+
+                            btn_playServico.Enabled = false;
+                            btn_replayServico.Enabled = false;
+                            btn_stopServico.Enabled = false;
+
+                            ptbCheckService.Image = Resources.loading_service;
+
+                            btn_playServico.BackgroundImage = Resources.play_cinza;
+                            btn_stopServico.BackgroundImage = Resources.stop_cinza;
+                            btn_replayServico.BackgroundImage = Resources.restart_cinza;
+
+                            break;
+                    }
+
+                    ptbAviso.Visible = false;
+                    lblServicoNI.Visible = false;
+                }
+                else
+                {
+
+                    ptbDesligado.Visible = false;
+                    ptbFuncionando.Visible = false;
+
+                    ptbAviso.Visible = true;
+                    lblServicoNI.Visible = true;
+
+                    ptbCheckService.Image = Resources._4075935_24;
+
+                    btn_playServico.Enabled = false;
+                    btn_replayServico.Enabled = false;
+                    btn_stopServico.Enabled = false;
+
+                    btn_playServico.BackgroundImage = Resources.play_cinza;
+                    btn_stopServico.BackgroundImage = Resources.stop_cinza;
+                    btn_replayServico.BackgroundImage = Resources.restart_cinza;
+
                 }
             }
-                
-            
+            catch (Exception ex)
+            {
+                ptbDesligado.Visible = false;
+                ptbFuncionando.Visible = false;
+
+                ptbAviso.Visible = true;
+                lblServicoNI.Visible = true;
+            }
+
+
         }
 
-        private void ltvEmail_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComandosService()
         {
-            if (ltvEmail.SelectedItems.Count == 0)
-                bnt_excluiremail.Enabled = false;
-            else
-            bnt_excluiremail.Enabled = true;
+            try
+            {
+                ServiceController service = new ServiceController(serviceName, machineName);
+
+                TimeSpan timeout = TimeSpan.FromMilliseconds(timeoutCommandService);
+
+
+                if (comando == comandoSTART)
+                {
+                    service.Start();
+                    service.WaitForStatus(ServiceControllerStatus.Running, timeout);
+                }
+                else if (comando == comandoSTOP)
+                {
+                    service.Stop();
+                    service.WaitForStatus(ServiceControllerStatus.Stopped, timeout);
+                }
+                else
+                {
+                    service.Stop();
+                    service.WaitForStatus(ServiceControllerStatus.Stopped, timeout);
+
+
+                    service.Start();
+                    service.WaitForStatus(ServiceControllerStatus.Running, timeout);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                log.LogError("Comando de " + comando + " Negado para o Serviço: " + serviceName + " - na Máquina: " + machineName,
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
+
+                MessageBox.Show("Comando de " + comando + " Negado para o Serviço: " + serviceName + " - na Máquina: " + machineName, "Falha", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void AssyncCommandService()
+        {
+            if (!isAlive)
+            {
+                isAlive = true;
+
+
+                //Inicia objeto assincrono UNICO para rodas apenas uma vez
+                bwService = new BackgroundWorker();
+
+                ////Declara auxiliares para o processo assincrono
+                //bwConfigSQL.ProgressChanged +=
+                //    new ProgressChangedEventHandler(bwConfigSQL_ProgressChanged);
+
+                ////habilita propriedade de acompanhar progressão do processo
+                //bwConfigSQL.WorkerReportsProgress = true;
+
+                bwService.RunWorkerCompleted +=
+                    new RunWorkerCompletedEventHandler(bwService_RunWorkerCompleted);
+
+                //inicia processo assincrono
+                bwService.DoWork += (Senderbw, args) =>
+                {
+                    try
+                    {
+                        ComandosService();
+                    }
+                    catch (Exception ex)
+                    {
+                        log.LogError("Erro durante o Background Worker.",
+                                MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
+                    }
+
+                };
+                //indica função acima como assincrona
+                bwService.RunWorkerAsync();
+
+            }
+        }
+        private void bwService_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            bwService.Dispose();
+
+            isAlive = false;
+
+        }
+
+
+        private void btn_stopServico_Click(object sender, EventArgs e)
+        {
+            comando = comandoSTOP;
+            AssyncCommandService();
+
+        }
+
+        private void btn_replayServico_Click(object sender, EventArgs e)
+        {
+            comando = comandoRESTART;
+            AssyncCommandService();
+        }
+
+        private void btn_playServico_Click(object sender, EventArgs e)
+        {
+            comando = comandoSTART;
+            AssyncCommandService();
         }
     }
-
-
+    #endregion
 }
