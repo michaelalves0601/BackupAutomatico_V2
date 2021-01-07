@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,8 +30,9 @@ namespace BackupNuvemSBuild_Models
         bool restaurando = false;
 
         string pathConfiguration = "";
-
         string pathPastasRestritas = "";
+
+        Log log = new Log("ClassConfiguration");
      
 
         public bool RestauraConfiguracao(string pathConfiguration, string pathPastasRestritas)
@@ -38,7 +40,6 @@ namespace BackupNuvemSBuild_Models
             restaurando = true;
 
             this.pathConfiguration = pathConfiguration;
-
             this.pathPastasRestritas = pathPastasRestritas;
 
             bool resultado = false;
@@ -52,7 +53,7 @@ namespace BackupNuvemSBuild_Models
                     string item = "";
                     string value = "";
 
-                    if (totalItens == 15)
+                    if (totalItens == 12)
                     {
                         for (int i = 0; i < totalItens; i++)
                         { 
@@ -119,18 +120,7 @@ namespace BackupNuvemSBuild_Models
                                     case 11:
                                         LimiteBackupsFull = Convert.ToInt32(value);
                                         break;
-
-                                    case 12:
-                                        UltimoBackup = value;
-                                        break;
-
-                                    case 13:
-                                        TipoUltimoBackup = value;
-                                        break;
-
-                                    case 14:
-                                        TamanhoUltimoBackup = value;
-                                        break;
+                                    
                                     default:
                                         break;
                                 }
@@ -140,7 +130,9 @@ namespace BackupNuvemSBuild_Models
 
                             }      
                         }
-                        RestauraPastasRestritas(pathPastasRestritas);
+
+                        RestauraPastasRestritas();
+
                         resultado = true;
                     }
                 }
@@ -155,7 +147,76 @@ namespace BackupNuvemSBuild_Models
             return resultado;
         }
 
-        private void RestauraPastasRestritas(string pathPastasRestritas)
+        public bool RestauraUltimoBackup(string pathUltimoBackup)
+        {
+            bool restaurou = false;
+
+            try
+            {
+                if (File.Exists(pathUltimoBackup))
+                {
+                    int totalItens = File.ReadLines(pathUltimoBackup).Count();
+
+                    string item = "";
+                    string value = "";
+
+                    if (totalItens == 3)
+                    {
+                        for (int i = 0; i < totalItens; i++)
+                        {
+                            item = File.ReadLines(pathUltimoBackup).Skip(i).Take(1).First().ToString();
+
+                            try
+                            {
+                                value = item.Substring(item.IndexOf(":") + 1);
+                            }
+                            catch (Exception)
+                            {
+                                value = "";
+                            }
+
+
+                            try
+                            {
+                                switch (i)
+                                {
+                                    case 0:
+                                        UltimoBackup = value;
+                                        break;
+
+                                    case 1:
+                                        TipoUltimoBackup = value;
+                                        break;
+
+                                    case 2:
+                                        TamanhoUltimoBackup = value;
+                                        break;
+
+
+                                    default:
+                                        break;
+                                }
+                            }
+                            catch (Exception)
+                            {
+
+                            }
+                        }
+
+                        restaurou = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return restaurou;
+        }
+
+
+        private void RestauraPastasRestritas()
         {
             if (File.Exists(pathPastasRestritas))
             {
@@ -190,11 +251,36 @@ namespace BackupNuvemSBuild_Models
                                 "EmailOrigem:" + EmailOrigem.ToString() + Environment.NewLine +
                                 "SenhaOrigem:" + SenhaOrigem.ToString() + Environment.NewLine +
                                 "BackupFULLHabilitado:" + BackupFULLHabilitado.ToString() +Environment.NewLine +
-                                "LimiteBackupsFull:" + LimiteBackupsFull.ToString() +
-                                "UltimoBackup:" + UltimoBackup.ToString() + Environment.NewLine + 
-                                "TipoUltimoBackup:" + TipoUltimoBackup.ToString() + Environment.NewLine + 
-                                "TamanhoUltimoBackup:" + TamanhoUltimoBackup.ToString() + Environment.NewLine);
+                                "LimiteBackupsFull:" + LimiteBackupsFull.ToString());
+
             SalvaConfiguracoesPastasRestritas(pathPastasRestritas);
+        }
+
+        public bool SalvaUltimoBackup(string pathUltimoBackup)
+        {
+            bool salvou = false;
+
+            try
+            {
+                if (File.Exists(pathUltimoBackup))
+                {
+                    File.WriteAllText(pathUltimoBackup,
+                                        "UltimoBackup:" + UltimoBackup.ToString() + Environment.NewLine +
+                                        "TipoUltimoBackup:" + TipoUltimoBackup.ToString() + Environment.NewLine +
+                                        "TamanhoUltimoBackup:" + TamanhoUltimoBackup.ToString());
+
+                    salvou = true;
+                }
+            }
+            catch(Exception ex)
+            {
+                log.LogError("Erro ao Salvar dados do último Backup.",
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
+            }
+
+            return salvou;
         }
 
         public void SalvaConfiguracoesEmail(string[] emails, string pathEmails)
@@ -206,6 +292,7 @@ namespace BackupNuvemSBuild_Models
             for (int i = 0; i < emails.Length; i++)
                 File.AppendAllText(pathEmails, emails[i] + Environment.NewLine);
         }
+
         private void SalvaConfiguracoesPastasRestritas(string pathPastasRestritas)
         {
 
