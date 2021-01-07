@@ -22,6 +22,9 @@ namespace BackupNuvemSBuild_Models
         public string SenhaOrigem { get; set; }
         public List<string> PastasRestritas { get; set; }
         public int LimiteBackupsFull { get; set; }
+        public string UltimoBackup { get; set; }
+        public string TipoUltimoBackup { get; set; }
+        public string TamanhoUltimoBackup { get; set; }
 
         bool restaurando = false;
 
@@ -49,7 +52,7 @@ namespace BackupNuvemSBuild_Models
                     string item = "";
                     string value = "";
 
-                    if (totalItens == 12)
+                    if (totalItens == 15)
                     {
                         for (int i = 0; i < totalItens; i++)
                         { 
@@ -117,6 +120,17 @@ namespace BackupNuvemSBuild_Models
                                         LimiteBackupsFull = Convert.ToInt32(value);
                                         break;
 
+                                    case 12:
+                                        UltimoBackup = value;
+                                        break;
+
+                                    case 13:
+                                        TipoUltimoBackup = value;
+                                        break;
+
+                                    case 14:
+                                        TamanhoUltimoBackup = value;
+                                        break;
                                     default:
                                         break;
                                 }
@@ -176,7 +190,10 @@ namespace BackupNuvemSBuild_Models
                                 "EmailOrigem:" + EmailOrigem.ToString() + Environment.NewLine +
                                 "SenhaOrigem:" + SenhaOrigem.ToString() + Environment.NewLine +
                                 "BackupFULLHabilitado:" + BackupFULLHabilitado.ToString() +Environment.NewLine +
-                                "LimiteBackupsFull:" + LimiteBackupsFull.ToString());
+                                "LimiteBackupsFull:" + LimiteBackupsFull.ToString() +
+                                "UltimoBackup:" + UltimoBackup.ToString() + Environment.NewLine + 
+                                "TipoUltimoBackup:" + TipoUltimoBackup.ToString() + Environment.NewLine + 
+                                "TamanhoUltimoBackup:" + TamanhoUltimoBackup.ToString() + Environment.NewLine);
             SalvaConfiguracoesPastasRestritas(pathPastasRestritas);
         }
 
