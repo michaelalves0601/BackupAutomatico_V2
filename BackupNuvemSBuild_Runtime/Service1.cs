@@ -139,7 +139,6 @@ namespace BackupNuvemSBuild_Runtime
 
         }
 
-
         protected override void OnStop()
         {
             StopTimer();
@@ -211,7 +210,7 @@ namespace BackupNuvemSBuild_Runtime
                         case "BkpDiferencial":
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
                             string nomeBackupFull = listPastas[listPastas.Count() - 1];
-                            this.pathDiferencial = configuration.PastaBackup + @"\" + nomeBackupFull + @"\";
+                            this.pathDiferencial = nomeBackupFull + @"\";
                             string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
                             if (Directory.Exists(newPathDiario))
                                 log.LogInfo("Backup '" + newPathDiario + "' já existe!");
@@ -254,8 +253,10 @@ namespace BackupNuvemSBuild_Runtime
                     msgRespota_Status[1] = typeBackupStatus.ToString();
                     if (typeBackupStatus != 0)
                     {
+                        int quantidadeProgressoInt = Convert.ToInt32(quantidadeProgresso);
+                        quantidadeProgressoInt = quantidadeProgressoInt > 100 ? 100 : quantidadeProgressoInt;
                         msgRespota_Status[2] = statusBackup.ToString();
-                        msgRespota_Status[3] = quantidadeProgresso.ToString();
+                        msgRespota_Status[3] = quantidadeProgressoInt.ToString();
                         msgRespota_Status[4] = folderAtualStatus;
 
                         if (tamanhoTotal != 0 || tamanho != 0)
@@ -522,7 +523,7 @@ namespace BackupNuvemSBuild_Runtime
                             else
                                 configuration.TipoUltimoBackup = "FULL";
 
-                            configuration.TamanhoUltimoBackup = ((tamanhoTotal / 1000000000).ToString() + " GB");
+                            configuration.TamanhoUltimoBackup = (((Convert.ToDouble(tamanhoTotal)) / 1000000000).ToString() + " GB");
 
                             configuration.SalvaUltimoBackup(pathUltimoBackup);
 
@@ -884,6 +885,9 @@ namespace BackupNuvemSBuild_Runtime
 
                 if (abort)
                     return;
+
+                while (pause)
+                    Thread.Sleep(500);
 
                 if (origemPathInfoAux.FullName.Length >= MAX_DIRECTORY)
                     origemPathInfo = new DirectoryInfo(@"\\?\" + origemPathInfoAux.FullName);

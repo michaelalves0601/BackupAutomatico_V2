@@ -1,0 +1,793 @@
+1/10/2021 9:29:31 AM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/10/2021 9:29:31 AM
+ | Classe: StopTimer
+ | Método: Void StopTimer()
+
+1/10/2021 9:35:09 AM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/10/2021 9:35:09 AM
+ | Classe: StartTime
+ | Método: Void StartTime()
+
+1/10/2021 10:00:37 AM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/10/2021 10:00:37 AM
+ | Classe: StopTimer
+ | Método: Void StopTimer()
+
+1/10/2021 10:04:48 AM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/10/2021 10:04:48 AM
+
+1/10/2021 10:06:34 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 10:06:34 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 10:06:34 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: Could not find a part of the path 'Z:\My Drive'.
+
+1/10/2021 10:14:15 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 10:14:15 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 10:14:15 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: Could not find a part of the path 'Z:\My Drive'.
+
+1/10/2021 10:15:28 AM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/10/2021 10:15:28 AM
+
+1/10/2021 10:29:02 AM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/10/2021 10:29:02 AM
+
+1/10/2021 10:30:20 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210110\FULL_210110\' já existe!
+
+1/10/2021 10:31:02 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 10:31:02 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 10:31:02 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: Could not find a part of the path 'Z:\My Drive'.
+
+1/10/2021 10:37:21 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210110\FULL_210110\' já existe!
+
+1/10/2021 10:38:00 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 10:38:00 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 10:38:00 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: Could not find a part of the path 'Z:\My Drive'.
+
+1/10/2021 10:40:30 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 10:40:30 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 10:40:30 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: Could not find a part of the path 'Z:\My Drive'.
+
+1/10/2021 10:45:41 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210110\FULL_210110\' já existe!
+
+1/10/2021 10:46:12 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 10:46:12 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 10:46:12 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: Could not find a part of the path 'Z:\My Drive'.
+
+1/10/2021 10:58:00 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 10:58:00 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 10:58:06 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/10/2021 10:58:10 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210110
+
+1/10/2021 11:00:00 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 11:00:00 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 11:00:00 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: The given path's format is not supported.
+
+1/10/2021 11:02:08 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 11:02:08 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 11:02:08 AM
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: Service1
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: The given path's format is not supported.
+
+1/10/2021 11:05:26 AM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/10/2021 11:05:26 AM
+
+1/10/2021 11:16:16 AM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/10/2021 11:16:16 AM
+
+1/10/2021 11:17:12 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210110
+
+1/10/2021 11:17:12 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/10/2021 11:17:12 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/10/2021 11:17:16 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210110
+
+1/11/2021 11:21:29 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210111
+
+1/11/2021 11:21:29 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/11/2021 11:21:30 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/11/2021 11:21:33 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210111
+
+1/12/2021 11:22:46 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210112
+
+1/12/2021 11:22:46 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/12/2021 11:22:47 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/12/2021 11:22:50 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210112
+
+1/13/2021 11:23:27 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210113
+
+1/13/2021 11:23:27 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/13/2021 11:23:34 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/13/2021 11:23:38 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210113
+
+1/13/2021 11:29:58 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210113
+
+1/13/2021 11:29:58 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/13/2021 11:29:59 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/13/2021 11:30:02 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210113
+
+1/13/2021 11:40:25 AM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/13/2021 11:40:25 AM
+
+1/13/2021 11:42:50 AM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/13/2021 11:42:50 AM
+
+1/14/2021 11:44:09 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210114
+
+1/14/2021 11:44:09 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/14/2021 11:44:10 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/14/2021 11:44:14 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210114
+
+1/15/2021 11:54:08 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210115
+
+1/15/2021 11:54:08 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/15/2021 11:54:08 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/15/2021 11:54:12 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210115
+
+1/15/2021 11:54:15 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210113\DIF_210115' já existe!
+
+1/15/2021 11:54:25 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210113\DIF_210115' já existe!
+
+1/15/2021 11:54:35 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210113\DIF_210115' já existe!
+
+1/15/2021 11:54:45 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210113\DIF_210115' já existe!
+
+1/15/2021 11:54:55 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210113\DIF_210115' já existe!
+
+1/16/2021 11:58:04 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 11:58:04 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 11:58:10 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 11:58:14 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 11:58:25 AM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 11:58:25 AM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 11:58:26 AM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 11:58:30 AM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 11:58:31 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 11:58:41 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 11:58:51 AM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 12:35:10 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 1:44:46 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/16/2021 1:44:46 PM
+
+1/16/2021 2:11:21 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/16/2021 2:11:21 PM
+
+1/16/2021 2:28:22 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 2:28:22 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 2:28:26 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 2:28:30 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 2:34:57 PM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/16/2021 2:34:57 PM
+
+1/16/2021 2:36:51 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/16/2021 2:36:51 PM
+
+1/16/2021 2:38:06 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 2:38:06 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 2:38:08 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 2:38:11 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 2:40:40 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 2:40:40 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 2:40:41 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 2:40:45 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 2:42:24 PM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/16/2021 2:42:24 PM
+
+1/16/2021 2:43:25 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/16/2021 2:43:25 PM
+
+1/16/2021 2:43:56 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 2:43:56 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 2:43:57 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 2:43:58 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 2:44:04 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:02:28 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:02:28 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:02:31 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:02:31 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:02:32 PM
+ | ATENÇÃO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\FULL_210116\' já existe!
+ | Classe: AssyncBackup
+ | Método: Void AssyncBackup(Boolean, Boolean, System.DateTime, System.String)
+ | Exception: 
+
+1/16/2021 3:02:37 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:02:38 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:02:38 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:02:38 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:02:39 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:02:43 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:02:45 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:02:55 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:11:38 PM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/16/2021 3:11:38 PM
+
+1/16/2021 3:12:08 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/16/2021 3:12:08 PM
+
+1/16/2021 3:13:08 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:13:18 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:13:28 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:13:38 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:13:48 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:13:58 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:14:21 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:14:21 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:14:22 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:14:23 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:14:29 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:14:40 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:14:40 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:14:41 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:14:42 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:14:45 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:14:48 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:14:58 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:21:40 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:21:41 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:21:42 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:21:42 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:21:49 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:23:11 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:23:11 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:23:12 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:23:13 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:23:20 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:25:19 PM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/16/2021 3:25:19 PM
+
+1/16/2021 3:52:06 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/16/2021 3:52:06 PM
+
+1/16/2021 3:54:13 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:54:13 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:54:15 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:54:15 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:54:22 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:56:09 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:56:09 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:56:10 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:56:11 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:56:17 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:56:29 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 3:56:29 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 3:56:30 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 3:56:30 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 3:56:34 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 3:56:36 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:56:46 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:56:56 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:59:46 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 3:59:56 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 4:00:01 PM
+ | INFO |
+ | Descrição: Stopping Timer v1.1.0: 1/16/2021 4:00:01 PM
+
+1/16/2021 4:02:20 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/16/2021 4:02:20 PM
+
+1/16/2021 4:02:33 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\FULL_210116\' já existe!
+
+1/16/2021 4:06:04 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 4:06:04 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 4:06:05 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 4:06:05 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 4:06:10 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 4:06:23 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210116
+
+1/16/2021 4:06:23 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/16/2021 4:06:24 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/16/2021 4:06:24 PM
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+1/16/2021 4:06:28 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210116
+
+1/16/2021 4:06:30 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 4:06:40 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
+1/16/2021 4:06:50 PM
+ | INFO |
+ | Descrição: Backup 'C:\TesteBackupSBUILD\210116\DIF_210116' já existe!
+
