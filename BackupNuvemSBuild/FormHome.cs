@@ -52,7 +52,7 @@ namespace BackupNuvemSBuild_Configuration
         string pathEmails = @"Config\email.ini";
 
         string machineName = "localhost";
-        string serviceName = "OPC Labs Kit Server";
+        string serviceName = "BackupNuvemSBuild_Runtime";
 
         string comandoSTART = "START";
         string comandoSTOP = "STOP";
@@ -1185,10 +1185,9 @@ namespace BackupNuvemSBuild_Configuration
                             statusPaused = Convert.ToBoolean(respostaArray[2]);
                             statusPorcentagem = Convert.ToInt32(respostaArray[3]);
                             statusDiretorio = Convert.ToString(respostaArray[4]);
-                            //statusTempoRestante = Convert.ToInt32(respostaArray[5]);
+                            statusTempoRestante = Convert.ToInt32(respostaArray[5]);
 
                         }
-                        //terminar porcentagem [3], diretório [4] e tempo restante [5]
                         AtualizaStatusBackup();
                     }
 

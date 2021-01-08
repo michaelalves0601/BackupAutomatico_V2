@@ -255,6 +255,7 @@ namespace BackupNuvemSBuild_Runtime
                     {
                         int quantidadeProgressoInt = Convert.ToInt32(quantidadeProgresso);
                         quantidadeProgressoInt = quantidadeProgressoInt > 100 ? 100 : quantidadeProgressoInt;
+
                         msgRespota_Status[2] = statusBackup.ToString();
                         msgRespota_Status[3] = quantidadeProgressoInt.ToString();
                         msgRespota_Status[4] = folderAtualStatus;
@@ -275,7 +276,7 @@ namespace BackupNuvemSBuild_Runtime
                         msgRespota_Status[5] = "404";
                     }
 
-                    msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5];
+                    msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5] + ";";
 
                     tamanho = 0;
                 }
@@ -523,7 +524,7 @@ namespace BackupNuvemSBuild_Runtime
                             else
                                 configuration.TipoUltimoBackup = "FULL";
 
-                            configuration.TamanhoUltimoBackup = (((Convert.ToDouble(tamanhoTotal)) / 1000000000).ToString() + " GB");
+                            configuration.TamanhoUltimoBackup = ((Math.Round((Convert.ToDouble(tamanhoTotal)) / 1000000000), 2).ToString() + " GB");
 
                             configuration.SalvaUltimoBackup(pathUltimoBackup);
 
