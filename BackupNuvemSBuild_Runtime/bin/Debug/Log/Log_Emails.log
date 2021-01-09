@@ -1,0 +1,14 @@
+1/9/2021 3:51:12 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+
+1/9/2021 3:58:38 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+

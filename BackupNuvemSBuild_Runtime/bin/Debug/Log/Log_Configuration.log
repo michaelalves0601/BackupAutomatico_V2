@@ -1,0 +1,14 @@
+1/9/2021 3:51:10 PM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+
+1/9/2021 3:58:37 PM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+
