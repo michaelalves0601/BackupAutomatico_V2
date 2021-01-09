@@ -28,3 +28,16 @@ D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug
 D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\SimpleTCP.dll
 D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Models.pdb
 D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.CopyComplete
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csprojAssemblyReference.cache
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.ProjectInstaller.resources
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.GenerateResource.cache
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.CoreCompileInputs.cache
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.exe
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.exe.config
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.exe
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Runtime.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Models.dll
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\SimpleTCP.dll
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Debug\BackupNuvemSBuild_Models.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Debug\BackupNuvemSBuild_Runtime.csproj.CopyComplete

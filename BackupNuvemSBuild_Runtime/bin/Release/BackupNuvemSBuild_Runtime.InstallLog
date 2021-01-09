@@ -27,3 +27,42 @@ Affected parameters are:
    logtoconsole = 
    logfile = D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.InstallLog
    assemblypath = D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+Installing assembly 'C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+   logfile = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.InstallLog
+Installing service BackupNuvemSBuild_Runtime...
+Service BackupNuvemSBuild_Runtime has been successfully installed.
+Creating EventLog source BackupNuvemSBuild_Runtime in log Application...
+Committing assembly 'C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+   logfile = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.InstallLog
+Installing assembly 'C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+   logfile = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.InstallLog
+Installing service BackupNuvemSBuild_Runtime...
+Service BackupNuvemSBuild_Runtime has been successfully installed.
+Creating EventLog source BackupNuvemSBuild_Runtime in log Application...
+Committing assembly 'C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+   logfile = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.InstallLog
+Installing assembly 'C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+   logfile = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.InstallLog
+Installing service BackupNuvemSBuild_Runtime...
+Service BackupNuvemSBuild_Runtime has been successfully installed.
+Creating EventLog source BackupNuvemSBuild_Runtime in log Application...
+Committing assembly 'C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+   logfile = C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.InstallLog

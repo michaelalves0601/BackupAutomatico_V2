@@ -46,8 +46,8 @@ namespace BackupNuvemSBuild_Configuration
         Log log = new Log("Configuration");
         Encrypt encrypt = new Encrypt("cenouras", "abacaxis");
 
-        string pathConfiguration = @"Config/Configuration.ini";
-        string pathPastasRestritas = @"Config/PastasRestritas.ini";
+        string pathConfiguration = @"Config\Configuration.ini";
+        string pathPastasRestritas = @"Config\PastasRestritas.ini";
         string pathEmails = @"Config\email.ini";
 
         string machineName = "localhost";
@@ -297,8 +297,10 @@ namespace BackupNuvemSBuild_Configuration
             timerBackup.Start();
 
             bool restaurou = configuration.RestauraConfiguracao(pathConfiguration, pathPastasRestritas);
-            
-            
+
+            lblLastBackup.Text = configuration.UltimoBackup;
+            lblLastTipoBackup.Text = configuration.TipoUltimoBackup;
+            lblLastBackupSize.Text = configuration.TamanhoUltimoBackup;
 
             //Restauração do menu Diretórios
             txbDrive.Text = configuration.PastaDrive;
