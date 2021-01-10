@@ -1,2 +1,0 @@
-C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.csprojAssemblyReference.cache
-C:\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.csproj.CoreCompileInputs.cache

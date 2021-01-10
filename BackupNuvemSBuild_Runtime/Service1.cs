@@ -30,6 +30,7 @@ namespace BackupNuvemSBuild_Runtime
         int MAX_DIRECTORY = 248;
         string pathConfiguration = AppDomain.CurrentDomain.BaseDirectory + @"\Config\Configuration.ini";
         string pathPastasRestritas = AppDomain.CurrentDomain.BaseDirectory + @"\Config\PastasRestritas.ini";
+        string pathUltimoBackup = AppDomain.CurrentDomain.BaseDirectory + @"\Config\UltimoBackup.ini";
 
 
         string folderAtualStatus = ""; //pasta atual do backup
@@ -514,14 +515,21 @@ namespace BackupNuvemSBuild_Runtime
                             }
 
 
-                            configuration.UltimoBackup = DateTime.Now.ToString("dd/MM/yyyy");
+                            configuration.UltimoBackup = dataNewBackup.ToString("dd/MM/yyyy");
+
                             if (bkpDiferencial)
                                 configuration.TipoUltimoBackup = "DIFERENCIAL";
                             else
                                 configuration.TipoUltimoBackup = "FULL";
+
                             configuration.TamanhoUltimoBackup = ((tamanhoTotal / 1000000000).ToString() + " GB");
 
+                            configuration.SalvaUltimoBackup(pathUltimoBackup);
+
                             NotificacaoEmail(dataNewBackup, false);
+
+
+                            log.LogInfo("Finalizando Backup: " + dataNewBackup.ToString("yyyyMMdd"));
                         }
                     }
                     else
@@ -535,7 +543,7 @@ namespace BackupNuvemSBuild_Runtime
                         Thread.Sleep(500);
 
 
-                        log.LogInfo("Finalizando Backup: " + dataNewBackup.ToString("yyyyMMdd"));
+                        log.LogInfo("Finalizando Sincronização: " + dataNewBackup.ToString("yyyyMMdd"));
                     }
 
                 }

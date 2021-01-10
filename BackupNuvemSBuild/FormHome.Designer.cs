@@ -1806,8 +1806,8 @@ namespace BackupNuvemSBuild_Configuration
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormHome_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbCheckAgendamento)).EndInit();

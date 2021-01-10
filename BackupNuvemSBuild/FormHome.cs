@@ -48,6 +48,7 @@ namespace BackupNuvemSBuild_Configuration
 
         string pathConfiguration = @"Config\Configuration.ini";
         string pathPastasRestritas = @"Config\PastasRestritas.ini";
+        string pathUltimoBackup = @"Config\UltimoBackup.ini";
         string pathEmails = @"Config\email.ini";
 
         string machineName = "localhost";
@@ -426,6 +427,29 @@ namespace BackupNuvemSBuild_Configuration
                     lblLastBackup.Visible = true;
                     lblLastBackupSizeTitulo.Visible = true;
                     lblLastBackupSize.Visible = true;
+
+                    bool restaurou = configuration.RestauraUltimoBackup(pathUltimoBackup);
+
+                    if (restaurou)
+                    {
+                        lblLastBackup.Text = configuration.UltimoBackup;
+                        
+                        lblLastTipoBackup.Text = configuration.TipoUltimoBackup;
+                        if (configuration.TipoUltimoBackup.ToUpper() == "DIFERENCIAL")
+                            lblLastTipoBackup.ForeColor = Color.FromArgb(13, 140, 202);
+                        else
+                            lblLastTipoBackup.ForeColor = Color.FromArgb(102, 255, 153);
+
+
+                        lblLastBackupSize.Text = configuration.TamanhoUltimoBackup;
+                    }
+                    else
+                    {
+                        lblLastBackup.Text = "NotFound 404";
+                        lblLastTipoBackup.Text = "NotFound 404";
+                        lblLastBackupSize.Text = "NotFound 404";
+                    }
+
 
                     break;
 
@@ -1200,7 +1224,9 @@ namespace BackupNuvemSBuild_Configuration
 
             ConfiguracaoServiçoWindows();
 
+
             CheckConfiguration();
+
 
             timerBackup.Start();
         }
