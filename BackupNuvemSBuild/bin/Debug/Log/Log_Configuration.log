@@ -4370,3 +4370,10 @@ Nome do parâmetro: addresses
  | Método: Void ComandosService()
  | Exception: Não é possível abrir o serviço BackupNuvemSBuild_Runtime no computador 'localhost'.
 
+11/01/2021 10:29:16
+ | ERROR |
+ | Descrição: Comando de STOP Negado para o Serviço: BackupNuvemSBuild_Runtime - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Não é possível abrir o serviço BackupNuvemSBuild_Runtime no computador 'localhost'.
+

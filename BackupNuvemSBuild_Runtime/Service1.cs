@@ -243,15 +243,17 @@ namespace BackupNuvemSBuild_Runtime
                             abort = true;
                             break;
                     }
-                    msgResposta = "Ok";
+
+                    msgResposta = "Ok;";
 
 
                 }
                 else if (arrayMsgRecebida[0] == "Status")
                 {
                     msgRespota_Status[0] = "OK";
-                    msgRespota_Status[1] = typeBackupStatus.ToString();
-                    if (typeBackupStatus != 0)
+                    msgRespota_Status[1] = 1.ToString();//typeBackupStatus.ToString();
+
+                    if (typeBackupStatus != 0 || true)
                     {
                         int quantidadeProgressoInt = Convert.ToInt32(quantidadeProgresso);
                         quantidadeProgressoInt = quantidadeProgressoInt > 100 ? 100 : quantidadeProgressoInt;
@@ -452,6 +454,8 @@ namespace BackupNuvemSBuild_Runtime
                 isAlive = true;
                 try
                 {
+                    tamanhoTotal = 0;
+
                     statusBackup = true;
 
                     NotificacaoEmail(dataNewBackup, true);
@@ -558,12 +562,13 @@ namespace BackupNuvemSBuild_Runtime
                 }
 
 
+                isAlive = false;
+                statusBackup = false;
+                typeBackupStatus = 0;
+                quantidadeProgresso = 0;
+                tempoestimado = 0;
             }
-            isAlive = false;
-            statusBackup = false;
-            typeBackupStatus = 0;
-            quantidadeProgresso = 0;
-            tempoestimado = 0;
+            
         }
 
 
