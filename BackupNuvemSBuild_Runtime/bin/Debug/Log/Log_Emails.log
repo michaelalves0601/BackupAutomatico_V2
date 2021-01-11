@@ -61,3 +61,31 @@
  | Método: Boolean SendEmail()
  | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
 
+11/01/2021 11:11:05
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: O servidor SMTP requer uma conexão segura ou o cliente não foi autenticado. A resposta do servidor foi: 5.7.0 Authentication Required. Learn more at
+
+11/01/2021 11:11:12
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: O servidor SMTP requer uma conexão segura ou o cliente não foi autenticado. A resposta do servidor foi: 5.7.0 Authentication Required. Learn more at
+
+11/01/2021 11:11:33
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: O servidor SMTP requer uma conexão segura ou o cliente não foi autenticado. A resposta do servidor foi: 5.7.0 Authentication Required. Learn more at
+
+11/01/2021 11:11:38
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: O servidor SMTP requer uma conexão segura ou o cliente não foi autenticado. A resposta do servidor foi: 5.7.0 Authentication Required. Learn more at
+

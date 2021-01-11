@@ -1385,13 +1385,13 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Footlight MT Light", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 17.25F);
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(185, 18);
+            this.label2.Location = new System.Drawing.Point(198, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 24);
+            this.label2.Size = new System.Drawing.Size(114, 26);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Backup Automático";
+            this.label2.Text = "S. Backup";
             // 
             // pictureBox2
             // 

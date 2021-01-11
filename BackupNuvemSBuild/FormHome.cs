@@ -38,6 +38,8 @@ namespace BackupNuvemSBuild_Configuration
         string statusDiretorio = "";
         int statusTempoRestante = 0;
 
+        bool linkOld = true;
+
 
         bool vendoPassword = false;
 
@@ -1024,18 +1026,27 @@ namespace BackupNuvemSBuild_Configuration
 
         private void atualizaIconLoading(bool link)
         {
-            if (link)
+            if (linkOld != link)
             {
-                pcbLoading.Image = Resources.loading;
-                pcbLoading.Size = new Size(47, 32);
-                pcbLoading.Location = new Point(428, 28);
+                linkOld = link;
+
+                {
+
+                }
+                if (link)
+                {
+                    pcbLoading.Image = Resources.loading;
+                    pcbLoading.Size = new Size(47, 32);
+                    pcbLoading.Location = new Point(428, 28);
+                }
+                else
+                {
+                    pcbLoading.Image = Resources.linkError;
+                    pcbLoading.Size = new Size(60, 50);
+                    pcbLoading.Location = new Point(442, 18);
+                }
             }
-            else
-            {
-                pcbLoading.Image = Resources.linkError;
-                pcbLoading.Size = new Size(60, 50);
-                pcbLoading.Location = new Point(442, 18);
-            }
+
         }
 
 
