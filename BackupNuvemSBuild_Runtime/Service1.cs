@@ -289,16 +289,12 @@ namespace BackupNuvemSBuild_Runtime
                 }
                 else
                 {
-
-                }
-                {
-                    
-                    msgResposta = "404";
+                    msgResposta = "404;";
                 }
             }
             catch (Exception ex)
             {
-                msgResposta = "404";
+                msgResposta = "404;";
                 log.LogError("Erro na comunicação TCP",
                                 MethodBase.GetCurrentMethod().Name,
                                     MethodBase.GetCurrentMethod().ToString(),
@@ -576,7 +572,6 @@ namespace BackupNuvemSBuild_Runtime
 
                                 configuration.SalvaUltimoBackup(pathUltimoBackup);
 
-                                
 
                                 NotificacaoEmail(dataNewBackup, false);
 
@@ -882,7 +877,7 @@ namespace BackupNuvemSBuild_Runtime
 
                     restante++;
 
-                    this.quantidadeProgresso = (restante * 100) / quantidadeTotal;
+                    quantidadeProgresso = (restante * 100) / quantidadeTotal;
 
                     if (abort)
                         return;
