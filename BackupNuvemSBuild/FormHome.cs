@@ -969,15 +969,13 @@ namespace BackupNuvemSBuild_Configuration
         {
             string pastaSelecionada = SearchPathFolder(configuration.PastaDrive);
 
-            if (pastaSelecionada == "OK")
+            if (pastaSelecionada.Trim().Length > 0)
             {
-                if (pastaSelecionada.Trim().Length > 0)
-                {
-                    ltvExclusao.Items.Add(pastaSelecionada);
+                ltvExclusao.Items.Add(pastaSelecionada);
 
-                    configuration.PastasRestritas.Add(pastaSelecionada);
-                }
+                configuration.PastasRestritas.Add(pastaSelecionada);
             }
+
             HabilitaSave();
         }
 
