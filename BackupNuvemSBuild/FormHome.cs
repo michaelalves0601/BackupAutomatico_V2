@@ -1125,6 +1125,10 @@ namespace BackupNuvemSBuild_Configuration
             catch (Exception ex)
             {
                 mensagemResposta = "Erro 404";
+                log.LogError( "Erro na comunicação TCP", 
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message)
             }
 
             isAlive = false;

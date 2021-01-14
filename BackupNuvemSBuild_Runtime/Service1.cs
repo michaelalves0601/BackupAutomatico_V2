@@ -37,18 +37,19 @@ namespace BackupNuvemSBuild_Runtime
         int typeBackupStatus = 0; //tipo de backup sendo executado 0 - nao executado, 1 - diferencial, 2 - full
         string timeEstimatedBackup = ""; //estado de tempo estimado de conclusao do backup
         bool pausedBackup = false; // estado do backup
+        long quantidade = 0; //quantidade de arquivos para fazer backup
 
         bool pause = false; //estado do pause
         bool abort = false; //estado do abort
 
-        long tamanho = 0; //tamanho passado no intervalo da comunicação com front
+        double tamanho = 0; //tamanho passado no intervalo da comunicação com front
         double restante = 0; // aux de quantidadeProgresso
-        long tamanhoTransferido = 0; //tamanho ja copiado do backup
-        long quantidade = 0; //quantidade de arquivos para fazer backup
+        double tamanhoTransferido = 0; //tamanho ja copiado do backup
+        long quantidadeTotal = 0; // quantidade total de arquivos
         double quantidadeProgresso = 0; //porcentagem da conclusão do backup
         long totalQuantidade = 0; //quantiade de pastas total
         long tamanhoTotal = 0; //total de tamanho do backup
-        long tempoestimado; // aux de timeEstimatedBackup
+        double tempoestimado; // aux de timeEstimatedBackup
 
         string parentPathDrive = "";
 
@@ -248,7 +249,7 @@ namespace BackupNuvemSBuild_Runtime
 
                     pausedBackup = pause;
 
-                    msgResposta = "Ok;";
+                    msgResposta = "OK;";
 
 
                 }
@@ -256,7 +257,7 @@ namespace BackupNuvemSBuild_Runtime
                 {
                     msgRespota_Status[0] = "OK";
                     msgRespota_Status[1] = typeBackupStatus.ToString();
-
+                
                     if (typeBackupStatus != 0)
                     {
                         int quantidadeProgressoInt = Convert.ToInt32(quantidadeProgresso);
@@ -266,12 +267,12 @@ namespace BackupNuvemSBuild_Runtime
                         msgRespota_Status[3] = quantidadeProgressoInt.ToString();
                         msgRespota_Status[4] = folderAtualStatus == "" ? "404" : folderAtualStatus;
 
-                        if (tamanhoTotal != 0 || tamanho != 0)
+                        if (tamanhoTotal != 0 && tamanho != 0)
                         {
-                            tempoestimado = (tamanhoTotal - tamanhoTransferido) / tamanho;
+                            double tamanhoRestante = tamanhoTotal - tamanhoTransferido;
+                            tempoestimado = tamanhoRestante / tamanho;
                             timeEstimatedBackup = tempoestimado.ToString();
                         }
-
                         msgRespota_Status[5] = timeEstimatedBackup == "" ? "0" : timeEstimatedBackup;
                     }
                     else
@@ -283,17 +284,21 @@ namespace BackupNuvemSBuild_Runtime
                     }
 
                     msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5] + ";";
-
                     tamanho = 0;
+
                 }
                 else
                 {
-                    msgResposta = "404";
+                    msgResposta = "404;";
                 }
             }
             catch (Exception ex)
             {
-                msgResposta = "404";
+                msgResposta = "404;";
+                log.LogError("Erro na comunicação TCP",
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
             }
 
             e.ReplyLine(string.Format(msgResposta));
@@ -324,8 +329,12 @@ namespace BackupNuvemSBuild_Runtime
                     server.Start(ip, Convert.ToInt16(ServerInfo[4]));
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                log.LogError("Erro na iniciação do TCP",
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
             }
         }
 
@@ -346,65 +355,75 @@ namespace BackupNuvemSBuild_Runtime
             //InstallUtil.exe C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
             //sc delete BackupNuvemSBuild_Runtime
 
-            if (!Directory.Exists(configuration.PastaBackup))
-                Directory.CreateDirectory(configuration.PastaBackup);
-
-            if (configuration.BackupFULLHabilitado)
+            try
             {
+                if (!Directory.Exists(configuration.PastaBackup))
+                    Directory.CreateDirectory(configuration.PastaBackup);
 
-                bool bkpDiferencial = VerificaTipoBackup();
-
-                int hora = 0;
-                int minuto = 0;
-
-
-                if (bkpDiferencial && configuration.BackupDiferencialHabilitado)
+                if (configuration.BackupFULLHabilitado)
                 {
-                    hora = Convert.ToInt32(configuration.HorarioDiferencial.Substring(0, 2));
-                    minuto = Convert.ToInt32(configuration.HorarioDiferencial.Substring(3, 2));
 
-                    DateTime dateTimeBackupDif = new DateTime(1970, 01, 01, hora, minuto, 0);
+                    bool bkpDiferencial = VerificaTipoBackup();
 
-                    if (DateTime.Now.Hour == dateTimeBackupDif.Hour
-                            && DateTime.Now.Minute == dateTimeBackupDif.Minute) //TIRA ISSO DAQUI............
+                    int hora = 0;
+                    int minuto = 0;
+
+
+                    if (bkpDiferencial && configuration.BackupDiferencialHabilitado)
                     {
-                        string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
+                        hora = Convert.ToInt32(configuration.HorarioDiferencial.Substring(0, 2));
+                        minuto = Convert.ToInt32(configuration.HorarioDiferencial.Substring(3, 2));
 
-                        string nomeBackupFull = listPastas[listPastas.Count() - 1];
+                        DateTime dateTimeBackupDif = new DateTime(1970, 01, 01, hora, minuto, 0);
 
-                        this.pathDiferencial = nomeBackupFull + @"\";
+                        if (DateTime.Now.Hour == dateTimeBackupDif.Hour
+                                && DateTime.Now.Minute == dateTimeBackupDif.Minute) //TIRA ISSO DAQUI............
+                        {
+                            string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
-                        // cria nome do backup Diferencial atual
-                        string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
+                            string nomeBackupFull = listPastas[listPastas.Count() - 1];
 
-                        if (Directory.Exists(newPathDiario))
-                            log.LogInfo("Backup '" + newPathDiario + "' já existe!");
-                        else
-                            AssyncBackup(true, false, DateTime.Now, newPathDiario);
+                            this.pathDiferencial = nomeBackupFull + @"\";
 
+                            // cria nome do backup Diferencial atual
+                            string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
+
+                            if (Directory.Exists(newPathDiario))
+                                log.LogInfo("Backup '" + newPathDiario + "' já existe!");
+                            else
+                                AssyncBackup(true, false, DateTime.Now, newPathDiario);
+
+                        }
+                    }
+                    else if (!bkpDiferencial)
+                    {
+                        hora = Convert.ToInt32(configuration.HorarioFull.Substring(0, 2));
+                        minuto = Convert.ToInt32(configuration.HorarioFull.Substring(3, 2));
+
+                        DateTime dateTimeBackupFULL = new DateTime(1970, 01, 01, hora, minuto, 0);
+
+                        if (DateTime.Now.Hour == dateTimeBackupFULL.Hour
+                                && DateTime.Now.Minute == dateTimeBackupFULL.Minute) //TIRA ISSO DAQUI............
+                        {
+                            this.pathFULL = configuration.PastaBackup + @"\";
+                            // cria nome do backup Diferencial atual
+                            string newPathDiario = pathFULL + DateTime.Now.ToString("yyMMdd") + @"\FULL_" + DateTime.Now.ToString("yyMMdd") + @"\";
+
+                            if (Directory.Exists(newPathDiario))
+                                log.LogInfo("Backup '" + newPathDiario + "' já existe!");
+                            else
+                                AssyncBackup(false, false, DateTime.Now, newPathDiario);
+
+                        }
                     }
                 }
-                else if (!bkpDiferencial)
-                {
-                    hora = Convert.ToInt32(configuration.HorarioFull.Substring(0, 2));
-                    minuto = Convert.ToInt32(configuration.HorarioFull.Substring(3, 2));
-
-                    DateTime dateTimeBackupFULL = new DateTime(1970, 01, 01, hora, minuto, 0);
-
-                    if (DateTime.Now.Hour == dateTimeBackupFULL.Hour
-                            && DateTime.Now.Minute == dateTimeBackupFULL.Minute) //TIRA ISSO DAQUI............
-                    {
-                        this.pathFULL = configuration.PastaBackup + @"\";
-                        // cria nome do backup Diferencial atual
-                        string newPathDiario = pathFULL + DateTime.Now.ToString("yyMMdd") + @"\FULL_" + DateTime.Now.ToString("yyMMdd") + @"\";
-
-                        if (Directory.Exists(newPathDiario))
-                            log.LogInfo("Backup '" + newPathDiario + "' já existe!");
-                        else
-                            AssyncBackup(false, false, DateTime.Now, newPathDiario);
-
-                    }
-                }
+            }
+            catch(Exception ex)
+            {
+                log.LogError("Erro na busca de backup automatico",
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
             }
         }
 
@@ -553,6 +572,7 @@ namespace BackupNuvemSBuild_Runtime
 
                                 configuration.SalvaUltimoBackup(pathUltimoBackup);
 
+
                                 NotificacaoEmail(dataNewBackup, false);
 
 
@@ -566,7 +586,7 @@ namespace BackupNuvemSBuild_Runtime
                             log.LogInfo("Iniciando Sincronização com para Espelho.");
 
                             SyncPastaEspelho();
-
+                              
                             Thread.Sleep(500);
 
 
@@ -632,9 +652,6 @@ namespace BackupNuvemSBuild_Runtime
             while (pause)
                 Thread.Sleep(500);
 
-
-
-
             foreach (string path in listSubPastas)
             {
                 DirectoryInfo directoryInfo = new DirectoryInfo(path);
@@ -651,6 +668,8 @@ namespace BackupNuvemSBuild_Runtime
 
                 quantidade = allfolders.Count() + allfiles.Count();
 
+                quantidadeTotal += allfolders.Count() + allfiles.Count();
+             
                 listFolders.Add(new Tuple<string, long>(directoryInfo.Name, quantidade));
 
                 folderAtual = directoryInfo.Name + " - (" + quantidade + ")";
@@ -685,7 +704,6 @@ namespace BackupNuvemSBuild_Runtime
 
                     verificaTamanho(subPasta);
 
-
                 }
                 catch (Exception e)
                 {
@@ -702,45 +720,54 @@ namespace BackupNuvemSBuild_Runtime
 
         private void CopiaArquivos(List<Tuple<string, long>> listFolders, string newPathDiario, bool bkpDiferencial)
         {
-            string pathFolder = "";
-
-            string destPathBackup = newPathDiario;
-
-            string nomeBackupFullinFullIndex = "";
-            string nomeBackupFullInFull = "";
-
-            string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
-            string nomeBackupFull = listPastas[listPastas.Count() - 1];
-            string[] listPastaFullFull = Directory.GetDirectories(nomeBackupFull, "*", SearchOption.TopDirectoryOnly);
-            nomeBackupFullInFull = listPastaFullFull[listPastaFullFull.Count() - 1];
-
-
-            string destinoPath = "";
-
-            for (int i = 0; i < listFolders.Count; i++)
+            try
             {
+                string pathFolder = "";
 
-                destinoPath = destPathBackup + @"\" + listFolders[i].Item1;
-                pathFolder = configuration.PastaDrive + @"\" + listFolders[i].Item1;
-                nomeBackupFullinFullIndex = nomeBackupFullInFull + @"\" + listFolders[i].Item1;
+                string destPathBackup = newPathDiario;
 
-                DirectoryInfo origemPathInfo = new DirectoryInfo(pathFolder);
-                DirectoryInfo destinoPathInfo = new DirectoryInfo(destinoPath);
-                DirectoryInfo backupFullPathInfo = new DirectoryInfo(nomeBackupFullinFullIndex);
+                string nomeBackupFullinFullIndex = "";
+                string nomeBackupFullInFull = "";
 
-                if ((!configuration.PastasRestritas.Contains(origemPathInfo.FullName) && bkpDiferencial) || !bkpDiferencial)
+                string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
+                string nomeBackupFull = listPastas[listPastas.Count() - 1];
+                string[] listPastaFullFull = Directory.GetDirectories(nomeBackupFull, "*", SearchOption.TopDirectoryOnly);
+                nomeBackupFullInFull = listPastaFullFull[listPastaFullFull.Count() - 1];
+
+
+                string destinoPath = "";
+
+                for (int i = 0; i < listFolders.Count; i++)
                 {
-                    CopyAll(origemPathInfo, destinoPathInfo, backupFullPathInfo, bkpDiferencial);
+
+                    destinoPath = destPathBackup + @"\" + listFolders[i].Item1;
+                    pathFolder = configuration.PastaDrive + @"\" + listFolders[i].Item1;
+                    nomeBackupFullinFullIndex = nomeBackupFullInFull + @"\" + listFolders[i].Item1;
+
+                    DirectoryInfo origemPathInfo = new DirectoryInfo(pathFolder);
+                    DirectoryInfo destinoPathInfo = new DirectoryInfo(destinoPath);
+                    DirectoryInfo backupFullPathInfo = new DirectoryInfo(nomeBackupFullinFullIndex);
+
+                    if ((!configuration.PastasRestritas.Contains(origemPathInfo.FullName) && bkpDiferencial) || !bkpDiferencial)
+                    {
+                        CopyAll(origemPathInfo, destinoPathInfo, backupFullPathInfo, bkpDiferencial);
+                    }
+
+                    if (abort)
+                        return;
+
+                    while (pause)
+                        Thread.Sleep(500);
                 }
-
-                if (abort)
-                    return;
-
-                while (pause)
-                    Thread.Sleep(500);
+            }
+            catch(Exception ex)
+            {
+                log.LogError("Erro na busca de pastas para backup",
+                                MethodBase.GetCurrentMethod().Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
             }
 
-            quantidadeProgresso = 100;
         }
 
         private void CopyAll(DirectoryInfo origemPathInfoAux, DirectoryInfo destinoPathInfoAux, DirectoryInfo backupFullPathInfoAux, bool bkpDiferencial)
@@ -850,7 +877,7 @@ namespace BackupNuvemSBuild_Runtime
 
                     restante++;
 
-                    this.quantidadeProgresso = (restante * 100) / quantidade;
+                    quantidadeProgresso = (restante * 100) / quantidadeTotal;
 
                     if (abort)
                         return;
@@ -904,6 +931,7 @@ namespace BackupNuvemSBuild_Runtime
                     {
                         CopyAll(subPasta, proximaSubPasta, proximaSubPastaFull, bkpDiferencial);
                     }
+
 
                 }
                 catch (Exception ex)

@@ -204,3 +204,218 @@
  | INFO |
  | Descrição: Starting Timer v1.1.0: 11/01/2021 11:12:24
 
+1/19/2021 3:25:52 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/19/2021 3:25:52 PM
+
+1/19/2021 3:25:58 PM
+ | INFO |
+ | Descrição: Backup '\210119\FULL_210119\' já existe!
+
+1/19/2021 3:26:02 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:26:12 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:26:22 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:26:32 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:26:42 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:26:47 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210119
+
+1/19/2021 3:26:47 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/19/2021 3:26:59 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/19/2021 3:26:59 PM
+
+1/19/2021 3:27:05 PM
+ | INFO |
+ | Descrição: Backup '\210119\FULL_210119\' já existe!
+
+1/19/2021 3:27:09 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:27:19 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:27:29 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:27:39 PM
+ | ERROR |
+ | Descrição: Erro na busca de backup automatico
+ | Classe: ExecutaRotina
+ | Método: Void ExecutaRotina(System.Object)
+ | Exception: The device is not ready.
+
+
+1/19/2021 3:32:52 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/19/2021 3:32:52 PM
+
+1/19/2021 3:33:06 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210119
+
+1/19/2021 3:33:06 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/19/2021 3:35:25 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/19/2021 3:35:25 PM
+
+1/19/2021 3:35:28 PM
+ | INFO |
+ | Descrição: Backup '\210119\FULL_210119\' já existe!
+
+1/19/2021 3:35:48 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210119
+
+1/19/2021 3:35:48 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/13/2021 12:23:23 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/13/2021 12:23:23 PM
+
+1/13/2021 12:32:31 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/13/2021 12:32:31 PM
+
+1/13/2021 12:35:28 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210113
+
+1/13/2021 12:35:28 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/13/2021 12:35:28 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/13/2021 12:35:30 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210113
+
+1/13/2021 12:37:18 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/13/2021 12:37:18 PM
+
+1/13/2021 12:37:28 PM
+ | INFO |
+ | Descrição: Backup '\210113\FULL_210113\' já existe!
+
+1/13/2021 12:37:36 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210113
+
+1/13/2021 12:37:36 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/13/2021 12:37:37 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/13/2021 12:37:39 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210113
+
+1/13/2021 12:41:10 PM
+ | INFO |
+ | Descrição: Iniciando Backup: 20210113
+
+1/13/2021 12:41:10 PM
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+1/13/2021 12:41:18 PM
+ | INFO |
+ | Descrição: Backup 'C:\TESTESBuild\210113\DIF_210113' já existe!
+
+1/13/2021 12:41:28 PM
+ | INFO |
+ | Descrição: Backup 'C:\TESTESBuild\210113\DIF_210113' já existe!
+
+1/13/2021 12:41:38 PM
+ | INFO |
+ | Descrição: Backup 'C:\TESTESBuild\210113\DIF_210113' já existe!
+
+1/13/2021 12:41:48 PM
+ | INFO |
+ | Descrição: Backup 'C:\TESTESBuild\210113\DIF_210113' já existe!
+
+1/13/2021 12:41:58 PM
+ | INFO |
+ | Descrição: Backup 'C:\TESTESBuild\210113\DIF_210113' já existe!
+
+1/13/2021 12:42:20 PM
+ | ERROR |
+ | Descrição: Erro na busca de pastas para backup
+ | Classe: CopiaArquivos
+ | Método: Void CopiaArquivos(System.Collections.Generic.List`1[System.Tuple`2[System.String,System.Int64]], System.String, Boolean)
+ | Exception: Could not find a part of the path 'C:\TESTESBuild\210113\FULL_210113\Backup Automático Server'.
+
+1/13/2021 12:42:20 PM
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+1/13/2021 12:42:22 PM
+ | INFO |
+ | Descrição: Finalizando Backup: 20210113
+
