@@ -1057,7 +1057,15 @@ namespace BackupNuvemSBuild_Configuration
 
         private void btnAbortBackup_Click(object sender, EventArgs e)
         {
-            AssyncTCPClient("Comando; Abort");
+            //AssyncTCPClient("Comando; Abort");
+            ServiceController service = new ServiceController(serviceName, machineName);
+            TimeSpan timeout = TimeSpan.FromMilliseconds(timeoutCommandService);
+            service.Stop();
+            service.WaitForStatus(ServiceControllerStatus.Stopped, timeout);
+
+
+            service.Start();
+            service.WaitForStatus(ServiceControllerStatus.Running, timeout);
         }
 
         private void btnNewBackupDiferencial_Click(object sender, EventArgs e)
@@ -1314,7 +1322,7 @@ namespace BackupNuvemSBuild_Configuration
             {
                 ServiceController[] services = ServiceController.GetServices(machineName);
                 var service = services.FirstOrDefault(s => s.ServiceName == serviceName);
-
+                
                 if (service != null)
                 {
 
