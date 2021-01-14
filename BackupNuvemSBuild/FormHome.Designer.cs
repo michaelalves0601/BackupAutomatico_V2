@@ -1152,7 +1152,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlServico2.Controls.Add(this.label13);
             this.pnlServico2.Controls.Add(this.label12);
             this.pnlServico2.Controls.Add(this.panel7);
-            this.pnlServico2.Location = new System.Drawing.Point(110, 314);
+            this.pnlServico2.Location = new System.Drawing.Point(110, 315);
             this.pnlServico2.Name = "pnlServico2";
             this.pnlServico2.Size = new System.Drawing.Size(270, 142);
             this.pnlServico2.TabIndex = 19;
@@ -1403,6 +1403,12 @@ namespace BackupNuvemSBuild_Configuration
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 200;
+            this.toolTip1.ReshowDelay = 100;
+            // 
             // pgbBackup
             // 
             this.pgbBackup.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
@@ -1496,6 +1502,7 @@ namespace BackupNuvemSBuild_Configuration
             this.lblPastaAtualTitulo.TabIndex = 30;
             this.lblPastaAtualTitulo.Text = "Pasta Atual";
             this.lblPastaAtualTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPastaAtualTitulo.Visible = false;
             // 
             // lblPastaAtual
             // 
@@ -1509,6 +1516,7 @@ namespace BackupNuvemSBuild_Configuration
             this.lblPastaAtual.TabIndex = 31;
             this.lblPastaAtual.Text = "G:\\Meu Drive\\ENGENHARIA\\Em Andamento\\P0012...";
             this.lblPastaAtual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPastaAtual.Visible = false;
             // 
             // lblAbortBackupTitulo
             // 
@@ -1644,6 +1652,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlPauseAbortBackup.Name = "pnlPauseAbortBackup";
             this.pnlPauseAbortBackup.Size = new System.Drawing.Size(213, 87);
             this.pnlPauseAbortBackup.TabIndex = 45;
+            this.pnlPauseAbortBackup.Visible = false;
             // 
             // btnPauseBackup
             // 
@@ -1772,6 +1781,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pcbPastaAtualIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbPastaAtualIcon.TabIndex = 39;
             this.pcbPastaAtualIcon.TabStop = false;
+            this.pcbPastaAtualIcon.Visible = false;
             // 
             // FormHome
             // 

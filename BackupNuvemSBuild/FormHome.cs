@@ -467,6 +467,8 @@ namespace BackupNuvemSBuild_Configuration
                     lblPastaAtualTitulo.Visible = true;
                     lblPastaAtual.Visible = true;
                     lblPastaAtual.Text = statusDiretorio;
+                    toolTip1.SetToolTip(lblPastaAtual, statusDiretorio);
+
                     pnlPauseAbortBackup.Visible = true;
 
                     lblTipoBackup.Visible = true;
@@ -1095,7 +1097,7 @@ namespace BackupNuvemSBuild_Configuration
                 // Translate the passed message into ASCII and store it as a Byte array.
 
 
-                Byte[] data = Encoding.ASCII.GetBytes(messageEnvio);
+                Byte[] data = Encoding.UTF8.GetBytes(messageEnvio);
 
                 // Get a client stream for reading and writing.
                 //  Stream stream = client.GetStream();
@@ -1114,7 +1116,7 @@ namespace BackupNuvemSBuild_Configuration
 
                 // Read the first batch of the TcpServer response bytes.
                 Int32 bytes = stream.Read(data, 0, data.Length);
-                mensagemResposta = Encoding.ASCII.GetString(data, 0, bytes);
+                mensagemResposta = Encoding.UTF8.GetString(data, 0, bytes);
 
 
 
@@ -1125,10 +1127,10 @@ namespace BackupNuvemSBuild_Configuration
             catch (Exception ex)
             {
                 mensagemResposta = "Erro 404";
-                log.LogError( "Erro na comunicação TCP", 
+                log.LogError("Erro na comunicação TCP",
                                 MethodBase.GetCurrentMethod().Name,
                                     MethodBase.GetCurrentMethod().ToString(),
-                                        ex.Message)
+                                        ex.Message);
             }
 
             isAlive = false;
@@ -1196,7 +1198,6 @@ namespace BackupNuvemSBuild_Configuration
 
                         if (statusBackup > 0)
                         {
-
                             statusPaused = Convert.ToBoolean(respostaArray[2]);
                             statusPorcentagem = Convert.ToInt32(respostaArray[3]);
                             statusDiretorio = Convert.ToString(respostaArray[4]);
