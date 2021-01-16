@@ -211,7 +211,7 @@ namespace BackupNuvemSBuild_Runtime
                         case "BkpDiferencial":
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
                             string nomeBackupFull = listPastas[listPastas.Count() - 1];
-                            this.pathDiferencial = configuration.PastaBackup + @"\" + nomeBackupFull + @"\";
+                            this.pathDiferencial = nomeBackupFull + @"\";
                             string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
                             if (Directory.Exists(newPathDiario))
                                 log.LogInfo("Backup '" + newPathDiario + "' já existe!");
@@ -522,7 +522,7 @@ namespace BackupNuvemSBuild_Runtime
                             else
                                 configuration.TipoUltimoBackup = "FULL";
 
-                            configuration.TamanhoUltimoBackup = ((tamanhoTotal / 1000000000).ToString() + " GB");
+                            configuration.TamanhoUltimoBackup = (((Convert.ToDouble(tamanhoTotal)) / 1000000000).ToString() + " GB");
 
                             configuration.SalvaUltimoBackup(pathUltimoBackup);
 

@@ -6,3 +6,16 @@ D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Rel
 D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.CoreCompileInputs.cache
 D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.exe
 D:\1.Aplicações\ProjetosC#\BackupNuvemSBuild\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe.config
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Models.dll
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\SimpleTCP.dll
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Models.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csprojAssemblyReference.cache
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.ProjectInstaller.resources
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.GenerateResource.cache
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.CoreCompileInputs.cache
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.CopyComplete
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.exe
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.pdb

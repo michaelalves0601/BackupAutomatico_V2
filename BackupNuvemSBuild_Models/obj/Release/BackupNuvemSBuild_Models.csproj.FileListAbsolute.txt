@@ -1,0 +1,5 @@
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Release\BackupNuvemSBuild_Models.dll
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Release\BackupNuvemSBuild_Models.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.csproj.CoreCompileInputs.cache
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.dll
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.pdb
