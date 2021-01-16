@@ -139,7 +139,6 @@ namespace BackupNuvemSBuild_Runtime
 
         }
 
-
         protected override void OnStop()
         {
             StopTimer();
@@ -254,8 +253,10 @@ namespace BackupNuvemSBuild_Runtime
                     msgRespota_Status[1] = typeBackupStatus.ToString();
                     if (typeBackupStatus != 0)
                     {
+                        int quantidadeProgressoInt = Convert.ToInt32(quantidadeProgresso);
+                        quantidadeProgressoInt = quantidadeProgressoInt > 100 ? 100 : quantidadeProgressoInt;
                         msgRespota_Status[2] = statusBackup.ToString();
-                        msgRespota_Status[3] = quantidadeProgresso.ToString();
+                        msgRespota_Status[3] = quantidadeProgressoInt.ToString();
                         msgRespota_Status[4] = folderAtualStatus;
 
                         if (tamanhoTotal != 0 || tamanho != 0)
@@ -884,6 +885,9 @@ namespace BackupNuvemSBuild_Runtime
 
                 if (abort)
                     return;
+
+                while (pause)
+                    Thread.Sleep(500);
 
                 if (origemPathInfoAux.FullName.Length >= MAX_DIRECTORY)
                     origemPathInfo = new DirectoryInfo(@"\\?\" + origemPathInfoAux.FullName);
