@@ -8,3 +8,4 @@ C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\Back
 C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.pdb
 C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Debug\BackupNuvemSBuild_Models.dll
 C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Debug\BackupNuvemSBuild_Models.pdb
+C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.csprojAssemblyReference.cache
