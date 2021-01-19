@@ -30,6 +30,7 @@ namespace BackupNuvemSBuild_Configuration
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.ptbCheckAgendamento = new System.Windows.Forms.PictureBox();
             this.ptbCheckService = new System.Windows.Forms.PictureBox();
@@ -1161,7 +1162,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.ptbLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbLoading.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.loading_service;
-            this.ptbLoading.Location = new System.Drawing.Point(183, 89);
+            this.ptbLoading.Location = new System.Drawing.Point(190, 89);
             this.ptbLoading.Name = "ptbLoading";
             this.ptbLoading.Size = new System.Drawing.Size(43, 36);
             this.ptbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1174,7 +1175,7 @@ namespace BackupNuvemSBuild_Configuration
             this.lblServicoNI.AutoSize = true;
             this.lblServicoNI.BackColor = System.Drawing.Color.Transparent;
             this.lblServicoNI.ForeColor = System.Drawing.Color.DimGray;
-            this.lblServicoNI.Location = new System.Drawing.Point(151, 124);
+            this.lblServicoNI.Location = new System.Drawing.Point(158, 125);
             this.lblServicoNI.Name = "lblServicoNI";
             this.lblServicoNI.Size = new System.Drawing.Size(109, 13);
             this.lblServicoNI.TabIndex = 27;
@@ -1189,7 +1190,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_replayServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_replayServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_replayServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_replayServico.Location = new System.Drawing.Point(179, 17);
+            this.btn_replayServico.Location = new System.Drawing.Point(186, 17);
             this.btn_replayServico.Name = "btn_replayServico";
             this.btn_replayServico.Size = new System.Drawing.Size(47, 32);
             this.btn_replayServico.TabIndex = 26;
@@ -1204,7 +1205,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_stopServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_stopServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_stopServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_stopServico.Location = new System.Drawing.Point(36, 17);
+            this.btn_stopServico.Location = new System.Drawing.Point(43, 17);
             this.btn_stopServico.Name = "btn_stopServico";
             this.btn_stopServico.Size = new System.Drawing.Size(47, 32);
             this.btn_stopServico.TabIndex = 25;
@@ -1220,7 +1221,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_playServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_playServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_playServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_playServico.Location = new System.Drawing.Point(110, 17);
+            this.btn_playServico.Location = new System.Drawing.Point(117, 17);
             this.btn_playServico.Name = "btn_playServico";
             this.btn_playServico.Size = new System.Drawing.Size(47, 32);
             this.btn_playServico.TabIndex = 22;
@@ -1231,7 +1232,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.ptbFuncionando.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24__1_;
             this.ptbFuncionando.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ptbFuncionando.Location = new System.Drawing.Point(183, 89);
+            this.ptbFuncionando.Location = new System.Drawing.Point(190, 89);
             this.ptbFuncionando.Name = "ptbFuncionando";
             this.ptbFuncionando.Size = new System.Drawing.Size(40, 32);
             this.ptbFuncionando.TabIndex = 20;
@@ -1242,7 +1243,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.ptbDesligado.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24;
             this.ptbDesligado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ptbDesligado.Location = new System.Drawing.Point(183, 89);
+            this.ptbDesligado.Location = new System.Drawing.Point(190, 89);
             this.ptbDesligado.Name = "ptbDesligado";
             this.ptbDesligado.Size = new System.Drawing.Size(40, 32);
             this.ptbDesligado.TabIndex = 19;
@@ -1254,7 +1255,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.ptbAviso.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4075935_32;
             this.ptbAviso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbAviso.Location = new System.Drawing.Point(183, 89);
+            this.ptbAviso.Location = new System.Drawing.Point(190, 89);
             this.ptbAviso.Name = "ptbAviso";
             this.ptbAviso.Size = new System.Drawing.Size(40, 32);
             this.ptbAviso.TabIndex = 18;
@@ -1266,7 +1267,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(184, 67);
+            this.label13.Location = new System.Drawing.Point(191, 67);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(40, 13);
             this.label13.TabIndex = 17;
@@ -1276,7 +1277,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(23, 68);
+            this.label12.Location = new System.Drawing.Point(5, 67);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(46, 13);
             this.label12.TabIndex = 16;
@@ -1286,20 +1287,20 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Location = new System.Drawing.Point(21, 85);
+            this.panel7.Location = new System.Drawing.Point(6, 85);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(119, 39);
+            this.panel7.Size = new System.Drawing.Size(162, 39);
             this.panel7.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(3, 14);
+            this.label6.Location = new System.Drawing.Point(5, 14);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 13);
+            this.label6.Size = new System.Drawing.Size(153, 13);
             this.label6.TabIndex = 0;
-            this.label6.Text = "BackupNuvemSBuild";
+            this.label6.Text = "BackupNuvemSBuild_Runtime";
             // 
             // panel3
             // 
@@ -1384,13 +1385,13 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Footlight MT Light", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 17.25F);
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(185, 18);
+            this.label2.Location = new System.Drawing.Point(198, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 24);
+            this.label2.Size = new System.Drawing.Size(114, 26);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Backup Automático";
+            this.label2.Text = "S. Backup";
             // 
             // pictureBox2
             // 
@@ -1805,6 +1806,7 @@ namespace BackupNuvemSBuild_Configuration
             this.Controls.Add(this.pgbBackup);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";

@@ -4363,3 +4363,17 @@ Nome do parâmetro: addresses
  | Método: System.String Decrypto(System.String)
  | Exception: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
 
+08/01/2021 18:08:17
+ | ERROR |
+ | Descrição: Comando de START Negado para o Serviço: BackupNuvemSBuild_Runtime - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Não é possível abrir o serviço BackupNuvemSBuild_Runtime no computador 'localhost'.
+
+11/01/2021 10:29:16
+ | ERROR |
+ | Descrição: Comando de STOP Negado para o Serviço: BackupNuvemSBuild_Runtime - na Máquina: localhost
+ | Classe: ComandosService
+ | Método: Void ComandosService()
+ | Exception: Não é possível abrir o serviço BackupNuvemSBuild_Runtime no computador 'localhost'.
+

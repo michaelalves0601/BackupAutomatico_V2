@@ -36,7 +36,7 @@ namespace BackupNuvemSBuild_Runtime
         string folderAtualStatus = ""; //pasta atual do backup
         int typeBackupStatus = 0; //tipo de backup sendo executado 0 - nao executado, 1 - diferencial, 2 - full
         string timeEstimatedBackup = ""; //estado de tempo estimado de conclusao do backup
-        bool statusBackup; // estado do backup
+        bool pausedBackup = false; // estado do backup
 
         bool pause = false; //estado do pause
         bool abort = false; //estado do abort
@@ -67,6 +67,8 @@ namespace BackupNuvemSBuild_Runtime
 
         Encrypt encrypt = new Encrypt("cenouras", "abacaxis");
 
+
+        BackgroundWorker bwBackup = null;
         #endregion
 
         #region Service
@@ -88,7 +90,7 @@ namespace BackupNuvemSBuild_Runtime
 
         private void StartTime()
         {
-            statusBackup = false;
+            pausedBackup = false;
             try
             {
                 try
@@ -243,7 +245,10 @@ namespace BackupNuvemSBuild_Runtime
                             abort = true;
                             break;
                     }
-                    msgResposta = "Ok";
+
+                    pausedBackup = pause;
+
+                    msgResposta = "Ok;";
 
 
                 }
@@ -251,13 +256,15 @@ namespace BackupNuvemSBuild_Runtime
                 {
                     msgRespota_Status[0] = "OK";
                     msgRespota_Status[1] = typeBackupStatus.ToString();
+
                     if (typeBackupStatus != 0)
                     {
                         int quantidadeProgressoInt = Convert.ToInt32(quantidadeProgresso);
                         quantidadeProgressoInt = quantidadeProgressoInt > 100 ? 100 : quantidadeProgressoInt;
-                        msgRespota_Status[2] = statusBackup.ToString();
+
+                        msgRespota_Status[2] = pausedBackup.ToString();
                         msgRespota_Status[3] = quantidadeProgressoInt.ToString();
-                        msgRespota_Status[4] = folderAtualStatus;
+                        msgRespota_Status[4] = folderAtualStatus == "" ? "404" : folderAtualStatus;
 
                         if (tamanhoTotal != 0 || tamanho != 0)
                         {
@@ -265,7 +272,7 @@ namespace BackupNuvemSBuild_Runtime
                             timeEstimatedBackup = tempoestimado.ToString();
                         }
 
-                        msgRespota_Status[5] = timeEstimatedBackup;
+                        msgRespota_Status[5] = timeEstimatedBackup == "" ? "0" : timeEstimatedBackup;
                     }
                     else
                     {
@@ -275,7 +282,7 @@ namespace BackupNuvemSBuild_Runtime
                         msgRespota_Status[5] = "404";
                     }
 
-                    msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5];
+                    msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5] + ";";
 
                     tamanho = 0;
                 }
@@ -451,101 +458,136 @@ namespace BackupNuvemSBuild_Runtime
                 isAlive = true;
                 try
                 {
-                    statusBackup = true;
+                    //Inicia objeto assincrono UNICO para roda apenas uma vez
+                    bwBackup = new BackgroundWorker();
 
-                    NotificacaoEmail(dataNewBackup, true);
+                    ////Declara auxiliares para o processo assincrono
+                    //bwConfigSQL.ProgressChanged +=
+                    //    new ProgressChangedEventHandler(bwConfigSQL_ProgressChanged);
 
-                    if (!apenasSync)
+                    ////habilita propriedade de acompanhar progressão do processo
+                    //bwConfigSQL.WorkerReportsProgress = true;
+
+                    bwBackup.RunWorkerCompleted +=
+                        new RunWorkerCompletedEventHandler(bwBackup_RunWorkerCompleted);
+
+                    //inicia processo assincrono
+                    bwBackup.DoWork += (Senderbw, args) =>
                     {
 
-                        typeBackupStatus = bkpDiferencial ? 2 : 1;
+                        tamanhoTotal = 0;
 
-                        if (Directory.Exists(newPathDiario))
-                            log.LogWarning("Backup '" + newPathDiario + "' já existe!",
-                                                MethodBase.GetCurrentMethod().Name,
-                                                    MethodBase.GetCurrentMethod().ToString(), "");
+                        pausedBackup = false;
+
+                        NotificacaoEmail(dataNewBackup, true);
+
+                        if (!apenasSync)
+                        {
+
+                            typeBackupStatus = bkpDiferencial ? 2 : 1;
+
+                            if (Directory.Exists(newPathDiario))
+                                log.LogWarning("Backup '" + newPathDiario + "' já existe!",
+                                                    MethodBase.GetCurrentMethod().Name,
+                                                        MethodBase.GetCurrentMethod().ToString(), "");
+                            else
+                            {
+                                log.LogInfo("Iniciando Backup: " + dataNewBackup.ToString("yyyyMMdd"));
+                                log.LogInfo("Iniciando Cópia do Drive.");
+
+
+                                Directory.CreateDirectory(newPathDiario);
+
+
+                                if (!bkpDiferencial)
+                                    OrganizarPastasFull(newPathDiario);
+
+
+                                List<Tuple<string, long>> listFolders = SelecionaPastasDrive();
+
+                                while (pause)
+                                    Thread.Sleep(500);
+
+                                if (abort)
+                                    return;
+
+                                CopiaArquivos(listFolders, newPathDiario, bkpDiferencial);
+
+                                if (abort)
+                                    return;
+
+                                while (pause)
+                                    Thread.Sleep(500);
+
+                                CopiaBuffer();
+
+                                if (abort)
+                                    return;
+
+                                Thread.Sleep(500);
+
+
+                                log.LogInfo("Iniciando Organização das pastas de Backup.");
+
+
+                                Thread.Sleep(500);
+
+                                if (configuration.HabilitaPastaEspelho)
+                                {
+                                    log.LogInfo("Iniciando Sincronização com para Espelho.");
+
+                                    SyncPastaEspelho();
+
+                                    Thread.Sleep(500);
+                                }
+
+
+                                configuration.UltimoBackup = dataNewBackup.ToString("dd/MM/yyyy");
+
+                                if (bkpDiferencial)
+                                    configuration.TipoUltimoBackup = "DIFERENCIAL";
+                                else
+                                    configuration.TipoUltimoBackup = "FULL";
+
+                                configuration.TamanhoUltimoBackup = ((Math.Round((Convert.ToDouble(tamanhoTotal)) / 1000000000), 2).ToString() + " GB");
+
+                                configuration.SalvaUltimoBackup(pathUltimoBackup);
+
+                                NotificacaoEmail(dataNewBackup, false);
+
+
+                                log.LogInfo("Finalizando Backup: " + dataNewBackup.ToString("yyyyMMdd"));
+                            }
+                        }
                         else
                         {
-                            log.LogInfo("Iniciando Backup: " + dataNewBackup.ToString("yyyyMMdd"));
-                            log.LogInfo("Iniciando Cópia do Drive.");
+                            typeBackupStatus = 3;
 
+                            log.LogInfo("Iniciando Sincronização com para Espelho.");
 
-                            Directory.CreateDirectory(newPathDiario);
-
-
-                            if (!bkpDiferencial)
-                                OrganizarPastasFull(newPathDiario);
-
-
-                            List<Tuple<string, long>> listFolders = SelecionaPastasDrive();
-
-                            while (pause)
-                                Thread.Sleep(500);
-
-                            if (abort)
-                                return;
-
-                            CopiaArquivos(listFolders, newPathDiario, bkpDiferencial);
-
-                            if (abort)
-                                return;
-
-                            while (pause)
-                                Thread.Sleep(500);
-
-                            CopiaBuffer();
-
-                            if (abort)
-                                return;
+                            SyncPastaEspelho();
 
                             Thread.Sleep(500);
 
 
-                            log.LogInfo("Iniciando Organização das pastas de Backup.");
-
-
-                            Thread.Sleep(500);
-
-                            if (configuration.HabilitaPastaEspelho)
-                            {
-                                log.LogInfo("Iniciando Sincronização com para Espelho.");
-
-                                SyncPastaEspelho();
-
-                                Thread.Sleep(500);
-                            }
-
-
-                            configuration.UltimoBackup = dataNewBackup.ToString("dd/MM/yyyy");
-
-                            if (bkpDiferencial)
-                                configuration.TipoUltimoBackup = "DIFERENCIAL";
-                            else
-                                configuration.TipoUltimoBackup = "FULL";
-
-                            configuration.TamanhoUltimoBackup = (((Convert.ToDouble(tamanhoTotal)) / 1000000000).ToString() + " GB");
-
-                            configuration.SalvaUltimoBackup(pathUltimoBackup);
-
-                            NotificacaoEmail(dataNewBackup, false);
-
-
-                            log.LogInfo("Finalizando Backup: " + dataNewBackup.ToString("yyyyMMdd"));
+                            log.LogInfo("Finalizando Sincronização: " + dataNewBackup.ToString("yyyyMMdd"));
                         }
-                    }
-                    else
-                    {
-                        typeBackupStatus = 3;
 
-                        log.LogInfo("Iniciando Sincronização com para Espelho.");
+                        try
+                        {
 
-                        SyncPastaEspelho();
+                        }
+                        catch (Exception ex)
+                        {
+                            log.LogError("Erro durante o Background Worker.",
+                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                        MethodBase.GetCurrentMethod().ToString(),
+                                            ex.Message);
+                        }
 
-                        Thread.Sleep(500);
-
-
-                        log.LogInfo("Finalizando Sincronização: " + dataNewBackup.ToString("yyyyMMdd"));
-                    }
+                    };
+                    //indica função acima como assincrona
+                    bwBackup.RunWorkerAsync();
 
                 }
                 catch (Exception ex)
@@ -556,15 +598,20 @@ namespace BackupNuvemSBuild_Runtime
                                     ex.Message);
                 }
 
-
             }
+
+        }
+
+        private void bwBackup_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
             isAlive = false;
-            statusBackup = false;
+            pausedBackup = false;
             typeBackupStatus = 0;
             quantidadeProgresso = 0;
             tempoestimado = 0;
-        }
 
+            bwBackup.Dispose();
+        }
 
         private List<Tuple<string, long>> SelecionaPastasDrive()
         {
@@ -803,7 +850,7 @@ namespace BackupNuvemSBuild_Runtime
 
                     restante++;
 
-                    this.quantidadeProgresso = (restante / quantidade) * 100;
+                    this.quantidadeProgresso = (restante * 100) / quantidade;
 
                     if (abort)
                         return;
