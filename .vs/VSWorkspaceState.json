@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BackupNuvemSBuild_Runtime"
+    "\\BackupNuvemSBuild"
   ],
-  "SelectedNode": "\\BackupNuvemSBuild.sln",
+  "SelectedNode": "\\BackupNuvemSBuild\\BackupNuvemSBuild_Configuration.csproj",
   "PreviewInSolutionExplorer": false
 }
