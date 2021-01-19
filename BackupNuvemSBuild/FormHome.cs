@@ -38,6 +38,8 @@ namespace BackupNuvemSBuild_Configuration
         string statusDiretorio = "";
         int statusTempoRestante = 0;
 
+        bool linkOld = true;
+
 
         bool vendoPassword = false;
 
@@ -52,7 +54,7 @@ namespace BackupNuvemSBuild_Configuration
         string pathEmails = @"Config\email.ini";
 
         string machineName = "localhost";
-        string serviceName = "OPC Labs Kit Server";
+        string serviceName = "BackupNuvemSBuild_Runtime";
 
         string comandoSTART = "START";
         string comandoSTOP = "STOP";
@@ -1024,18 +1026,27 @@ namespace BackupNuvemSBuild_Configuration
 
         private void atualizaIconLoading(bool link)
         {
-            if (link)
+            if (linkOld != link)
             {
-                pcbLoading.Image = Resources.loading;
-                pcbLoading.Size = new Size(47, 32);
-                pcbLoading.Location = new Point(428, 28);
+                linkOld = link;
+
+                {
+
+                }
+                if (link)
+                {
+                    pcbLoading.Image = Resources.loading;
+                    pcbLoading.Size = new Size(47, 32);
+                    pcbLoading.Location = new Point(428, 28);
+                }
+                else
+                {
+                    pcbLoading.Image = Resources.linkError;
+                    pcbLoading.Size = new Size(60, 50);
+                    pcbLoading.Location = new Point(442, 18);
+                }
             }
-            else
-            {
-                pcbLoading.Image = Resources.linkError;
-                pcbLoading.Size = new Size(60, 50);
-                pcbLoading.Location = new Point(442, 18);
-            }
+
         }
 
 
@@ -1188,7 +1199,6 @@ namespace BackupNuvemSBuild_Configuration
                             statusTempoRestante = Convert.ToInt32(respostaArray[5]);
 
                         }
-                        //terminar porcentagem [3], diretório [4] e tempo restante [5]
                         AtualizaStatusBackup();
                     }
 

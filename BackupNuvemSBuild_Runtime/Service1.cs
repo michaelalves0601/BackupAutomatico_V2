@@ -294,10 +294,6 @@ namespace BackupNuvemSBuild_Runtime
             catch (Exception ex)
             {
                 msgResposta = "404";
-                log.LogError("Falha na comunicação TCP",
-                                MethodBase.GetCurrentMethod().Name,
-                                    MethodBase.GetCurrentMethod().ToString(),
-                                        ex.Message);
             }
 
             e.ReplyLine(string.Format(msgResposta));
