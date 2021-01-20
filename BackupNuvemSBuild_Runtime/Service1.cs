@@ -42,14 +42,14 @@ namespace BackupNuvemSBuild_Runtime
         bool pause = false; //estado do pause
         bool abort = false; //estado do abort
 
-        long tamanho = 0; //tamanho passado no intervalo da comunicação com front
+        double tamanho = 0; //tamanho passado no intervalo da comunicação com front
         double restante = 0; // aux de quantidadeProgresso
-        long tamanhoTransferido = 0; //tamanho ja copiado do backup
+        double tamanhoTransferido = 0; //tamanho ja copiado do backup
         long quantidadeTotal = 0; // quantidade total de arquivos
         double quantidadeProgresso = 0; //porcentagem da conclusão do backup
         long totalQuantidade = 0; //quantiade de pastas total
         long tamanhoTotal = 0; //total de tamanho do backup
-        long tempoestimado; // aux de timeEstimatedBackup
+        double tempoestimado; // aux de timeEstimatedBackup
 
         string parentPathDrive = "";
 
@@ -257,7 +257,7 @@ namespace BackupNuvemSBuild_Runtime
                 {
                     msgRespota_Status[0] = "OK";
                     msgRespota_Status[1] = typeBackupStatus.ToString();
-
+                
                     if (typeBackupStatus != 0)
                     {
                         int quantidadeProgressoInt = Convert.ToInt32(quantidadeProgresso);
@@ -269,10 +269,10 @@ namespace BackupNuvemSBuild_Runtime
 
                         if (tamanhoTotal != 0 && tamanho != 0)
                         {
-                            tempoestimado = (tamanhoTotal - tamanhoTransferido) / tamanho;
+                            double tamanhoRestante = tamanhoTotal - tamanhoTransferido;
+                            tempoestimado = tamanhoRestante / tamanho;
                             timeEstimatedBackup = tempoestimado.ToString();
                         }
-
                         msgRespota_Status[5] = timeEstimatedBackup == "" ? "0" : timeEstimatedBackup;
                     }
                     else
@@ -284,11 +284,15 @@ namespace BackupNuvemSBuild_Runtime
                     }
 
                     msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5] + ";";
-
                     tamanho = 0;
+
                 }
                 else
                 {
+
+                }
+                {
+                    
                     msgResposta = "404";
                 }
             }
@@ -587,7 +591,7 @@ namespace BackupNuvemSBuild_Runtime
                             log.LogInfo("Iniciando Sincronização com para Espelho.");
 
                             SyncPastaEspelho();
-
+                              
                             Thread.Sleep(500);
 
 
