@@ -419,3 +419,14 @@
  | INFO |
  | Descrição: Finalizando Backup: 20210113
 
+1/14/2021 2:50:02 PM
+ | INFO |
+ | Descrição: Starting Timer v1.1.0: 1/14/2021 2:50:02 PM
+
+1/14/2021 2:50:03 PM
+ | ERROR |
+ | Descrição: Erro na iniciação do TCP
+ | Classe: StartTCP
+ | Método: Void StartTCP(System.String, System.String)
+ | Exception: Only one usage of each socket address (protocol/network address/port) is normally permitted
+

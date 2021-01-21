@@ -969,15 +969,13 @@ namespace BackupNuvemSBuild_Configuration
         {
             string pastaSelecionada = SearchPathFolder(configuration.PastaDrive);
 
-            if (pastaSelecionada == "OK")
+            if (pastaSelecionada.Trim().Length > 0)
             {
-                if (pastaSelecionada.Trim().Length > 0)
-                {
-                    ltvExclusao.Items.Add(pastaSelecionada);
+                ltvExclusao.Items.Add(pastaSelecionada);
 
-                    configuration.PastasRestritas.Add(pastaSelecionada);
-                }
+                configuration.PastasRestritas.Add(pastaSelecionada);
             }
+
             HabilitaSave();
         }
 
@@ -1059,7 +1057,15 @@ namespace BackupNuvemSBuild_Configuration
 
         private void btnAbortBackup_Click(object sender, EventArgs e)
         {
-            AssyncTCPClient("Comando; Abort");
+            //AssyncTCPClient("Comando; Abort");
+            ServiceController service = new ServiceController(serviceName, machineName);
+            TimeSpan timeout = TimeSpan.FromMilliseconds(timeoutCommandService);
+            service.Stop();
+            service.WaitForStatus(ServiceControllerStatus.Stopped, timeout);
+
+
+            service.Start();
+            service.WaitForStatus(ServiceControllerStatus.Running, timeout);
         }
 
         private void btnNewBackupDiferencial_Click(object sender, EventArgs e)
@@ -1316,7 +1322,7 @@ namespace BackupNuvemSBuild_Configuration
             {
                 ServiceController[] services = ServiceController.GetServices(machineName);
                 var service = services.FirstOrDefault(s => s.ServiceName == serviceName);
-
+                
                 if (service != null)
                 {
 
