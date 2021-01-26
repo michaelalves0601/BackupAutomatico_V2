@@ -19,6 +19,7 @@ using static BCrypt.Net.BCrypt;
 using System.Net.Mail;
 using System.ServiceProcess;
 using BackupNuvemSBuild_Configuration.Properties;
+using System.Threading;
 
 namespace BackupNuvemSBuild_Configuration
 {
@@ -541,7 +542,7 @@ namespace BackupNuvemSBuild_Configuration
                 case 3:
                     pcbTempoEstimado.Visible = true;
                     lblTempoEstimadoTitulo.Visible = true;
-                    lblTempoEstimado.Visible = true;
+                    lblTempoEstimado.Visible = false;
                     lblTempoEstimado.Text = Humanizer.TimeSpanHumanizeExtensions.Humanize(tsTempoRestante, 1, CultureInfo.GetCultureInfo("pt-br"));
                     pcbPastaAtualIcon.Visible = true;
                     lblPastaAtualTitulo.Visible = true;
@@ -1149,6 +1150,7 @@ namespace BackupNuvemSBuild_Configuration
         {
             logTCPClient.LogInfo("isAlive = " + isAlive.ToString());
 
+
             if (!isAlive)
             {
                 isAlive = true;
@@ -1173,7 +1175,14 @@ namespace BackupNuvemSBuild_Configuration
                 {
                     try
                     {
-                        messageRespostaGlobal = TcpClient(messageEnvioGlobal);
+                        var task = Task.Run(() => messageRespostaGlobal = TcpClient(messageEnvioGlobal));
+
+                        if (!task.Wait(TimeSpan.FromSeconds(10)))
+                            log.LogError("Timeout na consulta TCP IP.",
+                                MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        new Exception("Timed out").Message);
+
                     }
                     catch (Exception ex)
                     {
@@ -1192,7 +1201,9 @@ namespace BackupNuvemSBuild_Configuration
 
         private void bwTCPIP_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            bwTCPIP.Dispose();
+            isAlive = false;
+
+            bwTCPIP.Dispose();            
 
             try
             {
@@ -1239,8 +1250,6 @@ namespace BackupNuvemSBuild_Configuration
             }
 
             messageRespostaGlobal = String.Empty;
-
-            isAlive = false;
         }
         #endregion
 

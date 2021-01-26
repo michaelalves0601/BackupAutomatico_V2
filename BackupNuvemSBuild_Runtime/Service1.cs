@@ -446,7 +446,7 @@ namespace BackupNuvemSBuild_Runtime
                                                     + "tamanho = " + tamanho.ToString() + Environment.NewLine);
 
                         tempoestimado = tamanhoRestante / tamanho;
-                        
+
                         logTempoEstimado.LogInfo("tempoestimado = " + tempoestimado.ToString() + Environment.NewLine);
 
                         tempoestimado = tempoestimado < 0 ? 0 : Math.Round(tempoestimado, 0);
@@ -459,14 +459,14 @@ namespace BackupNuvemSBuild_Runtime
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 log.LogError("Falha ao calcular o tempo estimado do Backup",
                                 MethodBase.GetCurrentMethod().Name,
                                     MethodBase.GetCurrentMethod().ToString(),
                                         ex.Message);
             }
-         }
+        }
 
 
         private void TESTE_LogTCP()
@@ -640,20 +640,10 @@ namespace BackupNuvemSBuild_Runtime
                                 CopiaBuffer();
 
                                 if (abort)
-                                    return;                           
+                                    return;
 
 
                                 Thread.Sleep(500);
-
-                                if (configuration.HabilitaPastaEspelho)
-                                {
-                                    log.LogInfo("Iniciando Sincronização com para Espelho.");
-                                    folderAtualStatus = "Espelhando Backups...";
-
-                                    SyncPastaEspelho();
-
-                                    Thread.Sleep(500);
-                                }
 
 
                                 configuration.UltimoBackup = dataNewBackupDoWork.ToString("dd/MM/yyyy");
@@ -667,10 +657,10 @@ namespace BackupNuvemSBuild_Runtime
 
                                 try
                                 {
-                                    tamanhoBackupAux = Math.Round((Convert.ToDouble(tamanhoTotal) / 1000000000), 2);
+                                    tamanhoBackupAux = Math.Round((Convert.ToDouble(tamanhoTransferido) / 1000000000), 2);
                                     tamanhoBackupAux = tamanhoBackupAux < 0 ? 0 : tamanhoBackupAux;
                                 }
-                                catch(Exception ex)
+                                catch (Exception ex)
                                 {
                                     tamanhoBackupAux = 0;
                                     log.LogError("Falha no cálculo do tamanho do último Backup.",
@@ -683,6 +673,23 @@ namespace BackupNuvemSBuild_Runtime
                                 configuration.TamanhoUltimoBackup = tamanhoBackupAux.ToString() + " GB";
 
                                 configuration.SalvaUltimoBackup(pathUltimoBackup);
+
+
+
+                                if (configuration.HabilitaPastaEspelho)
+                                {
+                                    typeBackupStatus = 3;
+                                    quantidadeProgresso = 0;
+
+                                    log.LogInfo("Iniciando Sincronização com para Espelho.");
+                                    folderAtualStatus = "Espelhando Backups...";
+
+                                    SyncPastaEspelho();
+
+                                    Thread.Sleep(500);
+                                }
+
+
 
 
                                 log.LogInfo("Encaminhando Email...");
@@ -745,7 +752,7 @@ namespace BackupNuvemSBuild_Runtime
             quantidadeProgresso = 0;
             tempoestimado = 0;
 
-            log.LogInfo("Finalizando Backup");            
+            log.LogInfo("Finalizando Backup");
         }
 
         private List<Tuple<string, long>> SelecionaPastasDrive()
@@ -866,7 +873,7 @@ namespace BackupNuvemSBuild_Runtime
                     DirectoryInfo destinoPathInfo = new DirectoryInfo(destinoPath);
                     DirectoryInfo backupFullPathInfo = new DirectoryInfo(nomeBackupFullinFullIndex);
 
-                    if ((!configuration.PastasRestritas.Contains(origemPathInfo.FullName) && bkpDiferencial) ||  !bkpDiferencial)
+                    if ((!configuration.PastasRestritas.Contains(origemPathInfo.FullName) && bkpDiferencial) || !bkpDiferencial)
                     {
                         CopyAll(origemPathInfo, destinoPathInfo, backupFullPathInfo, bkpDiferencial);
                     }
@@ -903,7 +910,9 @@ namespace BackupNuvemSBuild_Runtime
                     origemPathInfo = new DirectoryInfo(@"\\?\" + origemPathInfoAux.FullName);
                 else
                     origemPathInfo = new DirectoryInfo(origemPathInfoAux.FullName);
+
                 folderAtualStatus = origemPathInfoAux.FullName;
+
                 if (destinoPathInfoAux.FullName.Length >= MAX_DIRECTORY)
                     destinoPathInfo = new DirectoryInfo(@"\\?\" + destinoPathInfoAux.FullName);
                 else
@@ -977,7 +986,8 @@ namespace BackupNuvemSBuild_Runtime
                         Thread.Sleep(500);
 
 
-                    tamanho += fileInfo.Length;                    
+                    if (typeBackupStatus != 3)
+                        tamanho += fileInfo.Length;
 
                     FileInfo fileInfoDestino = new FileInfo(diretorioFile);
 
@@ -1026,7 +1036,7 @@ namespace BackupNuvemSBuild_Runtime
 
             }
 
-            
+
 
             // copia as SubPastas para o Destino, usando Recursividade
             foreach (DirectoryInfo subPastaAux in origemPathInfo.GetDirectories())
@@ -1233,10 +1243,11 @@ namespace BackupNuvemSBuild_Runtime
 
         private void SyncPastaEspelho()
         {
-
             quantidade = Directory.GetFiles(configuration.PastaBackup, "*", SearchOption.AllDirectories).Length
                             + Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.AllDirectories).Length;
-            restante = quantidade;
+            quantidadeTotal = quantidade;
+
+            restante = 0;
 
             if (abort)
                 return;
@@ -1249,6 +1260,8 @@ namespace BackupNuvemSBuild_Runtime
 
             CopyAll(origemPathInfo, destinoPathInfo, destinoPathInfo, false);
 
+            quantidadeProgresso = 100;
+
             if (abort)
                 return;
 
@@ -1256,7 +1269,6 @@ namespace BackupNuvemSBuild_Runtime
                 Thread.Sleep(500);
 
             DeleteOldPath(origemPathInfo, destinoPathInfo);
-
         }
 
         private void CopiaBuffer()
@@ -1325,7 +1337,7 @@ namespace BackupNuvemSBuild_Runtime
                     email.SmtpServerString = "smtp.gmail.com";
                     email.Origem = configuration.EmailOrigem;
                     email.Password = encrypt.Decrypto(configuration.SenhaOrigem);
-                    email.Assunto = "Backup Drive Servidor: " + dataNewBackup.ToString("yyyyMMdd");
+                    email.Assunto = "Backup Automático 2.0: " + dataNewBackup.ToString("yyyyMMdd");
 
                     while (pause)
                         Thread.Sleep(500);

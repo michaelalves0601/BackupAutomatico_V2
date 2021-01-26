@@ -1154,7 +1154,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlServico2.Controls.Add(this.label13);
             this.pnlServico2.Controls.Add(this.label12);
             this.pnlServico2.Controls.Add(this.panel7);
-            this.pnlServico2.Location = new System.Drawing.Point(110, 315);
+            this.pnlServico2.Location = new System.Drawing.Point(110, 314);
             this.pnlServico2.Name = "pnlServico2";
             this.pnlServico2.Size = new System.Drawing.Size(270, 142);
             this.pnlServico2.TabIndex = 19;
@@ -1445,16 +1445,15 @@ namespace BackupNuvemSBuild_Configuration
             // 
             // lblPercentBackup
             // 
-            this.lblPercentBackup.AutoSize = true;
             this.lblPercentBackup.BackColor = System.Drawing.Color.Transparent;
             this.lblPercentBackup.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPercentBackup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
-            this.lblPercentBackup.Location = new System.Drawing.Point(266, 177);
+            this.lblPercentBackup.Location = new System.Drawing.Point(259, 177);
             this.lblPercentBackup.Name = "lblPercentBackup";
             this.lblPercentBackup.Size = new System.Drawing.Size(101, 53);
             this.lblPercentBackup.TabIndex = 26;
             this.lblPercentBackup.Text = "100";
-            this.lblPercentBackup.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblPercentBackup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPercentBackupEngUnit
             // 
@@ -1509,16 +1508,14 @@ namespace BackupNuvemSBuild_Configuration
             // 
             // lblPastaAtual
             // 
-            this.lblPastaAtual.AutoSize = true;
             this.lblPastaAtual.BackColor = System.Drawing.Color.Transparent;
-            this.lblPastaAtual.Font = new System.Drawing.Font("Arial", 9F);
+            this.lblPastaAtual.Font = new System.Drawing.Font("Arial", 7F);
             this.lblPastaAtual.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPastaAtual.Location = new System.Drawing.Point(183, 420);
+            this.lblPastaAtual.Location = new System.Drawing.Point(174, 415);
             this.lblPastaAtual.Name = "lblPastaAtual";
-            this.lblPastaAtual.Size = new System.Drawing.Size(292, 15);
+            this.lblPastaAtual.Size = new System.Drawing.Size(292, 38);
             this.lblPastaAtual.TabIndex = 31;
             this.lblPastaAtual.Text = "G:\\Meu Drive\\ENGENHARIA\\Em Andamento\\P0012...";
-            this.lblPastaAtual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblPastaAtual.Visible = false;
             // 
             // lblAbortBackupTitulo
@@ -1795,7 +1792,6 @@ namespace BackupNuvemSBuild_Configuration
             this.ClientSize = new System.Drawing.Size(510, 456);
             this.Controls.Add(this.pnlServico2);
             this.Controls.Add(this.pnlDiretorios2);
-            this.Controls.Add(this.pnlPauseAbortBackup);
             this.Controls.Add(this.pnlEmail2);
             this.Controls.Add(this.pnlAgendamento2);
             this.Controls.Add(this.lblLastBackup);
@@ -1817,6 +1813,7 @@ namespace BackupNuvemSBuild_Configuration
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pcbPastaAtualIcon);
             this.Controls.Add(this.pgbBackup);
+            this.Controls.Add(this.pnlPauseAbortBackup);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
