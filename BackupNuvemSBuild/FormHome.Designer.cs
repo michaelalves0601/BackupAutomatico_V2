@@ -505,6 +505,7 @@ namespace BackupNuvemSBuild_Configuration
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(221, 170);
             this.panel8.TabIndex = 10;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // btn_offEspelho
             // 
@@ -609,6 +610,7 @@ namespace BackupNuvemSBuild_Configuration
             this.txbPastaEspelho.ReadOnly = true;
             this.txbPastaEspelho.Size = new System.Drawing.Size(168, 21);
             this.txbPastaEspelho.TabIndex = 13;
+            this.txbPastaEspelho.TextChanged += new System.EventHandler(this.txbPastaEspelho_TextChanged);
             // 
             // btn_searchDestino
             // 
