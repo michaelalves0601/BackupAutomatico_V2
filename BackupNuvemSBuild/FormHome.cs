@@ -1142,13 +1142,13 @@ namespace BackupNuvemSBuild_Configuration
                                         ex.Message);
             }
 
-            isAlive = false;
             return mensagemResposta;
 
         }
         private void AssyncTCPClient(string messageEnvio)
         {
             logTCPClient.LogInfo("isAlive = " + isAlive.ToString());
+
             if (!isAlive)
             {
                 isAlive = true;
