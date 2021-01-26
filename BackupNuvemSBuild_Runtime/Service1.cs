@@ -375,7 +375,7 @@ namespace BackupNuvemSBuild_Runtime
                         DateTime dateTimeBackupDif = new DateTime(1970, 01, 01, hora, minuto, 0);
 
                         if (DateTime.Now.Hour == dateTimeBackupDif.Hour
-                                && DateTime.Now.Minute == dateTimeBackupDif.Minute) //TIRA ISSO DAQUI............
+                                && DateTime.Now.Minute == dateTimeBackupDif.Minute || true) //TIRA ISSO DAQUI............
                         {
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
@@ -942,8 +942,21 @@ namespace BackupNuvemSBuild_Runtime
 
 
             string diretorioFile = "";
+            FileInfo[] backupFullFiles = new FileInfo[0];
 
-            FileInfo[] backupFullFiles = backupFullPathInfo.GetFiles();
+            try
+            {
+                if (Directory.Exists(backupFullPathInfo.FullName))                
+                    backupFullFiles = backupFullPathInfo.GetFiles();
+            }
+            catch(Exception ex)
+            {
+                log.LogError("Falha ao ler os arquivos do Backup FULL da pasta: " + backupFullPathInfo,
+                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                        MethodBase.GetCurrentMethod().ToString(),
+                                            ex.Message);
+            }
+
 
             // copia arquivos para o pasta de destino
             foreach (FileInfo fileInfoAux in origemPathInfo.GetFiles())

@@ -1447,11 +1447,12 @@ namespace BackupNuvemSBuild_Configuration
             this.lblPercentBackup.BackColor = System.Drawing.Color.Transparent;
             this.lblPercentBackup.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPercentBackup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
-            this.lblPercentBackup.Location = new System.Drawing.Point(270, 177);
+            this.lblPercentBackup.Location = new System.Drawing.Point(266, 177);
             this.lblPercentBackup.Name = "lblPercentBackup";
-            this.lblPercentBackup.Size = new System.Drawing.Size(75, 53);
+            this.lblPercentBackup.Size = new System.Drawing.Size(101, 53);
             this.lblPercentBackup.TabIndex = 26;
-            this.lblPercentBackup.Text = "76";
+            this.lblPercentBackup.Text = "100";
+            this.lblPercentBackup.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblPercentBackupEngUnit
             // 
@@ -1459,7 +1460,7 @@ namespace BackupNuvemSBuild_Configuration
             this.lblPercentBackupEngUnit.BackColor = System.Drawing.Color.Transparent;
             this.lblPercentBackupEngUnit.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPercentBackupEngUnit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
-            this.lblPercentBackupEngUnit.Location = new System.Drawing.Point(331, 199);
+            this.lblPercentBackupEngUnit.Location = new System.Drawing.Point(351, 199);
             this.lblPercentBackupEngUnit.Name = "lblPercentBackupEngUnit";
             this.lblPercentBackupEngUnit.Size = new System.Drawing.Size(28, 23);
             this.lblPercentBackupEngUnit.TabIndex = 27;
