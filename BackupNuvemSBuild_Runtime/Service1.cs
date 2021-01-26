@@ -375,7 +375,7 @@ namespace BackupNuvemSBuild_Runtime
                         DateTime dateTimeBackupDif = new DateTime(1970, 01, 01, hora, minuto, 0);
 
                         if (DateTime.Now.Hour == dateTimeBackupDif.Hour
-                                && DateTime.Now.Minute == dateTimeBackupDif.Minute || true) //TIRA ISSO DAQUI............
+                                && DateTime.Now.Minute == dateTimeBackupDif.Minute) //TIRA ISSO DAQUI............
                         {
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
@@ -629,13 +629,8 @@ namespace BackupNuvemSBuild_Runtime
                                 while (pause)
                                     Thread.Sleep(500);
 
-                                if (abort)
-                                    return;
-
                                 CopiaArquivos(listFolders, newPathDiarioDoWork, bkpDiferencialDoWork);
 
-                                if (abort)
-                                    return;
 
                                 while (pause)
                                     Thread.Sleep(500);
@@ -871,7 +866,7 @@ namespace BackupNuvemSBuild_Runtime
                     DirectoryInfo destinoPathInfo = new DirectoryInfo(destinoPath);
                     DirectoryInfo backupFullPathInfo = new DirectoryInfo(nomeBackupFullinFullIndex);
 
-                    if ((!configuration.PastasRestritas.Contains(origemPathInfo.FullName) && bkpDiferencial) || !bkpDiferencial)
+                    if ((!configuration.PastasRestritas.Contains(origemPathInfo.FullName) && bkpDiferencial) ||  !bkpDiferencial)
                     {
                         CopyAll(origemPathInfo, destinoPathInfo, backupFullPathInfo, bkpDiferencial);
                     }
@@ -946,18 +941,16 @@ namespace BackupNuvemSBuild_Runtime
 
             try
             {
-                if (Directory.Exists(backupFullPathInfo.FullName))                
+                if (Directory.Exists(backupFullPathInfo.FullName))
                     backupFullFiles = backupFullPathInfo.GetFiles();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 log.LogError("Falha ao ler os arquivos do Backup FULL da pasta: " + backupFullPathInfo,
                                     MethodBase.GetCurrentMethod().DeclaringType.Name,
                                         MethodBase.GetCurrentMethod().ToString(),
                                             ex.Message);
             }
-
-
             // copia arquivos para o pasta de destino
             foreach (FileInfo fileInfoAux in origemPathInfo.GetFiles())
             {
@@ -987,8 +980,6 @@ namespace BackupNuvemSBuild_Runtime
                     tamanho += fileInfo.Length;                    
 
                     FileInfo fileInfoDestino = new FileInfo(diretorioFile);
-
-
 
                     if (File.Exists(diretorioFile))
                     {
@@ -1035,7 +1026,7 @@ namespace BackupNuvemSBuild_Runtime
 
             }
 
-
+            
 
             // copia as SubPastas para o Destino, usando Recursividade
             foreach (DirectoryInfo subPastaAux in origemPathInfo.GetDirectories())
@@ -1046,10 +1037,6 @@ namespace BackupNuvemSBuild_Runtime
 
                 try
                 {
-
-                    if (abort)
-                        return;
-
                     while (pause)
                         Thread.Sleep(500);
 
@@ -1067,8 +1054,6 @@ namespace BackupNuvemSBuild_Runtime
                     {
                         CopyAll(subPasta, proximaSubPasta, proximaSubPastaFull, bkpDiferencial);
                     }
-
-
                 }
                 catch (Exception ex)
                 {
@@ -1093,9 +1078,6 @@ namespace BackupNuvemSBuild_Runtime
 
             try
             {
-
-                if (abort)
-                    return;
 
                 while (pause)
                     Thread.Sleep(500);

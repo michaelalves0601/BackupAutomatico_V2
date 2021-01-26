@@ -46,6 +46,7 @@ namespace BackupNuvemSBuild_Configuration
         Configuration configuration = new Configuration();
         Email email = new Email();
         Log log = new Log("Configuration");
+        Log logTCPClient = new Log("TCPClient");
         Encrypt encrypt = new Encrypt("cenouras", "abacaxis");
 
         string pathConfiguration = @"Config\Configuration.ini";
@@ -879,6 +880,7 @@ namespace BackupNuvemSBuild_Configuration
         {
             btn_offEspelho.Visible = false;
             btn_onEspelho.Visible = true;
+            configuration.HabilitaPastaEspelho = true;
             txbPastaEspelho.Enabled = true;
             btn_searchEspelho.Enabled = true;
 
@@ -888,6 +890,7 @@ namespace BackupNuvemSBuild_Configuration
         {
             btn_offEspelho.Visible = true;
             btn_onEspelho.Visible = false;
+            configuration.HabilitaPastaEspelho = false;
             txbPastaEspelho.Enabled = false;
             btn_searchEspelho.Enabled = false;
 
@@ -1057,7 +1060,7 @@ namespace BackupNuvemSBuild_Configuration
 
         private void btnAbortBackup_Click(object sender, EventArgs e)
         {
-            //AssyncTCPClient("Comando; Abort");
+            //AssyncTCPClient("Comando; Aborts");
             ServiceController service = new ServiceController(serviceName, machineName);
             TimeSpan timeout = TimeSpan.FromMilliseconds(timeoutCommandService);
             service.Stop();
@@ -1145,6 +1148,7 @@ namespace BackupNuvemSBuild_Configuration
         }
         private void AssyncTCPClient(string messageEnvio)
         {
+            logTCPClient.LogInfo("isAlive = " + isAlive.ToString());
             if (!isAlive)
             {
                 isAlive = true;
@@ -1192,6 +1196,9 @@ namespace BackupNuvemSBuild_Configuration
 
             try
             {
+                logTCPClient.LogInfo("messageRespostaGlobal = " + messageRespostaGlobal);
+                logTCPClient.LogInfo("messageEnvioGlobal = " + messageEnvioGlobal);
+
                 string[] respostaArray = null;
 
                 if (messageEnvioGlobal == "Status")
@@ -1225,7 +1232,10 @@ namespace BackupNuvemSBuild_Configuration
             }
             catch (Exception ex)
             {
-
+                logTCPClient.LogError("Erro na comunicação TCP Client",
+                               MethodBase.GetCurrentMethod().Name,
+                                   MethodBase.GetCurrentMethod().ToString(),
+                                       ex.Message);
             }
 
             messageRespostaGlobal = String.Empty;
@@ -1484,7 +1494,7 @@ namespace BackupNuvemSBuild_Configuration
         {
             try
             {
-                ServiceController service = new ServiceController(serviceName, machineName);
+                ServiceController service = new ServiceController(serviceName);
 
                 TimeSpan timeout = TimeSpan.FromMilliseconds(timeoutCommandService);
 
@@ -1526,43 +1536,54 @@ namespace BackupNuvemSBuild_Configuration
         {
             if (!isAlive)
             {
-                isAlive = true;
-
-
-                //Inicia objeto assincrono UNICO para rodas apenas uma vez
-                bwService = new BackgroundWorker();
-
-                ////Declara auxiliares para o processo assincrono
-                //bwConfigSQL.ProgressChanged +=
-                //    new ProgressChangedEventHandler(bwConfigSQL_ProgressChanged);
-
-                ////habilita propriedade de acompanhar progressão do processo
-                //bwConfigSQL.WorkerReportsProgress = true;
-
-                bwService.RunWorkerCompleted +=
-                    new RunWorkerCompletedEventHandler(bwService_RunWorkerCompleted);
-
-                //inicia processo assincrono
-                bwService.DoWork += (Senderbw, args) =>
+                try
                 {
-                    try
-                    {
-                        ComandosService();
-                    }
-                    catch (Exception ex)
-                    {
-                        log.LogError("Erro durante o Background Worker.",
-                                MethodBase.GetCurrentMethod().DeclaringType.Name,
-                                    MethodBase.GetCurrentMethod().ToString(),
-                                        ex.Message);
-                    }
+                    isAlive = true;
 
-                };
-                //indica função acima como assincrona
-                bwService.RunWorkerAsync();
 
+                    //Inicia objeto assincrono UNICO para rodas apenas uma vez
+                    bwService = new BackgroundWorker();
+
+                    ////Declara auxiliares para o processo assincrono
+                    //bwConfigSQL.ProgressChanged +=
+                    //    new ProgressChangedEventHandler(bwConfigSQL_ProgressChanged);
+
+                    ////habilita propriedade de acompanhar progressão do processo
+                    //bwConfigSQL.WorkerReportsProgress = true;
+
+                    bwService.RunWorkerCompleted +=
+                        new RunWorkerCompletedEventHandler(bwService_RunWorkerCompleted);
+
+                    //inicia processo assincrono
+                    bwService.DoWork += (Senderbw, args) =>
+                    {
+                        try
+                        {
+                            ComandosService();
+                        }
+                        catch (Exception ex)
+                        {
+                            log.LogError("Erro durante o Background Worker.",
+                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                        MethodBase.GetCurrentMethod().ToString(),
+                                            ex.Message);
+                        }
+
+                    };
+                    //indica função acima como assincrona
+                    bwService.RunWorkerAsync();
+
+                }
+                catch (Exception e)
+                {
+                    log.LogError("Erro nos comandos de serviço",
+                        MethodBase.GetCurrentMethod().Name,
+                                        MethodBase.GetCurrentMethod().ToString(),
+                                            e.Message);
+                }
             }
         }
+
         private void bwService_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             bwService.Dispose();
@@ -1589,6 +1610,16 @@ namespace BackupNuvemSBuild_Configuration
         {
             comando = comandoSTART;
             AssyncCommandService();
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txbPastaEspelho_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     #endregion
