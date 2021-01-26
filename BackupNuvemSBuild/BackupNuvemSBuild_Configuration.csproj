@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>iconfinder_Blue_Backup_B_66548.ico</ApplicationIcon>
+    <ApplicationIcon>iconfinder_Drive-Backup_79136.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>Custom</TargetZone>
@@ -202,7 +202,6 @@
     <None Include="Resources\iconfinder_50_61514.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="iconfinder_Blue_Backup_B_66548.ico" />
     <None Include="Resources\loading_service1.gif" />
     <None Include="Resources\PlayAzul1.png" />
     <None Include="Resources\PLAYZAUL.png" />
@@ -383,6 +382,10 @@
       <Project>{463ed489-9572-4ff4-b03e-84f1366e1d79}</Project>
       <Name>BackupNuvemSBuild_Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconfinder_Drive-Backup_79136.ico" />
+    <None Include="Resources\iconfinder_Drive-Backup_79136.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
