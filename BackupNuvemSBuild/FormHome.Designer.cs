@@ -32,22 +32,38 @@ namespace BackupNuvemSBuild_Configuration
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHome));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ptbCheckAgendamento = new System.Windows.Forms.PictureBox();
+            this.ptbCheckService = new System.Windows.Forms.PictureBox();
+            this.ptbCheckDiretorio = new System.Windows.Forms.PictureBox();
+            this.ptbCheckEmail = new System.Windows.Forms.PictureBox();
             this.pnlServico = new System.Windows.Forms.Panel();
             this.pnlDiretorios = new System.Windows.Forms.Panel();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.pnlAgendamento = new System.Windows.Forms.Panel();
             this.pnlHome = new System.Windows.Forms.Panel();
+            this.btn_home = new System.Windows.Forms.Button();
+            this.btn_service = new System.Windows.Forms.Button();
+            this.btn_agendamento = new System.Windows.Forms.Button();
+            this.btn_email = new System.Windows.Forms.Button();
+            this.btn_pastas = new System.Windows.Forms.Button();
             this.pnlDiretorios2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btn_removerPasta = new System.Windows.Forms.Button();
+            this.btn_adicionarPasta = new System.Windows.Forms.Button();
             this.ltvExclusao = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label10 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btn_offEspelho = new System.Windows.Forms.Button();
+            this.btn_onEspelho = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_searchEspelho = new System.Windows.Forms.Button();
             this.Origem = new System.Windows.Forms.Label();
             this.txbDrive = new System.Windows.Forms.TextBox();
             this.txbPastaEspelho = new System.Windows.Forms.TextBox();
+            this.btn_searchDestino = new System.Windows.Forms.Button();
+            this.btn_searchOrigem = new System.Windows.Forms.Button();
             this.txbPastaDestino = new System.Windows.Forms.TextBox();
             this.pnlAgendamento2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -55,16 +71,25 @@ namespace BackupNuvemSBuild_Configuration
             this.txbLimiteBkFull = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.btnHabilitadoBkpfull = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.dtpBkFull = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txbdiasFull = new System.Windows.Forms.TextBox();
+            this.btnDesabilitadoBkpfull = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnOnBkpDif = new System.Windows.Forms.Button();
+            this.btnOffBkpDif = new System.Windows.Forms.Button();
             this.dtpBkDif = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlEmail2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnTesteEmail = new System.Windows.Forms.Button();
+            this.btnSeePassword = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtOrigem = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -73,14 +98,29 @@ namespace BackupNuvemSBuild_Configuration
             this.label5 = new System.Windows.Forms.Label();
             this.ltvEmail = new System.Windows.Forms.ListView();
             this.clhEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btn_addemail = new System.Windows.Forms.Button();
+            this.bnt_excluiremail = new System.Windows.Forms.Button();
             this.pnlServico2 = new System.Windows.Forms.Panel();
+            this.ptbLoading = new System.Windows.Forms.PictureBox();
             this.lblServicoNI = new System.Windows.Forms.Label();
+            this.btn_replayServico = new System.Windows.Forms.Button();
+            this.btn_stopServico = new System.Windows.Forms.Button();
+            this.btn_playServico = new System.Windows.Forms.Button();
+            this.ptbFuncionando = new System.Windows.Forms.PictureBox();
+            this.ptbDesligado = new System.Windows.Forms.PictureBox();
+            this.ptbAviso = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblVersao = new System.Windows.Forms.Label();
+            this.btnFechar = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.pcbLoading = new System.Windows.Forms.PictureBox();
+            this.btn_save = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pgbBackup = new CircularProgressBar.CircularProgressBar();
             this.lblPercentBackup = new System.Windows.Forms.Label();
@@ -94,88 +134,49 @@ namespace BackupNuvemSBuild_Configuration
             this.lblTempoEstimado = new System.Windows.Forms.Label();
             this.lblTempoEstimadoTitulo = new System.Windows.Forms.Label();
             this.pnlNewBackup = new System.Windows.Forms.Panel();
+            this.btnNewBackupEspelho = new System.Windows.Forms.Button();
+            this.btnNewBackupFull = new System.Windows.Forms.Button();
+            this.btnNewBackupDiferencial = new System.Windows.Forms.Button();
             this.pnlPauseAbortBackup = new System.Windows.Forms.Panel();
+            this.btnPauseBackup = new System.Windows.Forms.Button();
+            this.btnAbortBackup = new System.Windows.Forms.Button();
             this.lblLastBackupTitulo = new System.Windows.Forms.Label();
             this.lblLastBackupSize = new System.Windows.Forms.Label();
             this.lblLastBackupSizeTitulo = new System.Windows.Forms.Label();
             this.lblLastTipoBackup = new System.Windows.Forms.Label();
             this.lblLastBackup = new System.Windows.Forms.Label();
-            this.ptbLoading = new System.Windows.Forms.PictureBox();
-            this.btn_replayServico = new System.Windows.Forms.Button();
-            this.btn_stopServico = new System.Windows.Forms.Button();
-            this.btn_playServico = new System.Windows.Forms.Button();
-            this.ptbFuncionando = new System.Windows.Forms.PictureBox();
-            this.ptbDesligado = new System.Windows.Forms.PictureBox();
-            this.ptbAviso = new System.Windows.Forms.PictureBox();
-            this.btn_removerPasta = new System.Windows.Forms.Button();
-            this.btn_adicionarPasta = new System.Windows.Forms.Button();
-            this.btn_offEspelho = new System.Windows.Forms.Button();
-            this.btn_onEspelho = new System.Windows.Forms.Button();
-            this.btn_searchEspelho = new System.Windows.Forms.Button();
-            this.btn_searchDestino = new System.Windows.Forms.Button();
-            this.btn_searchOrigem = new System.Windows.Forms.Button();
-            this.btnSeePassword = new System.Windows.Forms.Button();
-            this.btn_addemail = new System.Windows.Forms.Button();
-            this.bnt_excluiremail = new System.Windows.Forms.Button();
-            this.btnHabilitadoBkpfull = new System.Windows.Forms.Button();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnDesabilitadoBkpfull = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnOnBkpDif = new System.Windows.Forms.Button();
-            this.btnOffBkpDif = new System.Windows.Forms.Button();
-            this.btnNewBackupEspelho = new System.Windows.Forms.Button();
-            this.btnNewBackupFull = new System.Windows.Forms.Button();
-            this.btnNewBackupDiferencial = new System.Windows.Forms.Button();
             this.pcbTempoEstimado = new System.Windows.Forms.PictureBox();
-            this.btnFechar = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.pcbLoading = new System.Windows.Forms.PictureBox();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ptbCheckAgendamento = new System.Windows.Forms.PictureBox();
-            this.ptbCheckService = new System.Windows.Forms.PictureBox();
-            this.ptbCheckDiretorio = new System.Windows.Forms.PictureBox();
-            this.ptbCheckEmail = new System.Windows.Forms.PictureBox();
-            this.btn_home = new System.Windows.Forms.Button();
-            this.btn_service = new System.Windows.Forms.Button();
-            this.btn_agendamento = new System.Windows.Forms.Button();
-            this.btn_email = new System.Windows.Forms.Button();
-            this.btn_pastas = new System.Windows.Forms.Button();
             this.pcbPastaAtualIcon = new System.Windows.Forms.PictureBox();
-            this.btnPauseBackup = new System.Windows.Forms.Button();
-            this.btnAbortBackup = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckAgendamento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckService)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckDiretorio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckEmail)).BeginInit();
             this.pnlDiretorios2.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.pnlAgendamento2.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlEmail2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.pnlServico2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.pnlNewBackup.SuspendLayout();
-            this.pnlPauseAbortBackup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLoading)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFuncionando)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDesligado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAviso)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbTempoEstimado)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLoading)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckAgendamento)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckService)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckDiretorio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckEmail)).BeginInit();
+            this.pnlNewBackup.SuspendLayout();
+            this.pnlPauseAbortBackup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTempoEstimado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPastaAtualIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,6 +201,58 @@ namespace BackupNuvemSBuild_Configuration
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(110, 396);
             this.panel1.TabIndex = 5;
+            // 
+            // ptbCheckAgendamento
+            // 
+            this.ptbCheckAgendamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ptbCheckAgendamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbCheckAgendamento.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
+            this.ptbCheckAgendamento.Location = new System.Drawing.Point(84, 94);
+            this.ptbCheckAgendamento.Name = "ptbCheckAgendamento";
+            this.ptbCheckAgendamento.Size = new System.Drawing.Size(20, 20);
+            this.ptbCheckAgendamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCheckAgendamento.TabIndex = 53;
+            this.ptbCheckAgendamento.TabStop = false;
+            this.ptbCheckAgendamento.Visible = false;
+            // 
+            // ptbCheckService
+            // 
+            this.ptbCheckService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ptbCheckService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbCheckService.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24__1_;
+            this.ptbCheckService.Location = new System.Drawing.Point(84, 331);
+            this.ptbCheckService.Name = "ptbCheckService";
+            this.ptbCheckService.Size = new System.Drawing.Size(20, 20);
+            this.ptbCheckService.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCheckService.TabIndex = 56;
+            this.ptbCheckService.TabStop = false;
+            // 
+            // ptbCheckDiretorio
+            // 
+            this.ptbCheckDiretorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ptbCheckDiretorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbCheckDiretorio.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
+            this.ptbCheckDiretorio.Location = new System.Drawing.Point(84, 250);
+            this.ptbCheckDiretorio.Name = "ptbCheckDiretorio";
+            this.ptbCheckDiretorio.Size = new System.Drawing.Size(20, 20);
+            this.ptbCheckDiretorio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCheckDiretorio.TabIndex = 55;
+            this.ptbCheckDiretorio.TabStop = false;
+            this.ptbCheckDiretorio.Visible = false;
+            // 
+            // ptbCheckEmail
+            // 
+            this.ptbCheckEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ptbCheckEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbCheckEmail.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
+            this.ptbCheckEmail.Location = new System.Drawing.Point(84, 172);
+            this.ptbCheckEmail.Margin = new System.Windows.Forms.Padding(0);
+            this.ptbCheckEmail.Name = "ptbCheckEmail";
+            this.ptbCheckEmail.Size = new System.Drawing.Size(20, 20);
+            this.ptbCheckEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCheckEmail.TabIndex = 54;
+            this.ptbCheckEmail.TabStop = false;
+            this.ptbCheckEmail.Visible = false;
             // 
             // pnlServico
             // 
@@ -245,6 +298,107 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlHome.Size = new System.Drawing.Size(2, 78);
             this.pnlHome.TabIndex = 9;
             // 
+            // btn_home
+            // 
+            this.btn_home.BackColor = System.Drawing.Color.Black;
+            this.btn_home.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.home_on;
+            this.btn_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_home.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btn_home.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Location = new System.Drawing.Point(0, 1);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(110, 80);
+            this.btn_home.TabIndex = 0;
+            this.btn_home.Text = "INÍCIO";
+            this.btn_home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_home.UseVisualStyleBackColor = false;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
+            // 
+            // btn_service
+            // 
+            this.btn_service.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_service.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.serviço;
+            this.btn_service.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_service.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btn_service.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btn_service.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btn_service.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_service.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_service.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_service.Location = new System.Drawing.Point(0, 316);
+            this.btn_service.Name = "btn_service";
+            this.btn_service.Size = new System.Drawing.Size(110, 80);
+            this.btn_service.TabIndex = 4;
+            this.btn_service.Text = "SERVIÇO";
+            this.btn_service.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_service.UseVisualStyleBackColor = false;
+            this.btn_service.Click += new System.EventHandler(this.btn_service_Click);
+            // 
+            // btn_agendamento
+            // 
+            this.btn_agendamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_agendamento.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.agenda;
+            this.btn_agendamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_agendamento.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btn_agendamento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btn_agendamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btn_agendamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agendamento.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agendamento.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_agendamento.Location = new System.Drawing.Point(0, 79);
+            this.btn_agendamento.Name = "btn_agendamento";
+            this.btn_agendamento.Size = new System.Drawing.Size(110, 80);
+            this.btn_agendamento.TabIndex = 1;
+            this.btn_agendamento.Text = "AGENDAMENTO";
+            this.btn_agendamento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_agendamento.UseVisualStyleBackColor = false;
+            this.btn_agendamento.Click += new System.EventHandler(this.btn_agendamento_Click);
+            // 
+            // btn_email
+            // 
+            this.btn_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_email.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.emial_dendieni1;
+            this.btn_email.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_email.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btn_email.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btn_email.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btn_email.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_email.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_email.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_email.Location = new System.Drawing.Point(0, 158);
+            this.btn_email.Name = "btn_email";
+            this.btn_email.Size = new System.Drawing.Size(110, 80);
+            this.btn_email.TabIndex = 2;
+            this.btn_email.Text = "EMAIL";
+            this.btn_email.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_email.UseVisualStyleBackColor = false;
+            this.btn_email.Click += new System.EventHandler(this.btn_email_Click);
+            // 
+            // btn_pastas
+            // 
+            this.btn_pastas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_pastas.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.FOLDER;
+            this.btn_pastas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_pastas.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btn_pastas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btn_pastas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btn_pastas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_pastas.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pastas.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_pastas.Location = new System.Drawing.Point(0, 237);
+            this.btn_pastas.Name = "btn_pastas";
+            this.btn_pastas.Size = new System.Drawing.Size(110, 80);
+            this.btn_pastas.TabIndex = 3;
+            this.btn_pastas.Text = "DIRETÓRIOS";
+            this.btn_pastas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_pastas.UseVisualStyleBackColor = false;
+            this.btn_pastas.Click += new System.EventHandler(this.btn_pastas_Click);
+            // 
             // pnlDiretorios2
             // 
             this.pnlDiretorios2.BackColor = System.Drawing.Color.Black;
@@ -267,6 +421,36 @@ namespace BackupNuvemSBuild_Configuration
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(221, 171);
             this.panel10.TabIndex = 12;
+            // 
+            // btn_removerPasta
+            // 
+            this.btn_removerPasta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_removerPasta.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4243317_24__2_;
+            this.btn_removerPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_removerPasta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_removerPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btn_removerPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_removerPasta.Location = new System.Drawing.Point(189, 145);
+            this.btn_removerPasta.Name = "btn_removerPasta";
+            this.btn_removerPasta.Size = new System.Drawing.Size(26, 25);
+            this.btn_removerPasta.TabIndex = 16;
+            this.btn_removerPasta.UseVisualStyleBackColor = false;
+            this.btn_removerPasta.Click += new System.EventHandler(this.btn_removerPasta_Click);
+            // 
+            // btn_adicionarPasta
+            // 
+            this.btn_adicionarPasta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_adicionarPasta.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4243316_24;
+            this.btn_adicionarPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_adicionarPasta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_adicionarPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btn_adicionarPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_adicionarPasta.Location = new System.Drawing.Point(184, 9);
+            this.btn_adicionarPasta.Name = "btn_adicionarPasta";
+            this.btn_adicionarPasta.Size = new System.Drawing.Size(27, 24);
+            this.btn_adicionarPasta.TabIndex = 15;
+            this.btn_adicionarPasta.UseVisualStyleBackColor = false;
+            this.btn_adicionarPasta.Click += new System.EventHandler(this.btn_adicionarPasta_Click);
             // 
             // ltvExclusao
             // 
@@ -324,6 +508,37 @@ namespace BackupNuvemSBuild_Configuration
             this.panel8.TabIndex = 10;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
+            // btn_offEspelho
+            // 
+            this.btn_offEspelho.BackColor = System.Drawing.Color.Transparent;
+            this.btn_offEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205230_32;
+            this.btn_offEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_offEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_offEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_offEspelho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_offEspelho.Location = new System.Drawing.Point(57, 104);
+            this.btn_offEspelho.Name = "btn_offEspelho";
+            this.btn_offEspelho.Size = new System.Drawing.Size(40, 30);
+            this.btn_offEspelho.TabIndex = 19;
+            this.btn_offEspelho.UseVisualStyleBackColor = false;
+            this.btn_offEspelho.Click += new System.EventHandler(this.btn_offEspelho_Click);
+            // 
+            // btn_onEspelho
+            // 
+            this.btn_onEspelho.BackColor = System.Drawing.Color.Transparent;
+            this.btn_onEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205232_32__1_;
+            this.btn_onEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_onEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_onEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_onEspelho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_onEspelho.Location = new System.Drawing.Point(57, 104);
+            this.btn_onEspelho.Name = "btn_onEspelho";
+            this.btn_onEspelho.Size = new System.Drawing.Size(40, 30);
+            this.btn_onEspelho.TabIndex = 18;
+            this.btn_onEspelho.UseVisualStyleBackColor = false;
+            this.btn_onEspelho.Visible = false;
+            this.btn_onEspelho.Click += new System.EventHandler(this.btn_onEspelho_Click_1);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -345,6 +560,21 @@ namespace BackupNuvemSBuild_Configuration
             this.label8.Size = new System.Drawing.Size(46, 14);
             this.label8.TabIndex = 16;
             this.label8.Text = "Destino:";
+            // 
+            // btn_searchEspelho
+            // 
+            this.btn_searchEspelho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_searchEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._314785_24;
+            this.btn_searchEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_searchEspelho.Enabled = false;
+            this.btn_searchEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_searchEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_searchEspelho.Location = new System.Drawing.Point(185, 137);
+            this.btn_searchEspelho.Name = "btn_searchEspelho";
+            this.btn_searchEspelho.Size = new System.Drawing.Size(27, 21);
+            this.btn_searchEspelho.TabIndex = 14;
+            this.btn_searchEspelho.UseVisualStyleBackColor = false;
+            this.btn_searchEspelho.Click += new System.EventHandler(this.btn_searchEspelho_Click);
             // 
             // Origem
             // 
@@ -382,6 +612,34 @@ namespace BackupNuvemSBuild_Configuration
             this.txbPastaEspelho.Size = new System.Drawing.Size(168, 21);
             this.txbPastaEspelho.TabIndex = 13;
             this.txbPastaEspelho.TextChanged += new System.EventHandler(this.txbPastaEspelho_TextChanged);
+            // 
+            // btn_searchDestino
+            // 
+            this.btn_searchDestino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_searchDestino.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._314785_241;
+            this.btn_searchDestino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_searchDestino.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_searchDestino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_searchDestino.Location = new System.Drawing.Point(185, 77);
+            this.btn_searchDestino.Name = "btn_searchDestino";
+            this.btn_searchDestino.Size = new System.Drawing.Size(27, 21);
+            this.btn_searchDestino.TabIndex = 14;
+            this.btn_searchDestino.UseVisualStyleBackColor = false;
+            this.btn_searchDestino.Click += new System.EventHandler(this.btn_searchDestino_Click);
+            // 
+            // btn_searchOrigem
+            // 
+            this.btn_searchOrigem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_searchOrigem.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._314785_24;
+            this.btn_searchOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_searchOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_searchOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_searchOrigem.Location = new System.Drawing.Point(185, 29);
+            this.btn_searchOrigem.Name = "btn_searchOrigem";
+            this.btn_searchOrigem.Size = new System.Drawing.Size(27, 21);
+            this.btn_searchOrigem.TabIndex = 13;
+            this.btn_searchOrigem.UseVisualStyleBackColor = false;
+            this.btn_searchOrigem.Click += new System.EventHandler(this.btn_searchOrigem_Click);
             // 
             // txbPastaDestino
             // 
@@ -475,6 +733,39 @@ namespace BackupNuvemSBuild_Configuration
             this.label14.TabIndex = 22;
             this.label14.Text = "A cada";
             // 
+            // btnHabilitadoBkpfull
+            // 
+            this.btnHabilitadoBkpfull.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btnHabilitadoBkpfull.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205232_32;
+            this.btnHabilitadoBkpfull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHabilitadoBkpfull.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnHabilitadoBkpfull.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnHabilitadoBkpfull.FlatAppearance.BorderSize = 0;
+            this.btnHabilitadoBkpfull.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnHabilitadoBkpfull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHabilitadoBkpfull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHabilitadoBkpfull.ForeColor = System.Drawing.Color.White;
+            this.btnHabilitadoBkpfull.Location = new System.Drawing.Point(158, 11);
+            this.btnHabilitadoBkpfull.Name = "btnHabilitadoBkpfull";
+            this.btnHabilitadoBkpfull.Size = new System.Drawing.Size(42, 36);
+            this.btnHabilitadoBkpfull.TabIndex = 20;
+            this.btnHabilitadoBkpfull.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHabilitadoBkpfull.UseVisualStyleBackColor = false;
+            this.btnHabilitadoBkpfull.Visible = false;
+            this.btnHabilitadoBkpfull.Click += new System.EventHandler(this.btnHabilitadoBkpfull_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24__2_;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox7.Location = new System.Drawing.Point(18, 94);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 19;
+            this.pictureBox7.TabStop = false;
+            // 
             // dtpBkFull
             // 
             this.dtpBkFull.CalendarForeColor = System.Drawing.Color.Gainsboro;
@@ -491,6 +782,18 @@ namespace BackupNuvemSBuild_Configuration
             this.dtpBkFull.Size = new System.Drawing.Size(137, 29);
             this.dtpBkFull.TabIndex = 15;
             this.dtpBkFull.ValueChanged += new System.EventHandler(this.dtpBkFull_ValueChanged);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(18, 95);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
             // 
             // label7
             // 
@@ -528,6 +831,26 @@ namespace BackupNuvemSBuild_Configuration
             this.txbdiasFull.TabIndex = 16;
             this.txbdiasFull.TextChanged += new System.EventHandler(this.txbdiasFull_TextChanged);
             // 
+            // btnDesabilitadoBkpfull
+            // 
+            this.btnDesabilitadoBkpfull.BackColor = System.Drawing.Color.Transparent;
+            this.btnDesabilitadoBkpfull.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.Off1;
+            this.btnDesabilitadoBkpfull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDesabilitadoBkpfull.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnDesabilitadoBkpfull.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDesabilitadoBkpfull.FlatAppearance.BorderSize = 0;
+            this.btnDesabilitadoBkpfull.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnDesabilitadoBkpfull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDesabilitadoBkpfull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesabilitadoBkpfull.ForeColor = System.Drawing.Color.White;
+            this.btnDesabilitadoBkpfull.Location = new System.Drawing.Point(158, 11);
+            this.btnDesabilitadoBkpfull.Name = "btnDesabilitadoBkpfull";
+            this.btnDesabilitadoBkpfull.Size = new System.Drawing.Size(42, 36);
+            this.btnDesabilitadoBkpfull.TabIndex = 21;
+            this.btnDesabilitadoBkpfull.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDesabilitadoBkpfull.UseVisualStyleBackColor = false;
+            this.btnDesabilitadoBkpfull.Click += new System.EventHandler(this.btnDesabilitadoBkpfull_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
@@ -541,6 +864,71 @@ namespace BackupNuvemSBuild_Configuration
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(227, 119);
             this.panel2.TabIndex = 16;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24__2_;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox6.Location = new System.Drawing.Point(25, 53);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 18;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 53);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnOnBkpDif
+            // 
+            this.btnOnBkpDif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btnOnBkpDif.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205232_32;
+            this.btnOnBkpDif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOnBkpDif.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnOnBkpDif.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnOnBkpDif.FlatAppearance.BorderSize = 0;
+            this.btnOnBkpDif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnOnBkpDif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOnBkpDif.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOnBkpDif.ForeColor = System.Drawing.Color.White;
+            this.btnOnBkpDif.Location = new System.Drawing.Point(161, 3);
+            this.btnOnBkpDif.Name = "btnOnBkpDif";
+            this.btnOnBkpDif.Size = new System.Drawing.Size(42, 36);
+            this.btnOnBkpDif.TabIndex = 16;
+            this.btnOnBkpDif.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnOnBkpDif.UseVisualStyleBackColor = false;
+            this.btnOnBkpDif.Visible = false;
+            this.btnOnBkpDif.Click += new System.EventHandler(this.btnOnBkpDif_Click);
+            // 
+            // btnOffBkpDif
+            // 
+            this.btnOffBkpDif.BackColor = System.Drawing.Color.Transparent;
+            this.btnOffBkpDif.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.Off1;
+            this.btnOffBkpDif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOffBkpDif.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnOffBkpDif.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnOffBkpDif.FlatAppearance.BorderSize = 0;
+            this.btnOffBkpDif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnOffBkpDif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOffBkpDif.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOffBkpDif.ForeColor = System.Drawing.Color.White;
+            this.btnOffBkpDif.Location = new System.Drawing.Point(161, 3);
+            this.btnOffBkpDif.Name = "btnOffBkpDif";
+            this.btnOffBkpDif.Size = new System.Drawing.Size(42, 36);
+            this.btnOffBkpDif.TabIndex = 14;
+            this.btnOffBkpDif.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnOffBkpDif.UseVisualStyleBackColor = false;
+            this.btnOffBkpDif.Click += new System.EventHandler(this.btnOffBkpDif_Click);
             // 
             // dtpBkDif
             // 
@@ -607,6 +995,19 @@ namespace BackupNuvemSBuild_Configuration
             this.btnTesteEmail.Text = "Testar";
             this.btnTesteEmail.UseVisualStyleBackColor = false;
             this.btnTesteEmail.Click += new System.EventHandler(this.btnTesteEmail_Click);
+            // 
+            // btnSeePassword
+            // 
+            this.btnSeePassword.BackColor = System.Drawing.Color.Transparent;
+            this.btnSeePassword.FlatAppearance.BorderSize = 0;
+            this.btnSeePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeePassword.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.fechaOlho;
+            this.btnSeePassword.Location = new System.Drawing.Point(193, 79);
+            this.btnSeePassword.Name = "btnSeePassword";
+            this.btnSeePassword.Size = new System.Drawing.Size(25, 21);
+            this.btnSeePassword.TabIndex = 9;
+            this.btnSeePassword.UseVisualStyleBackColor = false;
+            this.btnSeePassword.Click += new System.EventHandler(this.btnSeePassword_Click);
             // 
             // label4
             // 
@@ -704,6 +1105,41 @@ namespace BackupNuvemSBuild_Configuration
             this.clhEmail.Text = "Selecione o email desejado:";
             this.clhEmail.Width = 197;
             // 
+            // btn_addemail
+            // 
+            this.btn_addemail.BackColor = System.Drawing.Color.Transparent;
+            this.btn_addemail.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2124311_24;
+            this.btn_addemail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_addemail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_addemail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btn_addemail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_addemail.ForeColor = System.Drawing.Color.Black;
+            this.btn_addemail.Location = new System.Drawing.Point(106, 145);
+            this.btn_addemail.Name = "btn_addemail";
+            this.btn_addemail.Size = new System.Drawing.Size(55, 32);
+            this.btn_addemail.TabIndex = 3;
+            this.btn_addemail.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btn_addemail, "Cadastrar email destinatário");
+            this.btn_addemail.UseVisualStyleBackColor = false;
+            this.btn_addemail.Click += new System.EventHandler(this.btn_addemail_Click);
+            // 
+            // bnt_excluiremail
+            // 
+            this.bnt_excluiremail.BackColor = System.Drawing.Color.Transparent;
+            this.bnt_excluiremail.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2124300_24;
+            this.bnt_excluiremail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bnt_excluiremail.Enabled = false;
+            this.bnt_excluiremail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.bnt_excluiremail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.bnt_excluiremail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_excluiremail.Location = new System.Drawing.Point(172, 145);
+            this.bnt_excluiremail.Name = "bnt_excluiremail";
+            this.bnt_excluiremail.Size = new System.Drawing.Size(55, 33);
+            this.bnt_excluiremail.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.bnt_excluiremail, "Remover email destinatário");
+            this.bnt_excluiremail.UseVisualStyleBackColor = false;
+            this.bnt_excluiremail.Click += new System.EventHandler(this.bnt_excluiremail_Click);
+            // 
             // pnlServico2
             // 
             this.pnlServico2.BackColor = System.Drawing.Color.Black;
@@ -725,6 +1161,18 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlServico2.TabIndex = 19;
             this.pnlServico2.Visible = false;
             // 
+            // ptbLoading
+            // 
+            this.ptbLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbLoading.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.loading_service;
+            this.ptbLoading.Location = new System.Drawing.Point(190, 89);
+            this.ptbLoading.Name = "ptbLoading";
+            this.ptbLoading.Size = new System.Drawing.Size(43, 36);
+            this.ptbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbLoading.TabIndex = 28;
+            this.ptbLoading.TabStop = false;
+            this.ptbLoading.Visible = false;
+            // 
             // lblServicoNI
             // 
             this.lblServicoNI.AutoSize = true;
@@ -736,6 +1184,87 @@ namespace BackupNuvemSBuild_Configuration
             this.lblServicoNI.TabIndex = 27;
             this.lblServicoNI.Text = "Serviço não instalado";
             this.lblServicoNI.Visible = false;
+            // 
+            // btn_replayServico
+            // 
+            this.btn_replayServico.BackColor = System.Drawing.Color.Black;
+            this.btn_replayServico.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.restart;
+            this.btn_replayServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_replayServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_replayServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_replayServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_replayServico.Location = new System.Drawing.Point(186, 17);
+            this.btn_replayServico.Name = "btn_replayServico";
+            this.btn_replayServico.Size = new System.Drawing.Size(47, 32);
+            this.btn_replayServico.TabIndex = 26;
+            this.btn_replayServico.UseVisualStyleBackColor = false;
+            this.btn_replayServico.Click += new System.EventHandler(this.btn_replayServico_Click);
+            // 
+            // btn_stopServico
+            // 
+            this.btn_stopServico.BackColor = System.Drawing.Color.Black;
+            this.btn_stopServico.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._6065134_24;
+            this.btn_stopServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_stopServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_stopServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_stopServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_stopServico.Location = new System.Drawing.Point(43, 17);
+            this.btn_stopServico.Name = "btn_stopServico";
+            this.btn_stopServico.Size = new System.Drawing.Size(47, 32);
+            this.btn_stopServico.TabIndex = 25;
+            this.btn_stopServico.UseVisualStyleBackColor = false;
+            this.btn_stopServico.Click += new System.EventHandler(this.btn_stopServico_Click);
+            // 
+            // btn_playServico
+            // 
+            this.btn_playServico.BackColor = System.Drawing.Color.Black;
+            this.btn_playServico.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209257_24;
+            this.btn_playServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_playServico.Enabled = false;
+            this.btn_playServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_playServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_playServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_playServico.Location = new System.Drawing.Point(117, 17);
+            this.btn_playServico.Name = "btn_playServico";
+            this.btn_playServico.Size = new System.Drawing.Size(47, 32);
+            this.btn_playServico.TabIndex = 22;
+            this.btn_playServico.UseVisualStyleBackColor = false;
+            this.btn_playServico.Click += new System.EventHandler(this.btn_playServico_Click);
+            // 
+            // ptbFuncionando
+            // 
+            this.ptbFuncionando.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24__1_;
+            this.ptbFuncionando.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ptbFuncionando.Location = new System.Drawing.Point(190, 89);
+            this.ptbFuncionando.Name = "ptbFuncionando";
+            this.ptbFuncionando.Size = new System.Drawing.Size(40, 32);
+            this.ptbFuncionando.TabIndex = 20;
+            this.ptbFuncionando.TabStop = false;
+            this.toolTip1.SetToolTip(this.ptbFuncionando, "O  serviço não está instalado");
+            // 
+            // ptbDesligado
+            // 
+            this.ptbDesligado.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24;
+            this.ptbDesligado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ptbDesligado.Location = new System.Drawing.Point(190, 89);
+            this.ptbDesligado.Name = "ptbDesligado";
+            this.ptbDesligado.Size = new System.Drawing.Size(40, 32);
+            this.ptbDesligado.TabIndex = 19;
+            this.ptbDesligado.TabStop = false;
+            this.toolTip1.SetToolTip(this.ptbDesligado, "O  serviço não está instalado");
+            this.ptbDesligado.Visible = false;
+            // 
+            // ptbAviso
+            // 
+            this.ptbAviso.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4075935_32;
+            this.ptbAviso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbAviso.Location = new System.Drawing.Point(190, 89);
+            this.ptbAviso.Name = "ptbAviso";
+            this.ptbAviso.Size = new System.Drawing.Size(40, 32);
+            this.ptbAviso.TabIndex = 18;
+            this.ptbAviso.TabStop = false;
+            this.toolTip1.SetToolTip(this.ptbAviso, "O  serviço não está instalado");
+            this.ptbAviso.Visible = false;
             // 
             // label13
             // 
@@ -779,6 +1308,7 @@ namespace BackupNuvemSBuild_Configuration
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.lblVersao);
             this.panel3.Controls.Add(this.btnFechar);
             this.panel3.Controls.Add(this.btnMinimizar);
             this.panel3.Controls.Add(this.pcbLoading);
@@ -793,6 +1323,78 @@ namespace BackupNuvemSBuild_Configuration
             this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             // 
+            // lblVersao
+            // 
+            this.lblVersao.AutoSize = true;
+            this.lblVersao.ForeColor = System.Drawing.Color.Gray;
+            this.lblVersao.Location = new System.Drawing.Point(60, 42);
+            this.lblVersao.Name = "lblVersao";
+            this.lblVersao.Size = new System.Drawing.Size(40, 13);
+            this.lblVersao.TabIndex = 27;
+            this.lblVersao.Text = "v#.#.#";
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.Fechar3;
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.ForeColor = System.Drawing.Color.White;
+            this.btnFechar.Location = new System.Drawing.Point(462, 0);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(47, 22);
+            this.btnFechar.TabIndex = 11;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            this.btnFechar.MouseEnter += new System.EventHandler(this.btnFechar_Enter);
+            this.btnFechar.MouseLeave += new System.EventHandler(this.btnFechar_Leave);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._1303882_64;
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimizar.ForeColor = System.Drawing.Color.White;
+            this.btnMinimizar.Location = new System.Drawing.Point(415, 0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(47, 22);
+            this.btnMinimizar.TabIndex = 12;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Text = "_";
+            this.btnMinimizar.UseVisualStyleBackColor = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // pcbLoading
+            // 
+            this.pcbLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pcbLoading.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.loading;
+            this.pcbLoading.Location = new System.Drawing.Point(428, 28);
+            this.pcbLoading.Name = "pcbLoading";
+            this.pcbLoading.Size = new System.Drawing.Size(47, 32);
+            this.pcbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbLoading.TabIndex = 26;
+            this.pcbLoading.TabStop = false;
+            // 
+            // btn_save
+            // 
+            this.btn_save.BackColor = System.Drawing.Color.Black;
+            this.btn_save.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.savecinza;
+            this.btn_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_save.Enabled = false;
+            this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save.Location = new System.Drawing.Point(100, 5);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(47, 32);
+            this.btn_save.TabIndex = 25;
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -804,6 +1406,16 @@ namespace BackupNuvemSBuild_Configuration
             this.label2.Size = new System.Drawing.Size(114, 26);
             this.label2.TabIndex = 10;
             this.label2.Text = "S. Backup";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.LogoBlack;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(93, 52);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // toolTip1
             // 
@@ -981,6 +1593,66 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlNewBackup.Size = new System.Drawing.Size(355, 112);
             this.pnlNewBackup.TabIndex = 11;
             // 
+            // btnNewBackupEspelho
+            // 
+            this.btnNewBackupEspelho.BackColor = System.Drawing.Color.Transparent;
+            this.btnNewBackupEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.SyncEspelho3;
+            this.btnNewBackupEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNewBackupEspelho.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnNewBackupEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnNewBackupEspelho.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnNewBackupEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewBackupEspelho.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewBackupEspelho.ForeColor = System.Drawing.Color.Silver;
+            this.btnNewBackupEspelho.Location = new System.Drawing.Point(231, 12);
+            this.btnNewBackupEspelho.Name = "btnNewBackupEspelho";
+            this.btnNewBackupEspelho.Size = new System.Drawing.Size(110, 90);
+            this.btnNewBackupEspelho.TabIndex = 16;
+            this.btnNewBackupEspelho.Text = "SYNC ESPELHO";
+            this.btnNewBackupEspelho.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNewBackupEspelho.UseVisualStyleBackColor = false;
+            this.btnNewBackupEspelho.Click += new System.EventHandler(this.btnNewBackupEspelho_Click);
+            // 
+            // btnNewBackupFull
+            // 
+            this.btnNewBackupFull.BackColor = System.Drawing.Color.Transparent;
+            this.btnNewBackupFull.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.BkpFull1;
+            this.btnNewBackupFull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNewBackupFull.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnNewBackupFull.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnNewBackupFull.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnNewBackupFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewBackupFull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewBackupFull.ForeColor = System.Drawing.Color.Silver;
+            this.btnNewBackupFull.Location = new System.Drawing.Point(121, 12);
+            this.btnNewBackupFull.Name = "btnNewBackupFull";
+            this.btnNewBackupFull.Size = new System.Drawing.Size(110, 90);
+            this.btnNewBackupFull.TabIndex = 15;
+            this.btnNewBackupFull.Text = "FULL";
+            this.btnNewBackupFull.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNewBackupFull.UseVisualStyleBackColor = false;
+            this.btnNewBackupFull.Click += new System.EventHandler(this.btnNewBackupFull_Click);
+            // 
+            // btnNewBackupDiferencial
+            // 
+            this.btnNewBackupDiferencial.BackColor = System.Drawing.Color.Transparent;
+            this.btnNewBackupDiferencial.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.BkpDiferencial2;
+            this.btnNewBackupDiferencial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnNewBackupDiferencial.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnNewBackupDiferencial.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnNewBackupDiferencial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.btnNewBackupDiferencial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewBackupDiferencial.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewBackupDiferencial.ForeColor = System.Drawing.Color.Silver;
+            this.btnNewBackupDiferencial.Location = new System.Drawing.Point(10, 12);
+            this.btnNewBackupDiferencial.Name = "btnNewBackupDiferencial";
+            this.btnNewBackupDiferencial.Size = new System.Drawing.Size(110, 90);
+            this.btnNewBackupDiferencial.TabIndex = 14;
+            this.btnNewBackupDiferencial.Text = "DIFERENCIAL";
+            this.btnNewBackupDiferencial.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNewBackupDiferencial.UseVisualStyleBackColor = false;
+            this.btnNewBackupDiferencial.Click += new System.EventHandler(this.btnNewBackupDiferencial_Click);
+            // 
             // pnlPauseAbortBackup
             // 
             this.pnlPauseAbortBackup.BackColor = System.Drawing.Color.Transparent;
@@ -993,6 +1665,44 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlPauseAbortBackup.Size = new System.Drawing.Size(213, 87);
             this.pnlPauseAbortBackup.TabIndex = 45;
             this.pnlPauseAbortBackup.Visible = false;
+            // 
+            // btnPauseBackup
+            // 
+            this.btnPauseBackup.BackColor = System.Drawing.Color.Transparent;
+            this.btnPauseBackup.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.PauseBackup;
+            this.btnPauseBackup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPauseBackup.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnPauseBackup.FlatAppearance.BorderSize = 0;
+            this.btnPauseBackup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btnPauseBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPauseBackup.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPauseBackup.ForeColor = System.Drawing.Color.Gray;
+            this.btnPauseBackup.Location = new System.Drawing.Point(7, 5);
+            this.btnPauseBackup.Name = "btnPauseBackup";
+            this.btnPauseBackup.Size = new System.Drawing.Size(61, 62);
+            this.btnPauseBackup.TabIndex = 34;
+            this.btnPauseBackup.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPauseBackup.UseVisualStyleBackColor = false;
+            this.btnPauseBackup.Click += new System.EventHandler(this.btnPauseBackup_Click_1);
+            // 
+            // btnAbortBackup
+            // 
+            this.btnAbortBackup.BackColor = System.Drawing.Color.Transparent;
+            this.btnAbortBackup.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._646197_48__2_;
+            this.btnAbortBackup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAbortBackup.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnAbortBackup.FlatAppearance.BorderSize = 0;
+            this.btnAbortBackup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.btnAbortBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbortBackup.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbortBackup.ForeColor = System.Drawing.Color.Gray;
+            this.btnAbortBackup.Location = new System.Drawing.Point(146, 5);
+            this.btnAbortBackup.Name = "btnAbortBackup";
+            this.btnAbortBackup.Size = new System.Drawing.Size(61, 62);
+            this.btnAbortBackup.TabIndex = 32;
+            this.btnAbortBackup.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAbortBackup.UseVisualStyleBackColor = false;
+            this.btnAbortBackup.Click += new System.EventHandler(this.btnAbortBackup_Click);
             // 
             // lblLastBackupTitulo
             // 
@@ -1059,441 +1769,6 @@ namespace BackupNuvemSBuild_Configuration
             this.lblLastBackup.Text = "26/12/2020";
             this.lblLastBackup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ptbLoading
-            // 
-            this.ptbLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbLoading.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.loading_service;
-            this.ptbLoading.Location = new System.Drawing.Point(190, 89);
-            this.ptbLoading.Name = "ptbLoading";
-            this.ptbLoading.Size = new System.Drawing.Size(43, 36);
-            this.ptbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbLoading.TabIndex = 28;
-            this.ptbLoading.TabStop = false;
-            this.ptbLoading.Visible = false;
-            // 
-            // btn_replayServico
-            // 
-            this.btn_replayServico.BackColor = System.Drawing.Color.Black;
-            this.btn_replayServico.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.restart;
-            this.btn_replayServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_replayServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_replayServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_replayServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_replayServico.Location = new System.Drawing.Point(186, 17);
-            this.btn_replayServico.Name = "btn_replayServico";
-            this.btn_replayServico.Size = new System.Drawing.Size(47, 32);
-            this.btn_replayServico.TabIndex = 26;
-            this.btn_replayServico.UseVisualStyleBackColor = false;
-            this.btn_replayServico.Click += new System.EventHandler(this.btn_replayServico_Click);
-            // 
-            // btn_stopServico
-            // 
-            this.btn_stopServico.BackColor = System.Drawing.Color.Black;
-            this.btn_stopServico.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._6065134_24;
-            this.btn_stopServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_stopServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_stopServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_stopServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_stopServico.Location = new System.Drawing.Point(43, 17);
-            this.btn_stopServico.Name = "btn_stopServico";
-            this.btn_stopServico.Size = new System.Drawing.Size(47, 32);
-            this.btn_stopServico.TabIndex = 25;
-            this.btn_stopServico.UseVisualStyleBackColor = false;
-            this.btn_stopServico.Click += new System.EventHandler(this.btn_stopServico_Click);
-            // 
-            // btn_playServico
-            // 
-            this.btn_playServico.BackColor = System.Drawing.Color.Black;
-            this.btn_playServico.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209257_24;
-            this.btn_playServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_playServico.Enabled = false;
-            this.btn_playServico.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_playServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_playServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_playServico.Location = new System.Drawing.Point(117, 17);
-            this.btn_playServico.Name = "btn_playServico";
-            this.btn_playServico.Size = new System.Drawing.Size(47, 32);
-            this.btn_playServico.TabIndex = 22;
-            this.btn_playServico.UseVisualStyleBackColor = false;
-            this.btn_playServico.Click += new System.EventHandler(this.btn_playServico_Click);
-            // 
-            // ptbFuncionando
-            // 
-            this.ptbFuncionando.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24__1_;
-            this.ptbFuncionando.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ptbFuncionando.Location = new System.Drawing.Point(190, 89);
-            this.ptbFuncionando.Name = "ptbFuncionando";
-            this.ptbFuncionando.Size = new System.Drawing.Size(40, 32);
-            this.ptbFuncionando.TabIndex = 20;
-            this.ptbFuncionando.TabStop = false;
-            this.toolTip1.SetToolTip(this.ptbFuncionando, "O  serviço não está instalado");
-            // 
-            // ptbDesligado
-            // 
-            this.ptbDesligado.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24;
-            this.ptbDesligado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ptbDesligado.Location = new System.Drawing.Point(190, 89);
-            this.ptbDesligado.Name = "ptbDesligado";
-            this.ptbDesligado.Size = new System.Drawing.Size(40, 32);
-            this.ptbDesligado.TabIndex = 19;
-            this.ptbDesligado.TabStop = false;
-            this.toolTip1.SetToolTip(this.ptbDesligado, "O  serviço não está instalado");
-            this.ptbDesligado.Visible = false;
-            // 
-            // ptbAviso
-            // 
-            this.ptbAviso.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4075935_32;
-            this.ptbAviso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbAviso.Location = new System.Drawing.Point(190, 89);
-            this.ptbAviso.Name = "ptbAviso";
-            this.ptbAviso.Size = new System.Drawing.Size(40, 32);
-            this.ptbAviso.TabIndex = 18;
-            this.ptbAviso.TabStop = false;
-            this.toolTip1.SetToolTip(this.ptbAviso, "O  serviço não está instalado");
-            this.ptbAviso.Visible = false;
-            // 
-            // btn_removerPasta
-            // 
-            this.btn_removerPasta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_removerPasta.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4243317_24__2_;
-            this.btn_removerPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_removerPasta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_removerPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btn_removerPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_removerPasta.Location = new System.Drawing.Point(189, 145);
-            this.btn_removerPasta.Name = "btn_removerPasta";
-            this.btn_removerPasta.Size = new System.Drawing.Size(26, 25);
-            this.btn_removerPasta.TabIndex = 16;
-            this.btn_removerPasta.UseVisualStyleBackColor = false;
-            this.btn_removerPasta.Click += new System.EventHandler(this.btn_removerPasta_Click);
-            // 
-            // btn_adicionarPasta
-            // 
-            this.btn_adicionarPasta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_adicionarPasta.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4243316_24;
-            this.btn_adicionarPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_adicionarPasta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_adicionarPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btn_adicionarPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adicionarPasta.Location = new System.Drawing.Point(184, 9);
-            this.btn_adicionarPasta.Name = "btn_adicionarPasta";
-            this.btn_adicionarPasta.Size = new System.Drawing.Size(27, 24);
-            this.btn_adicionarPasta.TabIndex = 15;
-            this.btn_adicionarPasta.UseVisualStyleBackColor = false;
-            this.btn_adicionarPasta.Click += new System.EventHandler(this.btn_adicionarPasta_Click);
-            // 
-            // btn_offEspelho
-            // 
-            this.btn_offEspelho.BackColor = System.Drawing.Color.Transparent;
-            this.btn_offEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205230_32;
-            this.btn_offEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_offEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_offEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_offEspelho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_offEspelho.Location = new System.Drawing.Point(57, 104);
-            this.btn_offEspelho.Name = "btn_offEspelho";
-            this.btn_offEspelho.Size = new System.Drawing.Size(40, 30);
-            this.btn_offEspelho.TabIndex = 19;
-            this.btn_offEspelho.UseVisualStyleBackColor = false;
-            this.btn_offEspelho.Click += new System.EventHandler(this.btn_offEspelho_Click);
-            // 
-            // btn_onEspelho
-            // 
-            this.btn_onEspelho.BackColor = System.Drawing.Color.Transparent;
-            this.btn_onEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205232_32__1_;
-            this.btn_onEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_onEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_onEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_onEspelho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_onEspelho.Location = new System.Drawing.Point(57, 104);
-            this.btn_onEspelho.Name = "btn_onEspelho";
-            this.btn_onEspelho.Size = new System.Drawing.Size(40, 30);
-            this.btn_onEspelho.TabIndex = 18;
-            this.btn_onEspelho.UseVisualStyleBackColor = false;
-            this.btn_onEspelho.Visible = false;
-            this.btn_onEspelho.Click += new System.EventHandler(this.btn_onEspelho_Click_1);
-            // 
-            // btn_searchEspelho
-            // 
-            this.btn_searchEspelho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_searchEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._314785_24;
-            this.btn_searchEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_searchEspelho.Enabled = false;
-            this.btn_searchEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_searchEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_searchEspelho.Location = new System.Drawing.Point(185, 137);
-            this.btn_searchEspelho.Name = "btn_searchEspelho";
-            this.btn_searchEspelho.Size = new System.Drawing.Size(27, 21);
-            this.btn_searchEspelho.TabIndex = 14;
-            this.btn_searchEspelho.UseVisualStyleBackColor = false;
-            this.btn_searchEspelho.Click += new System.EventHandler(this.btn_searchEspelho_Click);
-            // 
-            // btn_searchDestino
-            // 
-            this.btn_searchDestino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_searchDestino.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._314785_241;
-            this.btn_searchDestino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_searchDestino.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_searchDestino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_searchDestino.Location = new System.Drawing.Point(185, 77);
-            this.btn_searchDestino.Name = "btn_searchDestino";
-            this.btn_searchDestino.Size = new System.Drawing.Size(27, 21);
-            this.btn_searchDestino.TabIndex = 14;
-            this.btn_searchDestino.UseVisualStyleBackColor = false;
-            this.btn_searchDestino.Click += new System.EventHandler(this.btn_searchDestino_Click);
-            // 
-            // btn_searchOrigem
-            // 
-            this.btn_searchOrigem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_searchOrigem.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._314785_24;
-            this.btn_searchOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_searchOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_searchOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_searchOrigem.Location = new System.Drawing.Point(185, 29);
-            this.btn_searchOrigem.Name = "btn_searchOrigem";
-            this.btn_searchOrigem.Size = new System.Drawing.Size(27, 21);
-            this.btn_searchOrigem.TabIndex = 13;
-            this.btn_searchOrigem.UseVisualStyleBackColor = false;
-            this.btn_searchOrigem.Click += new System.EventHandler(this.btn_searchOrigem_Click);
-            // 
-            // btnSeePassword
-            // 
-            this.btnSeePassword.BackColor = System.Drawing.Color.Transparent;
-            this.btnSeePassword.FlatAppearance.BorderSize = 0;
-            this.btnSeePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeePassword.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.fechaOlho;
-            this.btnSeePassword.Location = new System.Drawing.Point(193, 79);
-            this.btnSeePassword.Name = "btnSeePassword";
-            this.btnSeePassword.Size = new System.Drawing.Size(25, 21);
-            this.btnSeePassword.TabIndex = 9;
-            this.btnSeePassword.UseVisualStyleBackColor = false;
-            this.btnSeePassword.Click += new System.EventHandler(this.btnSeePassword_Click);
-            // 
-            // btn_addemail
-            // 
-            this.btn_addemail.BackColor = System.Drawing.Color.Transparent;
-            this.btn_addemail.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2124311_24;
-            this.btn_addemail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_addemail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_addemail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btn_addemail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_addemail.ForeColor = System.Drawing.Color.Black;
-            this.btn_addemail.Location = new System.Drawing.Point(106, 145);
-            this.btn_addemail.Name = "btn_addemail";
-            this.btn_addemail.Size = new System.Drawing.Size(55, 32);
-            this.btn_addemail.TabIndex = 3;
-            this.btn_addemail.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btn_addemail, "Cadastrar email destinatário");
-            this.btn_addemail.UseVisualStyleBackColor = false;
-            this.btn_addemail.Click += new System.EventHandler(this.btn_addemail_Click);
-            // 
-            // bnt_excluiremail
-            // 
-            this.bnt_excluiremail.BackColor = System.Drawing.Color.Transparent;
-            this.bnt_excluiremail.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2124300_24;
-            this.bnt_excluiremail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bnt_excluiremail.Enabled = false;
-            this.bnt_excluiremail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.bnt_excluiremail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.bnt_excluiremail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_excluiremail.Location = new System.Drawing.Point(172, 145);
-            this.bnt_excluiremail.Name = "bnt_excluiremail";
-            this.bnt_excluiremail.Size = new System.Drawing.Size(55, 33);
-            this.bnt_excluiremail.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.bnt_excluiremail, "Remover email destinatário");
-            this.bnt_excluiremail.UseVisualStyleBackColor = false;
-            this.bnt_excluiremail.Click += new System.EventHandler(this.bnt_excluiremail_Click);
-            // 
-            // btnHabilitadoBkpfull
-            // 
-            this.btnHabilitadoBkpfull.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btnHabilitadoBkpfull.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205232_32;
-            this.btnHabilitadoBkpfull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHabilitadoBkpfull.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnHabilitadoBkpfull.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnHabilitadoBkpfull.FlatAppearance.BorderSize = 0;
-            this.btnHabilitadoBkpfull.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnHabilitadoBkpfull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHabilitadoBkpfull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHabilitadoBkpfull.ForeColor = System.Drawing.Color.White;
-            this.btnHabilitadoBkpfull.Location = new System.Drawing.Point(158, 11);
-            this.btnHabilitadoBkpfull.Name = "btnHabilitadoBkpfull";
-            this.btnHabilitadoBkpfull.Size = new System.Drawing.Size(42, 36);
-            this.btnHabilitadoBkpfull.TabIndex = 20;
-            this.btnHabilitadoBkpfull.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnHabilitadoBkpfull.UseVisualStyleBackColor = false;
-            this.btnHabilitadoBkpfull.Visible = false;
-            this.btnHabilitadoBkpfull.Click += new System.EventHandler(this.btnHabilitadoBkpfull_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24__2_;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Location = new System.Drawing.Point(18, 94);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(37, 35);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 19;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 95);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(37, 35);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnDesabilitadoBkpfull
-            // 
-            this.btnDesabilitadoBkpfull.BackColor = System.Drawing.Color.Transparent;
-            this.btnDesabilitadoBkpfull.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.Off1;
-            this.btnDesabilitadoBkpfull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDesabilitadoBkpfull.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnDesabilitadoBkpfull.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDesabilitadoBkpfull.FlatAppearance.BorderSize = 0;
-            this.btnDesabilitadoBkpfull.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btnDesabilitadoBkpfull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDesabilitadoBkpfull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDesabilitadoBkpfull.ForeColor = System.Drawing.Color.White;
-            this.btnDesabilitadoBkpfull.Location = new System.Drawing.Point(158, 11);
-            this.btnDesabilitadoBkpfull.Name = "btnDesabilitadoBkpfull";
-            this.btnDesabilitadoBkpfull.Size = new System.Drawing.Size(42, 36);
-            this.btnDesabilitadoBkpfull.TabIndex = 21;
-            this.btnDesabilitadoBkpfull.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDesabilitadoBkpfull.UseVisualStyleBackColor = false;
-            this.btnDesabilitadoBkpfull.Click += new System.EventHandler(this.btnDesabilitadoBkpfull_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24__2_;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox6.Location = new System.Drawing.Point(25, 53);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(37, 35);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 18;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnOnBkpDif
-            // 
-            this.btnOnBkpDif.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btnOnBkpDif.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._2205232_32;
-            this.btnOnBkpDif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOnBkpDif.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnOnBkpDif.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnOnBkpDif.FlatAppearance.BorderSize = 0;
-            this.btnOnBkpDif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnOnBkpDif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOnBkpDif.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOnBkpDif.ForeColor = System.Drawing.Color.White;
-            this.btnOnBkpDif.Location = new System.Drawing.Point(161, 3);
-            this.btnOnBkpDif.Name = "btnOnBkpDif";
-            this.btnOnBkpDif.Size = new System.Drawing.Size(42, 36);
-            this.btnOnBkpDif.TabIndex = 16;
-            this.btnOnBkpDif.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnOnBkpDif.UseVisualStyleBackColor = false;
-            this.btnOnBkpDif.Visible = false;
-            this.btnOnBkpDif.Click += new System.EventHandler(this.btnOnBkpDif_Click);
-            // 
-            // btnOffBkpDif
-            // 
-            this.btnOffBkpDif.BackColor = System.Drawing.Color.Transparent;
-            this.btnOffBkpDif.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.Off1;
-            this.btnOffBkpDif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOffBkpDif.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnOffBkpDif.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnOffBkpDif.FlatAppearance.BorderSize = 0;
-            this.btnOffBkpDif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btnOffBkpDif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOffBkpDif.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOffBkpDif.ForeColor = System.Drawing.Color.White;
-            this.btnOffBkpDif.Location = new System.Drawing.Point(161, 3);
-            this.btnOffBkpDif.Name = "btnOffBkpDif";
-            this.btnOffBkpDif.Size = new System.Drawing.Size(42, 36);
-            this.btnOffBkpDif.TabIndex = 14;
-            this.btnOffBkpDif.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnOffBkpDif.UseVisualStyleBackColor = false;
-            this.btnOffBkpDif.Click += new System.EventHandler(this.btnOffBkpDif_Click);
-            // 
-            // btnNewBackupEspelho
-            // 
-            this.btnNewBackupEspelho.BackColor = System.Drawing.Color.Transparent;
-            this.btnNewBackupEspelho.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.SyncEspelho3;
-            this.btnNewBackupEspelho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnNewBackupEspelho.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnNewBackupEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnNewBackupEspelho.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btnNewBackupEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewBackupEspelho.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewBackupEspelho.ForeColor = System.Drawing.Color.Silver;
-            this.btnNewBackupEspelho.Location = new System.Drawing.Point(231, 12);
-            this.btnNewBackupEspelho.Name = "btnNewBackupEspelho";
-            this.btnNewBackupEspelho.Size = new System.Drawing.Size(110, 90);
-            this.btnNewBackupEspelho.TabIndex = 16;
-            this.btnNewBackupEspelho.Text = "SYNC ESPELHO";
-            this.btnNewBackupEspelho.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNewBackupEspelho.UseVisualStyleBackColor = false;
-            this.btnNewBackupEspelho.Click += new System.EventHandler(this.btnNewBackupEspelho_Click);
-            // 
-            // btnNewBackupFull
-            // 
-            this.btnNewBackupFull.BackColor = System.Drawing.Color.Transparent;
-            this.btnNewBackupFull.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.BkpFull1;
-            this.btnNewBackupFull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnNewBackupFull.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnNewBackupFull.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnNewBackupFull.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btnNewBackupFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewBackupFull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewBackupFull.ForeColor = System.Drawing.Color.Silver;
-            this.btnNewBackupFull.Location = new System.Drawing.Point(121, 12);
-            this.btnNewBackupFull.Name = "btnNewBackupFull";
-            this.btnNewBackupFull.Size = new System.Drawing.Size(110, 90);
-            this.btnNewBackupFull.TabIndex = 15;
-            this.btnNewBackupFull.Text = "FULL";
-            this.btnNewBackupFull.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNewBackupFull.UseVisualStyleBackColor = false;
-            this.btnNewBackupFull.Click += new System.EventHandler(this.btnNewBackupFull_Click);
-            // 
-            // btnNewBackupDiferencial
-            // 
-            this.btnNewBackupDiferencial.BackColor = System.Drawing.Color.Transparent;
-            this.btnNewBackupDiferencial.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.BkpDiferencial2;
-            this.btnNewBackupDiferencial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnNewBackupDiferencial.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnNewBackupDiferencial.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnNewBackupDiferencial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btnNewBackupDiferencial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewBackupDiferencial.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewBackupDiferencial.ForeColor = System.Drawing.Color.Silver;
-            this.btnNewBackupDiferencial.Location = new System.Drawing.Point(10, 12);
-            this.btnNewBackupDiferencial.Name = "btnNewBackupDiferencial";
-            this.btnNewBackupDiferencial.Size = new System.Drawing.Size(110, 90);
-            this.btnNewBackupDiferencial.TabIndex = 14;
-            this.btnNewBackupDiferencial.Text = "DIFERENCIAL";
-            this.btnNewBackupDiferencial.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNewBackupDiferencial.UseVisualStyleBackColor = false;
-            this.btnNewBackupDiferencial.Click += new System.EventHandler(this.btnNewBackupDiferencial_Click);
-            // 
             // pcbTempoEstimado
             // 
             this.pcbTempoEstimado.BackColor = System.Drawing.Color.Transparent;
@@ -1505,231 +1780,6 @@ namespace BackupNuvemSBuild_Configuration
             this.pcbTempoEstimado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbTempoEstimado.TabIndex = 38;
             this.pcbTempoEstimado.TabStop = false;
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
-            this.btnFechar.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.Fechar3;
-            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.ForeColor = System.Drawing.Color.White;
-            this.btnFechar.Location = new System.Drawing.Point(462, 0);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(47, 22);
-            this.btnFechar.TabIndex = 11;
-            this.btnFechar.TabStop = false;
-            this.btnFechar.UseVisualStyleBackColor = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
-            this.btnFechar.MouseEnter += new System.EventHandler(this.btnFechar_Enter);
-            this.btnFechar.MouseLeave += new System.EventHandler(this.btnFechar_Leave);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
-            this.btnMinimizar.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._1303882_64;
-            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimizar.ForeColor = System.Drawing.Color.White;
-            this.btnMinimizar.Location = new System.Drawing.Point(415, 0);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(47, 22);
-            this.btnMinimizar.TabIndex = 12;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Text = "_";
-            this.btnMinimizar.UseVisualStyleBackColor = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // pcbLoading
-            // 
-            this.pcbLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pcbLoading.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.loading;
-            this.pcbLoading.Location = new System.Drawing.Point(428, 28);
-            this.pcbLoading.Name = "pcbLoading";
-            this.pcbLoading.Size = new System.Drawing.Size(47, 32);
-            this.pcbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbLoading.TabIndex = 26;
-            this.pcbLoading.TabStop = false;
-            // 
-            // btn_save
-            // 
-            this.btn_save.BackColor = System.Drawing.Color.Black;
-            this.btn_save.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.savecinza;
-            this.btn_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_save.Enabled = false;
-            this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Location = new System.Drawing.Point(100, 5);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(47, 32);
-            this.btn_save.TabIndex = 25;
-            this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.LogoBlack;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(93, 52);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // ptbCheckAgendamento
-            // 
-            this.ptbCheckAgendamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ptbCheckAgendamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbCheckAgendamento.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
-            this.ptbCheckAgendamento.Location = new System.Drawing.Point(84, 94);
-            this.ptbCheckAgendamento.Name = "ptbCheckAgendamento";
-            this.ptbCheckAgendamento.Size = new System.Drawing.Size(20, 20);
-            this.ptbCheckAgendamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCheckAgendamento.TabIndex = 53;
-            this.ptbCheckAgendamento.TabStop = false;
-            this.ptbCheckAgendamento.Visible = false;
-            // 
-            // ptbCheckService
-            // 
-            this.ptbCheckService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ptbCheckService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbCheckService.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24__1_;
-            this.ptbCheckService.Location = new System.Drawing.Point(84, 331);
-            this.ptbCheckService.Name = "ptbCheckService";
-            this.ptbCheckService.Size = new System.Drawing.Size(20, 20);
-            this.ptbCheckService.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCheckService.TabIndex = 56;
-            this.ptbCheckService.TabStop = false;
-            // 
-            // ptbCheckDiretorio
-            // 
-            this.ptbCheckDiretorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ptbCheckDiretorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbCheckDiretorio.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
-            this.ptbCheckDiretorio.Location = new System.Drawing.Point(84, 250);
-            this.ptbCheckDiretorio.Name = "ptbCheckDiretorio";
-            this.ptbCheckDiretorio.Size = new System.Drawing.Size(20, 20);
-            this.ptbCheckDiretorio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCheckDiretorio.TabIndex = 55;
-            this.ptbCheckDiretorio.TabStop = false;
-            this.ptbCheckDiretorio.Visible = false;
-            // 
-            // ptbCheckEmail
-            // 
-            this.ptbCheckEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ptbCheckEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbCheckEmail.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
-            this.ptbCheckEmail.Location = new System.Drawing.Point(84, 172);
-            this.ptbCheckEmail.Margin = new System.Windows.Forms.Padding(0);
-            this.ptbCheckEmail.Name = "ptbCheckEmail";
-            this.ptbCheckEmail.Size = new System.Drawing.Size(20, 20);
-            this.ptbCheckEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCheckEmail.TabIndex = 54;
-            this.ptbCheckEmail.TabStop = false;
-            this.ptbCheckEmail.Visible = false;
-            // 
-            // btn_home
-            // 
-            this.btn_home.BackColor = System.Drawing.Color.Black;
-            this.btn_home.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.home_on;
-            this.btn_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_home.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btn_home.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btn_home.FlatAppearance.BorderSize = 0;
-            this.btn_home.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_home.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_home.ForeColor = System.Drawing.Color.White;
-            this.btn_home.Location = new System.Drawing.Point(0, 1);
-            this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(110, 80);
-            this.btn_home.TabIndex = 0;
-            this.btn_home.Text = "INÍCIO";
-            this.btn_home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_home.UseVisualStyleBackColor = false;
-            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
-            // 
-            // btn_service
-            // 
-            this.btn_service.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_service.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.serviço;
-            this.btn_service.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_service.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btn_service.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btn_service.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btn_service.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_service.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_service.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_service.Location = new System.Drawing.Point(0, 316);
-            this.btn_service.Name = "btn_service";
-            this.btn_service.Size = new System.Drawing.Size(110, 80);
-            this.btn_service.TabIndex = 4;
-            this.btn_service.Text = "SERVIÇO";
-            this.btn_service.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_service.UseVisualStyleBackColor = false;
-            this.btn_service.Click += new System.EventHandler(this.btn_service_Click);
-            // 
-            // btn_agendamento
-            // 
-            this.btn_agendamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_agendamento.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.agenda;
-            this.btn_agendamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_agendamento.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btn_agendamento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btn_agendamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btn_agendamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_agendamento.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agendamento.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_agendamento.Location = new System.Drawing.Point(0, 79);
-            this.btn_agendamento.Name = "btn_agendamento";
-            this.btn_agendamento.Size = new System.Drawing.Size(110, 80);
-            this.btn_agendamento.TabIndex = 1;
-            this.btn_agendamento.Text = "AGENDAMENTO";
-            this.btn_agendamento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_agendamento.UseVisualStyleBackColor = false;
-            this.btn_agendamento.Click += new System.EventHandler(this.btn_agendamento_Click);
-            // 
-            // btn_email
-            // 
-            this.btn_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_email.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.emial_dendieni1;
-            this.btn_email.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_email.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btn_email.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btn_email.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btn_email.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_email.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_email.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_email.Location = new System.Drawing.Point(0, 158);
-            this.btn_email.Name = "btn_email";
-            this.btn_email.Size = new System.Drawing.Size(110, 80);
-            this.btn_email.TabIndex = 2;
-            this.btn_email.Text = "EMAIL";
-            this.btn_email.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_email.UseVisualStyleBackColor = false;
-            this.btn_email.Click += new System.EventHandler(this.btn_email_Click);
-            // 
-            // btn_pastas
-            // 
-            this.btn_pastas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_pastas.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.FOLDER;
-            this.btn_pastas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_pastas.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btn_pastas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btn_pastas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.btn_pastas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pastas.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pastas.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_pastas.Location = new System.Drawing.Point(0, 237);
-            this.btn_pastas.Name = "btn_pastas";
-            this.btn_pastas.Size = new System.Drawing.Size(110, 80);
-            this.btn_pastas.TabIndex = 3;
-            this.btn_pastas.Text = "DIRETÓRIOS";
-            this.btn_pastas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_pastas.UseVisualStyleBackColor = false;
-            this.btn_pastas.Click += new System.EventHandler(this.btn_pastas_Click);
             // 
             // pcbPastaAtualIcon
             // 
@@ -1744,44 +1794,6 @@ namespace BackupNuvemSBuild_Configuration
             this.pcbPastaAtualIcon.TabIndex = 39;
             this.pcbPastaAtualIcon.TabStop = false;
             this.pcbPastaAtualIcon.Visible = false;
-            // 
-            // btnPauseBackup
-            // 
-            this.btnPauseBackup.BackColor = System.Drawing.Color.Transparent;
-            this.btnPauseBackup.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources.PauseBackup;
-            this.btnPauseBackup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnPauseBackup.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnPauseBackup.FlatAppearance.BorderSize = 0;
-            this.btnPauseBackup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btnPauseBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPauseBackup.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPauseBackup.ForeColor = System.Drawing.Color.Gray;
-            this.btnPauseBackup.Location = new System.Drawing.Point(7, 5);
-            this.btnPauseBackup.Name = "btnPauseBackup";
-            this.btnPauseBackup.Size = new System.Drawing.Size(61, 62);
-            this.btnPauseBackup.TabIndex = 34;
-            this.btnPauseBackup.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnPauseBackup.UseVisualStyleBackColor = false;
-            this.btnPauseBackup.Click += new System.EventHandler(this.btnPauseBackup_Click_1);
-            // 
-            // btnAbortBackup
-            // 
-            this.btnAbortBackup.BackColor = System.Drawing.Color.Transparent;
-            this.btnAbortBackup.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._646197_48__2_;
-            this.btnAbortBackup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnAbortBackup.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnAbortBackup.FlatAppearance.BorderSize = 0;
-            this.btnAbortBackup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
-            this.btnAbortBackup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbortBackup.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbortBackup.ForeColor = System.Drawing.Color.Gray;
-            this.btnAbortBackup.Location = new System.Drawing.Point(146, 5);
-            this.btnAbortBackup.Name = "btnAbortBackup";
-            this.btnAbortBackup.Size = new System.Drawing.Size(61, 62);
-            this.btnAbortBackup.TabIndex = 32;
-            this.btnAbortBackup.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAbortBackup.UseVisualStyleBackColor = false;
-            this.btnAbortBackup.Click += new System.EventHandler(this.btnAbortBackup_Click);
             // 
             // FormHome
             // 
@@ -1822,6 +1834,10 @@ namespace BackupNuvemSBuild_Configuration
             this.Text = " ";
             this.Load += new System.EventHandler(this.FormHome_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckAgendamento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckService)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckDiretorio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckEmail)).EndInit();
             this.pnlDiretorios2.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -1830,8 +1846,12 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlAgendamento2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlEmail2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1839,28 +1859,20 @@ namespace BackupNuvemSBuild_Configuration
             this.panel6.PerformLayout();
             this.pnlServico2.ResumeLayout(false);
             this.pnlServico2.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.pnlNewBackup.ResumeLayout(false);
-            this.pnlPauseAbortBackup.ResumeLayout(false);
-            this.pnlPauseAbortBackup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLoading)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFuncionando)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDesligado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAviso)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbTempoEstimado)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLoading)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckAgendamento)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckService)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckDiretorio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCheckEmail)).EndInit();
+            this.pnlNewBackup.ResumeLayout(false);
+            this.pnlPauseAbortBackup.ResumeLayout(false);
+            this.pnlPauseAbortBackup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTempoEstimado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbPastaAtualIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1984,5 +1996,6 @@ namespace BackupNuvemSBuild_Configuration
         private System.Windows.Forms.Label lblServicoNI;
         private System.Windows.Forms.PictureBox ptbLoading;
         private System.Windows.Forms.Button btn_playServico;
+        private System.Windows.Forms.Label lblVersao;
     }
 }
