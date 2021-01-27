@@ -1193,6 +1193,16 @@ namespace BackupNuvemSBuild_Configuration.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Drive_Backup_79136 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Drive-Backup_79136", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_folder_2_430096 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_folder-2_430096", resourceCulture);
