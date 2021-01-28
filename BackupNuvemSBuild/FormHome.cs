@@ -38,6 +38,7 @@ namespace BackupNuvemSBuild_Configuration
         int statusPorcentagem = 0;
         string statusDiretorio = "";
         int statusTempoRestante = 0;
+        string versao = "";
 
         bool linkOld = true;
 
@@ -295,6 +296,21 @@ namespace BackupNuvemSBuild_Configuration
 
             AssyncTCPClient("Status");
             //timer
+            try
+            {
+                versao = Assembly.GetEntryAssembly().GetName().Version.ToString();
+                versao = "v" + versao.Substring(0, versao.Length - 2);
+
+                lblVersao.Text = versao;
+            }
+            catch (Exception ex)
+            {
+                versao = "";
+                log.LogError("Erro na leitura da Versão.",
+                                MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                    MethodBase.GetCurrentMethod().ToString(),
+                                        ex.Message);
+            }
 
             timerBackup.Tick += TimerBackup_Tick;
             timerBackup.Enabled = true;
@@ -1630,6 +1646,7 @@ namespace BackupNuvemSBuild_Configuration
         {
 
         }
+
     }
     #endregion
 }
