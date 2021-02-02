@@ -1325,22 +1325,42 @@ namespace BackupNuvemSBuild_Configuration
             //agendamento
             if (configuration.BackupFULLHabilitado && configuration.LimiteBackupsFull != 0 && configuration.IntervaloBackupsFull != 0)
             {
+                ptbCheckAgendamento.Image = Resources.Check;
                 ptbCheckAgendamento.Visible = true;
 
             }
+            else
+            {
+                ptbCheckAgendamento.Image = Resources._4075935_32;
+                ptbCheckAgendamento.Visible = true;
+            }
+
 
             //email
-            if (txtOrigem.Text != "" && txtSenha.Text != "" && ltvEmail.Items.Count > 0)
+            if (txtOrigem.Text != "" && txtSenha.Text != "" && ltvEmail.Items.Count >0)
             {
+                ptbCheckEmail.Image = Resources.Check;
                 ptbCheckEmail.Visible = true;
 
+            }
+            else
+            {
+                ptbCheckEmail.Image = Resources._4075935_32;
+                ptbCheckEmail.Visible = true;
             }
 
             //diretorios
             if (txbDrive.Text != "" && txbPastaDestino.Text != "")
             {
+                ptbCheckDiretorio.Image = Resources.Check;
                 ptbCheckDiretorio.Visible = true;
             }
+            else 
+            {
+                ptbCheckDiretorio.Image = Resources._4075935_32;
+                ptbCheckDiretorio.Visible = true;
+            }
+                
 
 
         }

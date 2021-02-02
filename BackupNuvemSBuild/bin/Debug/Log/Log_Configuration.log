@@ -4413,3 +4413,1463 @@ Nome do parâmetro: addresses
  | Método: System.String TcpClient(System.String)
  | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
 
+2/2/2021 9:28:57 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:28:58 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:00 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:02 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:03 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:05 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:07 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:09 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:11 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:13 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:14 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:16 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:17 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:19 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:21 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:23 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:24 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:29:26 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:32 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:30:33 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:35 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:36 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:39 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:40 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:41 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:42 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:44 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:45 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:47 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:48 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:30:50 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:27 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:33:28 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:31 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:33 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:34 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:35 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:37 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:39 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:40 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:43 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:45 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:47 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:48 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:50 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:52 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:54 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:56 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:33:58 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:34:01 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:34:02 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:34:04 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:34:06 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:19 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:35:20 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:22 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:24 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:25 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:27 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:29 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:31 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:33 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:35 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:37 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:39 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:41 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:43 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:46 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:48 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:50 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:52 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:53 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:55 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:57 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:35:58 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:36:01 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:36:02 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:36:04 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:36:06 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:39:51 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:39:52 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:39:54 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:39:55 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:39:56 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:39:59 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:01 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:03 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:05 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:07 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:09 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:11 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:13 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:15 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:16 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:18 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:20 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:21 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:23 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:25 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:26 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:27 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:28 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:29 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:32 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:34 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:35 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:36 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:37 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:38 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:40 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:41 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:42 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:45 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:47 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:49 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:50 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:52 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:54 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:56 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:40:59 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:00 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:02 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:03 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:04 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:06 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:07 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:09 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:10 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:11 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:12 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:13 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:15 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:17 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:18 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:20 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:41:21 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:06 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:42:07 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:09 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:11 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:12 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:13 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:15 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:18 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:19 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:21 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:23 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:37 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:42:39 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:41 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:43 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:42:45 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:46:14 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:46:16 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:46:17 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:46:19 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:46:21 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:46:23 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:46:24 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:46:26 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:39 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:47:40 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:42 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:44 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:45 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:47 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:49 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:50 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:52 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:47:54 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:19 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:48:21 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:23 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:24 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:26 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:28 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:30 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:31 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:33 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:34 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:35 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:37 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:48:40 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:29 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 9:50:30 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:32 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:33 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:34 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:37 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:39 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:41 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:43 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:45 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:46 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:48 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:50 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:53 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:55 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:56 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:58 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:50:59 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:51:01 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:51:04 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:51:05 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:51:07 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:51:08 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 9:51:10 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
