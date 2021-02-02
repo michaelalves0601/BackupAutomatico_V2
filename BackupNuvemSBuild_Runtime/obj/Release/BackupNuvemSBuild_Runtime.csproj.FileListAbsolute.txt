@@ -32,3 +32,16 @@ D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Relea
 D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.CopyComplete
 D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.exe
 D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.pdb
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe.config
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.exe
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Runtime.pdb
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Models.dll
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\SimpleTCP.dll
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\bin\Release\BackupNuvemSBuild_Models.pdb
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.ProjectInstaller.resources
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.exe
+C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Runtime\obj\Release\BackupNuvemSBuild_Runtime.pdb

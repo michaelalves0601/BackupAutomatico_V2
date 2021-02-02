@@ -5873,3 +5873,25 @@ Nome do parâmetro: addresses
  | Método: System.String TcpClient(System.String)
  | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
 
+2/2/2021 10:34:12 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/2/2021 10:34:13 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+
+2/2/2021 10:34:15 AM
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: No connection could be made because the target machine actively refused it 127.0.0.1:8910
+

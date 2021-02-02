@@ -25,7 +25,7 @@ namespace BackupNuvemSBuild_Runtime
         string versao = "";
 
         string pathFULL = "";
-        string pathDiferencial = "";
+        string pathDataRecente = "";
         int MAX_PATH = 260;
         int MAX_DIRECTORY = 248;
         string pathConfiguration = AppDomain.CurrentDomain.BaseDirectory + @"\Config\Configuration.ini";
@@ -213,9 +213,13 @@ namespace BackupNuvemSBuild_Runtime
                         case "BkpDiferencial":
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
                             string nomeBackupFull = listPastas[listPastas.Count() - 1];
-                            this.pathDiferencial = nomeBackupFull + @"\";
-                            string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
-                            if (Directory.Exists(newPathDiario))
+                            this.pathDataRecente = nomeBackupFull + @"\";
+
+                            // cria nome do backup Diferencial atual
+                            string newPathDiario = pathDataRecente + "DIF_" + DateTime.Now.ToString("yyMMdd");
+                            string newPathFull = pathDataRecente + "FULL_" + DateTime.Now.ToString("yyMMdd");
+
+                            if (Directory.Exists(newPathDiario) || Directory.Exists(newPathFull))
                                 log.LogInfo("Backup '" + newPathDiario + "' já existe!");
                             else
                                 AssyncBackup(true, false, DateTime.Now, newPathDiario);
@@ -375,18 +379,19 @@ namespace BackupNuvemSBuild_Runtime
                         DateTime dateTimeBackupDif = new DateTime(1970, 01, 01, hora, minuto, 0);
 
                         if (DateTime.Now.Hour == dateTimeBackupDif.Hour
-                                && DateTime.Now.Minute == dateTimeBackupDif.Minute) //TIRA ISSO DAQUI............
+                                && DateTime.Now.Minute == dateTimeBackupDif.Minute) 
                         {
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
                             string nomeBackupFull = listPastas[listPastas.Count() - 1];
 
-                            this.pathDiferencial = nomeBackupFull + @"\";
+                            this.pathDataRecente = nomeBackupFull + @"\";
 
                             // cria nome do backup Diferencial atual
-                            string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
+                            string newPathDiario = pathDataRecente + "DIF_" + DateTime.Now.ToString("yyMMdd");
+                            string newPathFull = pathDataRecente + "FULL_" + DateTime.Now.ToString("yyMMdd");
 
-                            if (Directory.Exists(newPathDiario))
+                            if (Directory.Exists(newPathDiario) || Directory.Exists(newPathFull))
                                 log.LogInfo("Backup '" + newPathDiario + "' já existe!");
                             else
                                 AssyncBackup(true, false, DateTime.Now, newPathDiario);
