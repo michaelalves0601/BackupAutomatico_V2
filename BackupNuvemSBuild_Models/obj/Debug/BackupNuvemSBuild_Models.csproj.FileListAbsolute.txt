@@ -10,7 +10,6 @@ C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Debug\Back
 C:\ProjetosC#\GitHub\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Debug\BackupNuvemSBuild_Models.pdb
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Debug\BackupNuvemSBuild_Models.dll
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\bin\Debug\BackupNuvemSBuild_Models.pdb
-C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.csprojAssemblyReference.cache
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.dll
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.pdb

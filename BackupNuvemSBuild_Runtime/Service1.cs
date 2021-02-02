@@ -85,8 +85,8 @@ namespace BackupNuvemSBuild_Runtime
 
         protected override void OnStart(string[] args)
         {
-            //ExecutaRotina();
-            StartTime();
+            ExecutaRotina();
+            //StartTime();
         }
 
         private void StartTime()
@@ -116,7 +116,7 @@ namespace BackupNuvemSBuild_Runtime
 
                     TimeSpan tsInterval = new TimeSpan(0, 0, timerIntervalSecs);
 
-                    rotina = new Timer(new TimerCallback(ExecutaRotina), null, tsInterval, tsInterval);
+                    //rotina = new Timer(new TimerCallback(ExecutaRotina), null, tsInterval, tsInterval);
                 }
             }
             catch (Exception ex)
@@ -344,7 +344,7 @@ namespace BackupNuvemSBuild_Runtime
         #endregion
 
         #region Rotina
-        private void ExecutaRotina(object sender)
+        private void ExecutaRotina(/*object sender*/)
         {
             TESTE_LogTCP();
 
@@ -362,10 +362,13 @@ namespace BackupNuvemSBuild_Runtime
                 if (!Directory.Exists(configuration.PastaBackup))
                     Directory.CreateDirectory(configuration.PastaBackup);
 
-                if (configuration.BackupFULLHabilitado)
-                {
+                DateTime dt = new DateTime(1970, 01, 01, 0, 0, 0);
+                
 
-                    bool bkpDiferencial = VerificaTipoBackup();
+                if (configuration.BackupFULLHabilitado)
+                {                    
+
+                    bool bkpDiferencial = VerificaTipoBackup(dt);
 
                     int hora = 0;
                     int minuto = 0;
@@ -527,7 +530,7 @@ namespace BackupNuvemSBuild_Runtime
             bool resultado = configuration.RestauraConfiguracao(pathConfiguration, pathPastasRestritas);
         }
 
-        private bool VerificaTipoBackup()
+        private bool VerificaTipoBackup(DateTime dt)
         {
             //true = Diferencial  -----  false = FULL
             bool tipoBackup = false;
@@ -535,8 +538,8 @@ namespace BackupNuvemSBuild_Runtime
             //Verifica se existe algum backup FULL
             string[] backupsExistentes = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
-            if (backupsExistentes.Length == 0)
-                tipoBackup = false;
+            if (backupsExistentes.Length == 0 || configuration.DayOfWeek == DateTime.Now.DayOfWeek.ToString())
+                   tipoBackup = false;
             else
             {
                 DateTime dateIndex = DateTime.Now;

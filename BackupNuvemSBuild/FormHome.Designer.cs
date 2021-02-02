@@ -31,6 +31,7 @@ namespace BackupNuvemSBuild_Configuration
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHome));
+            this.cbxDataFull = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ptbCheckAgendamento = new System.Windows.Forms.PictureBox();
             this.ptbCheckService = new System.Windows.Forms.PictureBox();
@@ -67,6 +68,7 @@ namespace BackupNuvemSBuild_Configuration
             this.txbPastaDestino = new System.Windows.Forms.TextBox();
             this.pnlAgendamento2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.txbLimiteBkFull = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -180,6 +182,26 @@ namespace BackupNuvemSBuild_Configuration
             ((System.ComponentModel.ISupportInitialize)(this.pcbPastaAtualIcon)).BeginInit();
             this.SuspendLayout();
             // 
+            // cbxDataFull
+            // 
+            this.cbxDataFull.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxDataFull.Enabled = false;
+            this.cbxDataFull.FormattingEnabled = true;
+            this.cbxDataFull.Items.AddRange(new object[] {
+            "",
+            "Segunda-Feira",
+            "Terça-Feira",
+            "Quarta-Feira",
+            "Quinta-Feira",
+            "Sexta-Feira",
+            "Sábado",
+            "Domingo"});
+            this.cbxDataFull.Location = new System.Drawing.Point(157, 229);
+            this.cbxDataFull.Name = "cbxDataFull";
+            this.cbxDataFull.Size = new System.Drawing.Size(121, 24);
+            this.cbxDataFull.TabIndex = 27;
+            this.cbxDataFull.SelectedIndexChanged += new System.EventHandler(this.cbxDataFull_SelectedIndexChanged);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
@@ -198,7 +220,7 @@ namespace BackupNuvemSBuild_Configuration
             this.panel1.Controls.Add(this.btn_email);
             this.panel1.Controls.Add(this.btn_pastas);
             this.panel1.Location = new System.Drawing.Point(0, 74);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(147, 487);
             this.panel1.TabIndex = 5;
@@ -209,7 +231,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ptbCheckAgendamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbCheckAgendamento.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
             this.ptbCheckAgendamento.Location = new System.Drawing.Point(112, 116);
-            this.ptbCheckAgendamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbCheckAgendamento.Margin = new System.Windows.Forms.Padding(4);
             this.ptbCheckAgendamento.Name = "ptbCheckAgendamento";
             this.ptbCheckAgendamento.Size = new System.Drawing.Size(27, 25);
             this.ptbCheckAgendamento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,7 +245,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ptbCheckService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbCheckService.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24__1_;
             this.ptbCheckService.Location = new System.Drawing.Point(112, 407);
-            this.ptbCheckService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbCheckService.Margin = new System.Windows.Forms.Padding(4);
             this.ptbCheckService.Name = "ptbCheckService";
             this.ptbCheckService.Size = new System.Drawing.Size(27, 25);
             this.ptbCheckService.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,7 +258,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ptbCheckDiretorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbCheckDiretorio.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.Check;
             this.ptbCheckDiretorio.Location = new System.Drawing.Point(112, 308);
-            this.ptbCheckDiretorio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbCheckDiretorio.Margin = new System.Windows.Forms.Padding(4);
             this.ptbCheckDiretorio.Name = "ptbCheckDiretorio";
             this.ptbCheckDiretorio.Size = new System.Drawing.Size(27, 25);
             this.ptbCheckDiretorio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -262,7 +284,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.pnlServico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
             this.pnlServico.Location = new System.Drawing.Point(1, 390);
-            this.pnlServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlServico.Margin = new System.Windows.Forms.Padding(4);
             this.pnlServico.Name = "pnlServico";
             this.pnlServico.Size = new System.Drawing.Size(3, 96);
             this.pnlServico.TabIndex = 13;
@@ -272,7 +294,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.pnlDiretorios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
             this.pnlDiretorios.Location = new System.Drawing.Point(1, 293);
-            this.pnlDiretorios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDiretorios.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDiretorios.Name = "pnlDiretorios";
             this.pnlDiretorios.Size = new System.Drawing.Size(3, 96);
             this.pnlDiretorios.TabIndex = 12;
@@ -282,7 +304,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.pnlEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
             this.pnlEmail.Location = new System.Drawing.Point(1, 196);
-            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEmail.Name = "pnlEmail";
             this.pnlEmail.Size = new System.Drawing.Size(3, 96);
             this.pnlEmail.TabIndex = 11;
@@ -292,7 +314,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.pnlAgendamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
             this.pnlAgendamento.Location = new System.Drawing.Point(1, 98);
-            this.pnlAgendamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAgendamento.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAgendamento.Name = "pnlAgendamento";
             this.pnlAgendamento.Size = new System.Drawing.Size(3, 96);
             this.pnlAgendamento.TabIndex = 10;
@@ -302,7 +324,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.pnlHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(140)))), ((int)(((byte)(202)))));
             this.pnlHome.Location = new System.Drawing.Point(1, 2);
-            this.pnlHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlHome.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHome.Name = "pnlHome";
             this.pnlHome.Size = new System.Drawing.Size(3, 96);
             this.pnlHome.TabIndex = 9;
@@ -320,7 +342,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_home.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_home.ForeColor = System.Drawing.Color.White;
             this.btn_home.Location = new System.Drawing.Point(0, 1);
-            this.btn_home.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_home.Margin = new System.Windows.Forms.Padding(4);
             this.btn_home.Name = "btn_home";
             this.btn_home.Size = new System.Drawing.Size(147, 98);
             this.btn_home.TabIndex = 0;
@@ -341,7 +363,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_service.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_service.ForeColor = System.Drawing.Color.DimGray;
             this.btn_service.Location = new System.Drawing.Point(0, 389);
-            this.btn_service.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_service.Margin = new System.Windows.Forms.Padding(4);
             this.btn_service.Name = "btn_service";
             this.btn_service.Size = new System.Drawing.Size(147, 98);
             this.btn_service.TabIndex = 4;
@@ -362,7 +384,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_agendamento.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_agendamento.ForeColor = System.Drawing.Color.DimGray;
             this.btn_agendamento.Location = new System.Drawing.Point(0, 97);
-            this.btn_agendamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_agendamento.Margin = new System.Windows.Forms.Padding(4);
             this.btn_agendamento.Name = "btn_agendamento";
             this.btn_agendamento.Size = new System.Drawing.Size(147, 98);
             this.btn_agendamento.TabIndex = 1;
@@ -383,7 +405,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_email.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_email.ForeColor = System.Drawing.Color.DimGray;
             this.btn_email.Location = new System.Drawing.Point(0, 194);
-            this.btn_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_email.Margin = new System.Windows.Forms.Padding(4);
             this.btn_email.Name = "btn_email";
             this.btn_email.Size = new System.Drawing.Size(147, 98);
             this.btn_email.TabIndex = 2;
@@ -404,7 +426,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_pastas.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pastas.ForeColor = System.Drawing.Color.DimGray;
             this.btn_pastas.Location = new System.Drawing.Point(0, 292);
-            this.btn_pastas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_pastas.Margin = new System.Windows.Forms.Padding(4);
             this.btn_pastas.Name = "btn_pastas";
             this.btn_pastas.Size = new System.Drawing.Size(147, 98);
             this.btn_pastas.TabIndex = 3;
@@ -419,7 +441,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlDiretorios2.Controls.Add(this.panel10);
             this.pnlDiretorios2.Controls.Add(this.panel8);
             this.pnlDiretorios2.Location = new System.Drawing.Point(147, 74);
-            this.pnlDiretorios2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDiretorios2.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDiretorios2.Name = "pnlDiretorios2";
             this.pnlDiretorios2.Size = new System.Drawing.Size(360, 487);
             this.pnlDiretorios2.TabIndex = 18;
@@ -433,7 +455,7 @@ namespace BackupNuvemSBuild_Configuration
             this.panel10.Controls.Add(this.ltvExclusao);
             this.panel10.Controls.Add(this.label10);
             this.panel10.Location = new System.Drawing.Point(35, 244);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(295, 210);
             this.panel10.TabIndex = 12;
@@ -447,7 +469,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_removerPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btn_removerPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_removerPasta.Location = new System.Drawing.Point(252, 178);
-            this.btn_removerPasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_removerPasta.Margin = new System.Windows.Forms.Padding(4);
             this.btn_removerPasta.Name = "btn_removerPasta";
             this.btn_removerPasta.Size = new System.Drawing.Size(35, 31);
             this.btn_removerPasta.TabIndex = 16;
@@ -463,7 +485,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_adicionarPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btn_adicionarPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_adicionarPasta.Location = new System.Drawing.Point(245, 11);
-            this.btn_adicionarPasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_adicionarPasta.Margin = new System.Windows.Forms.Padding(4);
             this.btn_adicionarPasta.Name = "btn_adicionarPasta";
             this.btn_adicionarPasta.Size = new System.Drawing.Size(36, 30);
             this.btn_adicionarPasta.TabIndex = 15;
@@ -483,7 +505,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ltvExclusao.HideSelection = false;
             this.ltvExclusao.LabelEdit = true;
             this.ltvExclusao.Location = new System.Drawing.Point(15, 50);
-            this.ltvExclusao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ltvExclusao.Margin = new System.Windows.Forms.Padding(4);
             this.ltvExclusao.Name = "ltvExclusao";
             this.ltvExclusao.Size = new System.Drawing.Size(266, 121);
             this.ltvExclusao.TabIndex = 12;
@@ -523,11 +545,10 @@ namespace BackupNuvemSBuild_Configuration
             this.panel8.Controls.Add(this.btn_searchOrigem);
             this.panel8.Controls.Add(this.txbPastaDestino);
             this.panel8.Location = new System.Drawing.Point(35, 25);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(295, 209);
             this.panel8.TabIndex = 10;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // btn_offEspelho
             // 
@@ -538,7 +559,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_offEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_offEspelho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_offEspelho.Location = new System.Drawing.Point(76, 128);
-            this.btn_offEspelho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_offEspelho.Margin = new System.Windows.Forms.Padding(4);
             this.btn_offEspelho.Name = "btn_offEspelho";
             this.btn_offEspelho.Size = new System.Drawing.Size(53, 37);
             this.btn_offEspelho.TabIndex = 19;
@@ -554,7 +575,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_onEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_onEspelho.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_onEspelho.Location = new System.Drawing.Point(76, 128);
-            this.btn_onEspelho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_onEspelho.Margin = new System.Windows.Forms.Padding(4);
             this.btn_onEspelho.Name = "btn_onEspelho";
             this.btn_onEspelho.Size = new System.Drawing.Size(53, 37);
             this.btn_onEspelho.TabIndex = 18;
@@ -595,7 +616,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_searchEspelho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_searchEspelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_searchEspelho.Location = new System.Drawing.Point(247, 169);
-            this.btn_searchEspelho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_searchEspelho.Margin = new System.Windows.Forms.Padding(4);
             this.btn_searchEspelho.Name = "btn_searchEspelho";
             this.btn_searchEspelho.Size = new System.Drawing.Size(36, 26);
             this.btn_searchEspelho.TabIndex = 14;
@@ -621,7 +642,7 @@ namespace BackupNuvemSBuild_Configuration
             this.txbDrive.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbDrive.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbDrive.Location = new System.Drawing.Point(15, 36);
-            this.txbDrive.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbDrive.Margin = new System.Windows.Forms.Padding(4);
             this.txbDrive.Name = "txbDrive";
             this.txbDrive.ReadOnly = true;
             this.txbDrive.Size = new System.Drawing.Size(223, 24);
@@ -635,12 +656,11 @@ namespace BackupNuvemSBuild_Configuration
             this.txbPastaEspelho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPastaEspelho.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbPastaEspelho.Location = new System.Drawing.Point(12, 171);
-            this.txbPastaEspelho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPastaEspelho.Margin = new System.Windows.Forms.Padding(4);
             this.txbPastaEspelho.Name = "txbPastaEspelho";
             this.txbPastaEspelho.ReadOnly = true;
             this.txbPastaEspelho.Size = new System.Drawing.Size(223, 24);
             this.txbPastaEspelho.TabIndex = 13;
-            this.txbPastaEspelho.TextChanged += new System.EventHandler(this.txbPastaEspelho_TextChanged);
             // 
             // btn_searchDestino
             // 
@@ -650,7 +670,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_searchDestino.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_searchDestino.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_searchDestino.Location = new System.Drawing.Point(247, 95);
-            this.btn_searchDestino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_searchDestino.Margin = new System.Windows.Forms.Padding(4);
             this.btn_searchDestino.Name = "btn_searchDestino";
             this.btn_searchDestino.Size = new System.Drawing.Size(36, 26);
             this.btn_searchDestino.TabIndex = 14;
@@ -665,7 +685,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_searchOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_searchOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_searchOrigem.Location = new System.Drawing.Point(247, 36);
-            this.btn_searchOrigem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_searchOrigem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_searchOrigem.Name = "btn_searchOrigem";
             this.btn_searchOrigem.Size = new System.Drawing.Size(36, 26);
             this.btn_searchOrigem.TabIndex = 13;
@@ -679,7 +699,7 @@ namespace BackupNuvemSBuild_Configuration
             this.txbPastaDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPastaDestino.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbPastaDestino.Location = new System.Drawing.Point(15, 95);
-            this.txbPastaDestino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbPastaDestino.Margin = new System.Windows.Forms.Padding(4);
             this.txbPastaDestino.Name = "txbPastaDestino";
             this.txbPastaDestino.ReadOnly = true;
             this.txbPastaDestino.Size = new System.Drawing.Size(223, 24);
@@ -691,7 +711,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlAgendamento2.Controls.Add(this.panel4);
             this.pnlAgendamento2.Controls.Add(this.panel2);
             this.pnlAgendamento2.Location = new System.Drawing.Point(147, 74);
-            this.pnlAgendamento2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlAgendamento2.Margin = new System.Windows.Forms.Padding(4);
             this.pnlAgendamento2.Name = "pnlAgendamento2";
             this.pnlAgendamento2.Size = new System.Drawing.Size(360, 487);
             this.pnlAgendamento2.TabIndex = 8;
@@ -700,6 +720,8 @@ namespace BackupNuvemSBuild_Configuration
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.panel4.Controls.Add(this.cbxDataFull);
+            this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.txbLimiteBkFull);
             this.panel4.Controls.Add(this.label15);
@@ -712,11 +734,24 @@ namespace BackupNuvemSBuild_Configuration
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.txbdiasFull);
             this.panel4.Controls.Add(this.btnDesabilitadoBkpfull);
-            this.panel4.Location = new System.Drawing.Point(28, 25);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(28, 20);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(303, 235);
+            this.panel4.Size = new System.Drawing.Size(303, 274);
             this.panel4.TabIndex = 17;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Arial", 9F);
+            this.label17.ForeColor = System.Drawing.Color.Gray;
+            this.label17.Location = new System.Drawing.Point(14, 231);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(130, 17);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "Preferência de dia:";
             // 
             // label16
             // 
@@ -737,8 +772,8 @@ namespace BackupNuvemSBuild_Configuration
             this.txbLimiteBkFull.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbLimiteBkFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbLimiteBkFull.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbLimiteBkFull.Location = new System.Drawing.Point(171, 192);
-            this.txbLimiteBkFull.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbLimiteBkFull.Location = new System.Drawing.Point(152, 172);
+            this.txbLimiteBkFull.Margin = new System.Windows.Forms.Padding(4);
             this.txbLimiteBkFull.Name = "txbLimiteBkFull";
             this.txbLimiteBkFull.Size = new System.Drawing.Size(59, 30);
             this.txbLimiteBkFull.TabIndex = 24;
@@ -751,7 +786,7 @@ namespace BackupNuvemSBuild_Configuration
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Arial", 9F);
             this.label15.ForeColor = System.Drawing.Color.Gray;
-            this.label15.Location = new System.Drawing.Point(20, 199);
+            this.label15.Location = new System.Drawing.Point(14, 185);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(130, 17);
@@ -784,7 +819,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnHabilitadoBkpfull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHabilitadoBkpfull.ForeColor = System.Drawing.Color.White;
             this.btnHabilitadoBkpfull.Location = new System.Drawing.Point(211, 14);
-            this.btnHabilitadoBkpfull.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHabilitadoBkpfull.Margin = new System.Windows.Forms.Padding(4);
             this.btnHabilitadoBkpfull.Name = "btnHabilitadoBkpfull";
             this.btnHabilitadoBkpfull.Size = new System.Drawing.Size(56, 44);
             this.btnHabilitadoBkpfull.TabIndex = 20;
@@ -799,7 +834,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pictureBox7.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24__2_;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox7.Location = new System.Drawing.Point(24, 116);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(49, 43);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -829,7 +864,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pictureBox4.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox4.Location = new System.Drawing.Point(24, 117);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(49, 43);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -869,7 +904,7 @@ namespace BackupNuvemSBuild_Configuration
             this.txbdiasFull.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbdiasFull.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbdiasFull.Location = new System.Drawing.Point(127, 66);
-            this.txbdiasFull.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbdiasFull.Margin = new System.Windows.Forms.Padding(4);
             this.txbdiasFull.Name = "txbdiasFull";
             this.txbdiasFull.Size = new System.Drawing.Size(59, 30);
             this.txbdiasFull.TabIndex = 16;
@@ -888,7 +923,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnDesabilitadoBkpfull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDesabilitadoBkpfull.ForeColor = System.Drawing.Color.White;
             this.btnDesabilitadoBkpfull.Location = new System.Drawing.Point(211, 14);
-            this.btnDesabilitadoBkpfull.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDesabilitadoBkpfull.Margin = new System.Windows.Forms.Padding(4);
             this.btnDesabilitadoBkpfull.Name = "btnDesabilitadoBkpfull";
             this.btnDesabilitadoBkpfull.Size = new System.Drawing.Size(56, 44);
             this.btnDesabilitadoBkpfull.TabIndex = 21;
@@ -906,7 +941,7 @@ namespace BackupNuvemSBuild_Configuration
             this.panel2.Controls.Add(this.dtpBkDif);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(28, 314);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(303, 146);
             this.panel2.TabIndex = 16;
@@ -917,7 +952,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pictureBox6.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24__2_;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox6.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(49, 43);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -930,7 +965,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pictureBox1.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._290115_24;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(33, 65);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -950,7 +985,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnOnBkpDif.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOnBkpDif.ForeColor = System.Drawing.Color.White;
             this.btnOnBkpDif.Location = new System.Drawing.Point(215, 4);
-            this.btnOnBkpDif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOnBkpDif.Margin = new System.Windows.Forms.Padding(4);
             this.btnOnBkpDif.Name = "btnOnBkpDif";
             this.btnOnBkpDif.Size = new System.Drawing.Size(56, 44);
             this.btnOnBkpDif.TabIndex = 16;
@@ -972,7 +1007,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnOffBkpDif.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOffBkpDif.ForeColor = System.Drawing.Color.White;
             this.btnOffBkpDif.Location = new System.Drawing.Point(215, 4);
-            this.btnOffBkpDif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOffBkpDif.Margin = new System.Windows.Forms.Padding(4);
             this.btnOffBkpDif.Name = "btnOffBkpDif";
             this.btnOffBkpDif.Size = new System.Drawing.Size(56, 44);
             this.btnOffBkpDif.TabIndex = 14;
@@ -985,7 +1020,7 @@ namespace BackupNuvemSBuild_Configuration
             this.dtpBkDif.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBkDif.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpBkDif.Location = new System.Drawing.Point(91, 73);
-            this.dtpBkDif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpBkDif.Margin = new System.Windows.Forms.Padding(4);
             this.dtpBkDif.Name = "dtpBkDif";
             this.dtpBkDif.ShowUpDown = true;
             this.dtpBkDif.Size = new System.Drawing.Size(181, 35);
@@ -1012,7 +1047,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlEmail2.Controls.Add(this.panel6);
             this.pnlEmail2.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.pnlEmail2.Location = new System.Drawing.Point(147, 74);
-            this.pnlEmail2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEmail2.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEmail2.Name = "pnlEmail2";
             this.pnlEmail2.Size = new System.Drawing.Size(360, 487);
             this.pnlEmail2.TabIndex = 17;
@@ -1029,7 +1064,7 @@ namespace BackupNuvemSBuild_Configuration
             this.panel5.Controls.Add(this.label1);
             this.panel5.ForeColor = System.Drawing.Color.Gainsboro;
             this.panel5.Location = new System.Drawing.Point(28, 37);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(299, 171);
             this.panel5.TabIndex = 10;
@@ -1043,7 +1078,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnTesteEmail.Font = new System.Drawing.Font("Arial", 8.25F);
             this.btnTesteEmail.ForeColor = System.Drawing.Color.DarkGray;
             this.btnTesteEmail.Location = new System.Drawing.Point(177, 134);
-            this.btnTesteEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTesteEmail.Margin = new System.Windows.Forms.Padding(4);
             this.btnTesteEmail.Name = "btnTesteEmail";
             this.btnTesteEmail.Size = new System.Drawing.Size(80, 28);
             this.btnTesteEmail.TabIndex = 10;
@@ -1058,7 +1093,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnSeePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeePassword.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.fechaOlho;
             this.btnSeePassword.Location = new System.Drawing.Point(257, 97);
-            this.btnSeePassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSeePassword.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeePassword.Name = "btnSeePassword";
             this.btnSeePassword.Size = new System.Drawing.Size(33, 26);
             this.btnSeePassword.TabIndex = 9;
@@ -1084,7 +1119,7 @@ namespace BackupNuvemSBuild_Configuration
             this.txtOrigem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOrigem.ForeColor = System.Drawing.Color.Silver;
             this.txtOrigem.Location = new System.Drawing.Point(23, 36);
-            this.txtOrigem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrigem.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrigem.Name = "txtOrigem";
             this.txtOrigem.Size = new System.Drawing.Size(229, 22);
             this.txtOrigem.TabIndex = 5;
@@ -1096,7 +1131,7 @@ namespace BackupNuvemSBuild_Configuration
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenha.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtSenha.Location = new System.Drawing.Point(23, 98);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(229, 22);
             this.txtSenha.TabIndex = 6;
@@ -1124,7 +1159,7 @@ namespace BackupNuvemSBuild_Configuration
             this.panel6.Controls.Add(this.btn_addemail);
             this.panel6.Controls.Add(this.bnt_excluiremail);
             this.panel6.Location = new System.Drawing.Point(28, 229);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(299, 230);
             this.panel6.TabIndex = 11;
@@ -1154,7 +1189,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ltvEmail.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.ltvEmail.HideSelection = false;
             this.ltvEmail.Location = new System.Drawing.Point(16, 49);
-            this.ltvEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ltvEmail.Margin = new System.Windows.Forms.Padding(4);
             this.ltvEmail.MultiSelect = false;
             this.ltvEmail.Name = "ltvEmail";
             this.ltvEmail.Size = new System.Drawing.Size(266, 123);
@@ -1178,7 +1213,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_addemail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_addemail.ForeColor = System.Drawing.Color.Black;
             this.btn_addemail.Location = new System.Drawing.Point(141, 178);
-            this.btn_addemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_addemail.Margin = new System.Windows.Forms.Padding(4);
             this.btn_addemail.Name = "btn_addemail";
             this.btn_addemail.Size = new System.Drawing.Size(73, 39);
             this.btn_addemail.TabIndex = 3;
@@ -1197,7 +1232,7 @@ namespace BackupNuvemSBuild_Configuration
             this.bnt_excluiremail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.bnt_excluiremail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bnt_excluiremail.Location = new System.Drawing.Point(229, 178);
-            this.bnt_excluiremail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bnt_excluiremail.Margin = new System.Windows.Forms.Padding(4);
             this.bnt_excluiremail.Name = "bnt_excluiremail";
             this.bnt_excluiremail.Size = new System.Drawing.Size(73, 41);
             this.bnt_excluiremail.TabIndex = 2;
@@ -1220,8 +1255,8 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlServico2.Controls.Add(this.label13);
             this.pnlServico2.Controls.Add(this.label12);
             this.pnlServico2.Controls.Add(this.panel7);
-            this.pnlServico2.Location = new System.Drawing.Point(147, 386);
-            this.pnlServico2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlServico2.Location = new System.Drawing.Point(147, 384);
+            this.pnlServico2.Margin = new System.Windows.Forms.Padding(4);
             this.pnlServico2.Name = "pnlServico2";
             this.pnlServico2.Size = new System.Drawing.Size(360, 175);
             this.pnlServico2.TabIndex = 19;
@@ -1232,7 +1267,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ptbLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbLoading.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.loading_service;
             this.ptbLoading.Location = new System.Drawing.Point(253, 110);
-            this.ptbLoading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbLoading.Margin = new System.Windows.Forms.Padding(4);
             this.ptbLoading.Name = "ptbLoading";
             this.ptbLoading.Size = new System.Drawing.Size(57, 44);
             this.ptbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1262,7 +1297,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_replayServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_replayServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_replayServico.Location = new System.Drawing.Point(248, 21);
-            this.btn_replayServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_replayServico.Margin = new System.Windows.Forms.Padding(4);
             this.btn_replayServico.Name = "btn_replayServico";
             this.btn_replayServico.Size = new System.Drawing.Size(63, 39);
             this.btn_replayServico.TabIndex = 26;
@@ -1278,7 +1313,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_stopServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_stopServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_stopServico.Location = new System.Drawing.Point(57, 21);
-            this.btn_stopServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_stopServico.Margin = new System.Windows.Forms.Padding(4);
             this.btn_stopServico.Name = "btn_stopServico";
             this.btn_stopServico.Size = new System.Drawing.Size(63, 39);
             this.btn_stopServico.TabIndex = 25;
@@ -1295,7 +1330,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_playServico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_playServico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_playServico.Location = new System.Drawing.Point(156, 21);
-            this.btn_playServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_playServico.Margin = new System.Windows.Forms.Padding(4);
             this.btn_playServico.Name = "btn_playServico";
             this.btn_playServico.Size = new System.Drawing.Size(63, 39);
             this.btn_playServico.TabIndex = 22;
@@ -1307,7 +1342,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ptbFuncionando.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24__1_;
             this.ptbFuncionando.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ptbFuncionando.Location = new System.Drawing.Point(253, 110);
-            this.ptbFuncionando.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbFuncionando.Margin = new System.Windows.Forms.Padding(4);
             this.ptbFuncionando.Name = "ptbFuncionando";
             this.ptbFuncionando.Size = new System.Drawing.Size(53, 39);
             this.ptbFuncionando.TabIndex = 20;
@@ -1319,7 +1354,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ptbDesligado.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._3209280_24;
             this.ptbDesligado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ptbDesligado.Location = new System.Drawing.Point(253, 110);
-            this.ptbDesligado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbDesligado.Margin = new System.Windows.Forms.Padding(4);
             this.ptbDesligado.Name = "ptbDesligado";
             this.ptbDesligado.Size = new System.Drawing.Size(53, 39);
             this.ptbDesligado.TabIndex = 19;
@@ -1332,7 +1367,7 @@ namespace BackupNuvemSBuild_Configuration
             this.ptbAviso.BackgroundImage = global::BackupNuvemSBuild_Configuration.Properties.Resources._4075935_32;
             this.ptbAviso.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ptbAviso.Location = new System.Drawing.Point(253, 110);
-            this.ptbAviso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptbAviso.Margin = new System.Windows.Forms.Padding(4);
             this.ptbAviso.Name = "ptbAviso";
             this.ptbAviso.Size = new System.Drawing.Size(53, 39);
             this.ptbAviso.TabIndex = 18;
@@ -1367,7 +1402,7 @@ namespace BackupNuvemSBuild_Configuration
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.panel7.Controls.Add(this.label6);
             this.panel7.Location = new System.Drawing.Point(8, 105);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(216, 48);
             this.panel7.TabIndex = 11;
@@ -1388,13 +1423,14 @@ namespace BackupNuvemSBuild_Configuration
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.lblVersao);
             this.panel3.Controls.Add(this.btnFechar);
+            this.panel3.Controls.Add(this.pnlEmail2);
             this.panel3.Controls.Add(this.btnMinimizar);
             this.panel3.Controls.Add(this.pcbLoading);
             this.panel3.Controls.Add(this.btn_save);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(681, 74);
             this.panel3.TabIndex = 8;
@@ -1422,7 +1458,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
             this.btnFechar.Location = new System.Drawing.Point(616, 0);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(63, 27);
             this.btnFechar.TabIndex = 11;
@@ -1441,7 +1477,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimizar.ForeColor = System.Drawing.Color.White;
             this.btnMinimizar.Location = new System.Drawing.Point(553, 0);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(63, 27);
             this.btnMinimizar.TabIndex = 12;
@@ -1455,7 +1491,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pcbLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pcbLoading.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.loading;
             this.pcbLoading.Location = new System.Drawing.Point(571, 34);
-            this.pcbLoading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbLoading.Margin = new System.Windows.Forms.Padding(4);
             this.pcbLoading.Name = "pcbLoading";
             this.pcbLoading.Size = new System.Drawing.Size(63, 39);
             this.pcbLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1472,7 +1508,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.Location = new System.Drawing.Point(133, 6);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(63, 39);
             this.btn_save.TabIndex = 25;
@@ -1496,7 +1532,7 @@ namespace BackupNuvemSBuild_Configuration
             // 
             this.pictureBox2.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.LogoBlack;
             this.pictureBox2.Location = new System.Drawing.Point(9, 6);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(124, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1521,7 +1557,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pgbBackup.InnerMargin = 15;
             this.pgbBackup.InnerWidth = -1;
             this.pgbBackup.Location = new System.Drawing.Point(276, 127);
-            this.pgbBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pgbBackup.Margin = new System.Windows.Forms.Padding(4);
             this.pgbBackup.MarqueeAnimationSpeed = 2000;
             this.pgbBackup.Name = "pgbBackup";
             this.pgbBackup.OuterColor = System.Drawing.Color.Gray;
@@ -1686,7 +1722,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlNewBackup.Controls.Add(this.btnNewBackupFull);
             this.pnlNewBackup.Controls.Add(this.btnNewBackupDiferencial);
             this.pnlNewBackup.Location = new System.Drawing.Point(179, 406);
-            this.pnlNewBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlNewBackup.Margin = new System.Windows.Forms.Padding(4);
             this.pnlNewBackup.Name = "pnlNewBackup";
             this.pnlNewBackup.Size = new System.Drawing.Size(473, 138);
             this.pnlNewBackup.TabIndex = 11;
@@ -1703,7 +1739,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnNewBackupEspelho.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewBackupEspelho.ForeColor = System.Drawing.Color.Silver;
             this.btnNewBackupEspelho.Location = new System.Drawing.Point(308, 15);
-            this.btnNewBackupEspelho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewBackupEspelho.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewBackupEspelho.Name = "btnNewBackupEspelho";
             this.btnNewBackupEspelho.Size = new System.Drawing.Size(147, 111);
             this.btnNewBackupEspelho.TabIndex = 16;
@@ -1724,7 +1760,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnNewBackupFull.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewBackupFull.ForeColor = System.Drawing.Color.Silver;
             this.btnNewBackupFull.Location = new System.Drawing.Point(161, 15);
-            this.btnNewBackupFull.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewBackupFull.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewBackupFull.Name = "btnNewBackupFull";
             this.btnNewBackupFull.Size = new System.Drawing.Size(147, 111);
             this.btnNewBackupFull.TabIndex = 15;
@@ -1745,7 +1781,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnNewBackupDiferencial.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewBackupDiferencial.ForeColor = System.Drawing.Color.Silver;
             this.btnNewBackupDiferencial.Location = new System.Drawing.Point(13, 15);
-            this.btnNewBackupDiferencial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewBackupDiferencial.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewBackupDiferencial.Name = "btnNewBackupDiferencial";
             this.btnNewBackupDiferencial.Size = new System.Drawing.Size(147, 111);
             this.btnNewBackupDiferencial.TabIndex = 14;
@@ -1762,7 +1798,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pnlPauseAbortBackup.Controls.Add(this.btnPauseBackup);
             this.pnlPauseAbortBackup.Controls.Add(this.btnAbortBackup);
             this.pnlPauseAbortBackup.Location = new System.Drawing.Point(272, 382);
-            this.pnlPauseAbortBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPauseAbortBackup.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPauseAbortBackup.Name = "pnlPauseAbortBackup";
             this.pnlPauseAbortBackup.Size = new System.Drawing.Size(284, 107);
             this.pnlPauseAbortBackup.TabIndex = 45;
@@ -1780,7 +1816,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnPauseBackup.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPauseBackup.ForeColor = System.Drawing.Color.Gray;
             this.btnPauseBackup.Location = new System.Drawing.Point(9, 6);
-            this.btnPauseBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPauseBackup.Margin = new System.Windows.Forms.Padding(4);
             this.btnPauseBackup.Name = "btnPauseBackup";
             this.btnPauseBackup.Size = new System.Drawing.Size(81, 76);
             this.btnPauseBackup.TabIndex = 34;
@@ -1800,7 +1836,7 @@ namespace BackupNuvemSBuild_Configuration
             this.btnAbortBackup.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbortBackup.ForeColor = System.Drawing.Color.Gray;
             this.btnAbortBackup.Location = new System.Drawing.Point(195, 6);
-            this.btnAbortBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAbortBackup.Margin = new System.Windows.Forms.Padding(4);
             this.btnAbortBackup.Name = "btnAbortBackup";
             this.btnAbortBackup.Size = new System.Drawing.Size(81, 76);
             this.btnAbortBackup.TabIndex = 32;
@@ -1884,7 +1920,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pcbTempoEstimado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbTempoEstimado.Image = global::BackupNuvemSBuild_Configuration.Properties.Resources.GS20201225232615;
             this.pcbTempoEstimado.Location = new System.Drawing.Point(163, 94);
-            this.pcbTempoEstimado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbTempoEstimado.Margin = new System.Windows.Forms.Padding(4);
             this.pcbTempoEstimado.Name = "pcbTempoEstimado";
             this.pcbTempoEstimado.Size = new System.Drawing.Size(62, 62);
             this.pcbTempoEstimado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1898,7 +1934,7 @@ namespace BackupNuvemSBuild_Configuration
             this.pcbPastaAtualIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pcbPastaAtualIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbPastaAtualIcon.Location = new System.Drawing.Point(163, 491);
-            this.pcbPastaAtualIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbPastaAtualIcon.Margin = new System.Windows.Forms.Padding(4);
             this.pcbPastaAtualIcon.Name = "pcbPastaAtualIcon";
             this.pcbPastaAtualIcon.Size = new System.Drawing.Size(65, 46);
             this.pcbPastaAtualIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1915,7 +1951,6 @@ namespace BackupNuvemSBuild_Configuration
             this.ClientSize = new System.Drawing.Size(680, 561);
             this.Controls.Add(this.pnlServico2);
             this.Controls.Add(this.pnlDiretorios2);
-            this.Controls.Add(this.pnlEmail2);
             this.Controls.Add(this.pnlAgendamento2);
             this.Controls.Add(this.lblLastBackup);
             this.Controls.Add(this.lblLastTipoBackup);
@@ -1940,7 +1975,7 @@ namespace BackupNuvemSBuild_Configuration
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
@@ -2109,5 +2144,7 @@ namespace BackupNuvemSBuild_Configuration
         private System.Windows.Forms.PictureBox ptbLoading;
         private System.Windows.Forms.Button btn_playServico;
         private System.Windows.Forms.Label lblVersao;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox cbxDataFull;
     }
 }
