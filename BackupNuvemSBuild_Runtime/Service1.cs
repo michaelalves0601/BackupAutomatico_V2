@@ -42,7 +42,7 @@ namespace BackupNuvemSBuild_Runtime
         bool pause = false; //estado do pause
         bool abort = false; //estado do abort
 
-        double tamanho = 0; //tamanho passado no intervalo de 1s
+        double velocidade = 0; //tamanho passado no intervalo de 1s
         double restante = 0; // aux de quantidadeProgresso
         double tamanhoTransferido = 0; //tamanho ja copiado do backup
         long quantidadeTotal = 0; // quantidade total de arquivos
@@ -281,7 +281,7 @@ namespace BackupNuvemSBuild_Runtime
                     }
 
                     msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5] + ";";
-                    tamanho = 0;
+                    velocidade = 0;
 
                 }
                 else
@@ -409,7 +409,7 @@ namespace BackupNuvemSBuild_Runtime
                         DateTime dateTimeBackupFULL = new DateTime(1970, 01, 01, hora, minuto, 0);
 
                         if (DateTime.Now.Hour == dateTimeBackupFULL.Hour
-                                && DateTime.Now.Minute == dateTimeBackupFULL.Minute) //TIRA ISSO DAQUI............
+                                && DateTime.Now.Minute == dateTimeBackupFULL.Minute || true) //TIRA ISSO DAQUI............
                         {
                             this.pathFULL = configuration.PastaBackup + @"\";
                             // cria nome do backup Diferencial atual
@@ -439,9 +439,9 @@ namespace BackupNuvemSBuild_Runtime
             {
                 if (typeBackupStatus != 0)
                 {
-                    if (tamanhoTotal != 0 && tamanho != 0)
+                    if (tamanhoTotal != 0 && velocidade != 0)
                     {
-                        tamanhoTransferido += tamanho;
+                        tamanhoTransferido += velocidade;
 
                         Log logTempoEstimado = new Log("TempoEstimado");
 
@@ -451,9 +451,9 @@ namespace BackupNuvemSBuild_Runtime
                         double tamanhoRestante = tamanhoTotal - tamanhoTransferido;
 
                         logTempoEstimado.LogInfo("tamanhoRestante = " + tamanhoTotal.ToString() + Environment.NewLine
-                                                    + "tamanho = " + tamanho.ToString() + Environment.NewLine);
+                                                    + "tamanho = " + velocidade.ToString() + Environment.NewLine);
 
-                        tempoestimado = tamanhoRestante / tamanho;
+                        tempoestimado = tamanhoRestante / velocidade;
 
                         logTempoEstimado.LogInfo("tempoestimado = " + tempoestimado.ToString() + Environment.NewLine);
 
@@ -463,7 +463,7 @@ namespace BackupNuvemSBuild_Runtime
 
                         logTempoEstimado.LogInfo("timeEstimatedBackup = " + timeEstimatedBackup);
 
-                        tamanho = 0;
+                        velocidade = 0;
                     }
                 }
             }
@@ -663,7 +663,7 @@ namespace BackupNuvemSBuild_Runtime
 
                                 double tamanhoBackupAux = 0;
 
-                                try
+                                try //último backup 
                                 {
                                     tamanhoBackupAux = Math.Round((Convert.ToDouble(tamanhoTransferido) / 1000000000), 2);
                                     tamanhoBackupAux = tamanhoBackupAux < 0 ? 0 : tamanhoBackupAux;
@@ -995,7 +995,7 @@ namespace BackupNuvemSBuild_Runtime
 
 
                     if (typeBackupStatus != 3)
-                        tamanho += fileInfo.Length;
+                        velocidade += fileInfo.Length;
 
                     FileInfo fileInfoDestino = new FileInfo(diretorioFile);
 

@@ -152,3 +152,35 @@
  | Método: Boolean SendEmail()
  | Exception: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
 
+2/3/2021 11:37:30 AM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The parameter 'address' cannot be an empty string.
+Parameter name: address
+
+2/3/2021 11:46:11 AM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The parameter 'address' cannot be an empty string.
+Parameter name: address
+
+2/3/2021 11:46:22 AM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The parameter 'address' cannot be an empty string.
+Parameter name: address
+
+2/3/2021 1:39:40 PM
+ | ERROR |
+ | Descrição: Falha no Envio do Email
+ | Classe: SendEmail
+ | Método: Boolean SendEmail()
+ | Exception: The parameter 'address' cannot be an empty string.
+Parameter name: address
+
