@@ -4363,3 +4363,306 @@ Nome do parâmetro: addresses
  | Método: System.String Decrypto(System.String)
  | Exception: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
 
+2/3/2021 11:37:30 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/3/2021 11:46:11 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/3/2021 11:46:22 AM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+2/3/2021 1:39:40 PM
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Bad Data.
+
+
+04/02/2021 09:31:41
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Referência de objeto não definida para uma instância de um objeto.
+
+04/02/2021 09:37:36
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:39:37
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:41:38
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:42:32
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:45:08
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:46:12
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:46:35
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:48:00
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:49:46
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:55:15
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 09:56:39
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:01:39
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:03:03
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:08:49
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:09:26
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:12:18
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:12:52
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:14:11
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:17:08
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:17:43
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:18:40
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:24:33
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:34:17
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:36:20
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:37:55
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:38:38
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:40:27
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 10:41:03
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+05/02/2021 10:42:09
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+05/02/2021 10:42:23
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+05/02/2021 10:43:05
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+05/02/2021 10:43:19
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+05/02/2021 10:43:35
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+

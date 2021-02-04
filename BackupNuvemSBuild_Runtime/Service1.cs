@@ -25,7 +25,7 @@ namespace BackupNuvemSBuild_Runtime
         string versao = "";
 
         string pathFULL = "";
-        string pathDiferencial = "";
+        string pathDataRecente = "";
         int MAX_PATH = 260;
         int MAX_DIRECTORY = 248;
         string pathConfiguration = AppDomain.CurrentDomain.BaseDirectory + @"\Config\Configuration.ini";
@@ -45,6 +45,7 @@ namespace BackupNuvemSBuild_Runtime
         double tamanho = 0; //tamanho passado no intervalo de 1s
         double restante = 0; // aux de quantidadeProgresso
         double tamanhoTransferido = 0; //tamanho ja copiado do backup
+        double totalTransferido = 0; //tamanho ja copiado do backup
         long quantidadeTotal = 0; // quantidade total de arquivos
         double quantidadeProgresso = 0; //porcentagem da conclusão do backup
         long totalQuantidade = 0; //quantiade de pastas total
@@ -52,6 +53,8 @@ namespace BackupNuvemSBuild_Runtime
         double tempoestimado; // aux de timeEstimatedBackup
 
         string parentPathDrive = "";
+
+        int timerIntervalSecs = 1;
 
         bool enableSync = false;
 
@@ -67,6 +70,8 @@ namespace BackupNuvemSBuild_Runtime
         string[] msgRespota_Status = new string[6];
 
         Encrypt encrypt = new Encrypt("cenouras", "abacaxis");
+
+        Log logTempoEstimado = new Log("TempoEstimado");
 
 
         BackgroundWorker bwBackup = null;
@@ -112,8 +117,6 @@ namespace BackupNuvemSBuild_Runtime
 
                 if (rotina == null)
                 {
-                    int timerIntervalSecs = 1;
-
                     TimeSpan tsInterval = new TimeSpan(0, 0, timerIntervalSecs);
 
                     rotina = new Timer(new TimerCallback(ExecutaRotina), null, tsInterval, tsInterval);
@@ -213,9 +216,13 @@ namespace BackupNuvemSBuild_Runtime
                         case "BkpDiferencial":
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
                             string nomeBackupFull = listPastas[listPastas.Count() - 1];
-                            this.pathDiferencial = nomeBackupFull + @"\";
-                            string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
-                            if (Directory.Exists(newPathDiario))
+                            this.pathDataRecente = nomeBackupFull + @"\";
+
+                            // cria nome do backup Diferencial atual
+                            string newPathDiario = pathDataRecente + "DIF_" + DateTime.Now.ToString("yyMMdd");
+                            string newPathFull = pathDataRecente + "FULL_" + DateTime.Now.ToString("yyMMdd");
+
+                            if (Directory.Exists(newPathDiario) || Directory.Exists(newPathFull))
                                 log.LogInfo("Backup '" + newPathDiario + "' já existe!");
                             else
                                 AssyncBackup(true, false, DateTime.Now, newPathDiario);
@@ -277,13 +284,13 @@ namespace BackupNuvemSBuild_Runtime
                     }
 
                     msgResposta = msgRespota_Status[0] + ";" + msgRespota_Status[1] + ";" + msgRespota_Status[2] + ";" + msgRespota_Status[3] + ";" + msgRespota_Status[4] + ";" + msgRespota_Status[5] + ";";
-                    tamanho = 0;
-
                 }
                 else
                 {
                     msgResposta = "404;";
                 }
+
+                e.ReplyLine(string.Format(msgResposta));
             }
             catch (Exception ex)
             {
@@ -294,7 +301,6 @@ namespace BackupNuvemSBuild_Runtime
                                         ex.Message);
             }
 
-            e.ReplyLine(string.Format(msgResposta));
         }
 
         private void StartTCP(string host, string port)
@@ -358,10 +364,13 @@ namespace BackupNuvemSBuild_Runtime
                 if (!Directory.Exists(configuration.PastaBackup))
                     Directory.CreateDirectory(configuration.PastaBackup);
 
+                DateTime dt = new DateTime(1970, 01, 01, 0, 0, 0);
+
+
                 if (configuration.BackupFULLHabilitado)
                 {
 
-                    bool bkpDiferencial = VerificaTipoBackup();
+                    bool bkpDiferencial = VerificaTipoBackup(dt);
 
                     int hora = 0;
                     int minuto = 0;
@@ -375,18 +384,19 @@ namespace BackupNuvemSBuild_Runtime
                         DateTime dateTimeBackupDif = new DateTime(1970, 01, 01, hora, minuto, 0);
 
                         if (DateTime.Now.Hour == dateTimeBackupDif.Hour
-                                && DateTime.Now.Minute == dateTimeBackupDif.Minute) //TIRA ISSO DAQUI............
+                                && DateTime.Now.Minute == dateTimeBackupDif.Minute)
                         {
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
                             string nomeBackupFull = listPastas[listPastas.Count() - 1];
 
-                            this.pathDiferencial = nomeBackupFull + @"\";
+                            this.pathDataRecente = nomeBackupFull + @"\";
 
                             // cria nome do backup Diferencial atual
-                            string newPathDiario = pathDiferencial + "DIF_" + DateTime.Now.ToString("yyMMdd");
+                            string newPathDiario = pathDataRecente + "DIF_" + DateTime.Now.ToString("yyMMdd");
+                            string newPathFull = pathDataRecente + "FULL_" + DateTime.Now.ToString("yyMMdd");
 
-                            if (Directory.Exists(newPathDiario))
+                            if (Directory.Exists(newPathDiario) || Directory.Exists(newPathFull))
                                 log.LogInfo("Backup '" + newPathDiario + "' já existe!");
                             else
                                 AssyncBackup(true, false, DateTime.Now, newPathDiario);
@@ -401,7 +411,7 @@ namespace BackupNuvemSBuild_Runtime
                         DateTime dateTimeBackupFULL = new DateTime(1970, 01, 01, hora, minuto, 0);
 
                         if (DateTime.Now.Hour == dateTimeBackupFULL.Hour
-                                && DateTime.Now.Minute == dateTimeBackupFULL.Minute) //TIRA ISSO DAQUI............
+                                && DateTime.Now.Minute == dateTimeBackupFULL.Minute)
                         {
                             this.pathFULL = configuration.PastaBackup + @"\";
                             // cria nome do backup Diferencial atual
@@ -429,23 +439,25 @@ namespace BackupNuvemSBuild_Runtime
         {
             try
             {
-                if (typeBackupStatus != 0)
+                if (typeBackupStatus != 0 && typeBackupStatus != 3)
                 {
                     if (tamanhoTotal != 0 && tamanho != 0)
                     {
-                        tamanhoTransferido += tamanho;
+                        double velocidade = tamanho / timerIntervalSecs;
+                        tamanho = 0;
 
-                        Log logTempoEstimado = new Log("TempoEstimado");
 
                         logTempoEstimado.LogInfo("tamanhoTotal = " + tamanhoTotal.ToString() + Environment.NewLine
                                                     + "tamanhoTransferido = " + tamanhoTransferido.ToString() + Environment.NewLine);
 
+
+
                         double tamanhoRestante = tamanhoTotal - tamanhoTransferido;
 
-                        logTempoEstimado.LogInfo("tamanhoRestante = " + tamanhoTotal.ToString() + Environment.NewLine
-                                                    + "tamanho = " + tamanho.ToString() + Environment.NewLine);
+                        logTempoEstimado.LogInfo("tamanhoRestante = " + tamanhoTotal.ToString() + Environment.NewLine);
 
-                        tempoestimado = tamanhoRestante / tamanho;
+
+                        tempoestimado = tamanhoRestante / velocidade;
 
                         logTempoEstimado.LogInfo("tempoestimado = " + tempoestimado.ToString() + Environment.NewLine);
 
@@ -455,7 +467,8 @@ namespace BackupNuvemSBuild_Runtime
 
                         logTempoEstimado.LogInfo("timeEstimatedBackup = " + timeEstimatedBackup);
 
-                        tamanho = 0;
+                        velocidade = 0;
+
                     }
                 }
             }
@@ -522,7 +535,7 @@ namespace BackupNuvemSBuild_Runtime
             bool resultado = configuration.RestauraConfiguracao(pathConfiguration, pathPastasRestritas);
         }
 
-        private bool VerificaTipoBackup()
+        private bool VerificaTipoBackup(DateTime dt)
         {
             //true = Diferencial  -----  false = FULL
             bool tipoBackup = false;
@@ -530,7 +543,7 @@ namespace BackupNuvemSBuild_Runtime
             //Verifica se existe algum backup FULL
             string[] backupsExistentes = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
-            if (backupsExistentes.Length == 0)
+            if (backupsExistentes.Length == 0 || configuration.DayOfWeek == DateTime.Now.DayOfWeek.ToString())
                 tipoBackup = false;
             else
             {
@@ -591,9 +604,9 @@ namespace BackupNuvemSBuild_Runtime
                     {
                         try
                         {
-
                             tamanhoTotal = 0;
                             tamanhoTransferido = 0;
+                            totalTransferido = 0;
 
                             pausedBackup = false;
 
@@ -655,10 +668,14 @@ namespace BackupNuvemSBuild_Runtime
 
                                 double tamanhoBackupAux = 0;
 
-                                try
+                                try //último backup 
                                 {
-                                    tamanhoBackupAux = Math.Round((Convert.ToDouble(tamanhoTransferido) / 1000000000), 2);
-                                    tamanhoBackupAux = tamanhoBackupAux < 0 ? 0 : tamanhoBackupAux;
+                                    if (tamanhoTransferido > 0)
+                                    {
+                                        //Convert Byte to GigaByte
+                                        tamanhoBackupAux = Math.Round((Convert.ToDouble(tamanhoTransferido) / Math.Pow(1024, 3)), 2);
+                                        tamanhoBackupAux = tamanhoBackupAux < 0 ? 0 : tamanhoBackupAux;
+                                    }
                                 }
                                 catch (Exception ex)
                                 {
@@ -671,6 +688,8 @@ namespace BackupNuvemSBuild_Runtime
 
 
                                 configuration.TamanhoUltimoBackup = tamanhoBackupAux.ToString() + " GB";
+
+                                totalTransferido = 0;
 
                                 configuration.SalvaUltimoBackup(pathUltimoBackup);
 
@@ -986,29 +1005,41 @@ namespace BackupNuvemSBuild_Runtime
                         Thread.Sleep(500);
 
 
-                    if (typeBackupStatus != 3)
-                        tamanho += fileInfo.Length;
-
                     FileInfo fileInfoDestino = new FileInfo(diretorioFile);
 
                     if (File.Exists(diretorioFile))
                     {
                         if (fileInfo.LastWriteTime != fileInfoDestino.LastWriteTime)
+                        {
                             fileInfo.CopyTo(diretorioFile, true);
+
+                            ArquivoCopiado(fileInfo);
+                        }
                     }
                     else
                     {
                         if (!bkpDiferencial)
+                        {
                             fileInfo.CopyTo(diretorioFile, true);
+                            ArquivoCopiado(fileInfo);
+                        }
                         else
                         {
                             if (backupFullFiles.Where(f => f.Name == fileInfo.Name).Count() > 0)
                             {
                                 if (backupFullFiles.Where(b => b.Name == fileInfo.Name).FirstOrDefault().LastWriteTime != fileInfo.LastWriteTime)
+                                {
                                     fileInfo.CopyTo(diretorioFile, true);
+
+                                    ArquivoCopiado(fileInfo);
+                                }
                             }
                             else
+                            {
                                 fileInfo.CopyTo(diretorioFile, true);
+
+                                ArquivoCopiado(fileInfo);
+                            }
                         }
                     }
 
@@ -1078,6 +1109,16 @@ namespace BackupNuvemSBuild_Runtime
 
 
 
+        }
+
+        private void ArquivoCopiado(FileInfo fileInfo)
+        {
+            if (typeBackupStatus != 3 && typeBackupStatus != 0)
+            {
+                totalTransferido++;
+                tamanho += fileInfo.Length;
+                tamanhoTransferido += fileInfo.Length;
+            }
         }
 
         private void DeleteOldPath(DirectoryInfo origemPathInfoAux, DirectoryInfo destinoPathInfoAux)

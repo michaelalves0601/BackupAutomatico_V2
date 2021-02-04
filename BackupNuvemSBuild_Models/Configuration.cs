@@ -26,6 +26,7 @@ namespace BackupNuvemSBuild_Models
         public string UltimoBackup { get; set; }
         public string TipoUltimoBackup { get; set; }
         public string TamanhoUltimoBackup { get; set; }
+        public string DayOfWeek { get; set; }
 
         bool restaurando = false;
 
@@ -53,7 +54,7 @@ namespace BackupNuvemSBuild_Models
                     string item = "";
                     string value = "";
 
-                    if (totalItens == 12)
+                    if (totalItens == 13)
                     {
                         for (int i = 0; i < totalItens; i++)
                         { 
@@ -119,6 +120,10 @@ namespace BackupNuvemSBuild_Models
 
                                     case 11:
                                         LimiteBackupsFull = Convert.ToInt32(value);
+                                        break;
+
+                                    case 12:
+                                        DayOfWeek = value;
                                         break;
                                     
                                     default:
@@ -250,8 +255,10 @@ namespace BackupNuvemSBuild_Models
                                 "HorarioFull:" + HorarioFull.ToString() + Environment.NewLine +
                                 "EmailOrigem:" + EmailOrigem.ToString() + Environment.NewLine +
                                 "SenhaOrigem:" + SenhaOrigem.ToString() + Environment.NewLine +
-                                "BackupFULLHabilitado:" + BackupFULLHabilitado.ToString() +Environment.NewLine +
-                                "LimiteBackupsFull:" + LimiteBackupsFull.ToString());
+                                "BackupFULLHabilitado:" + BackupFULLHabilitado.ToString() + Environment.NewLine +
+                                "LimiteBackupsFull:" + LimiteBackupsFull.ToString() + Environment.NewLine +
+                                "DataFull:" + DayOfWeek.ToString());
+                                
 
             SalvaConfiguracoesPastasRestritas(pathPastasRestritas);
         }

@@ -292,6 +292,7 @@ namespace BackupNuvemSBuild_Configuration
         #region Inicialização e Restauração
         private void FormHome_Load(object sender, EventArgs e)
         {
+
             AtualizaStatusBackup();
 
             AssyncTCPClient("Status");
@@ -317,6 +318,11 @@ namespace BackupNuvemSBuild_Configuration
             timerBackup.Interval = 1000;
             timerBackup.Start();
 
+
+            PopulaListaDiasdaSemana();
+
+
+
             bool restaurou = configuration.RestauraConfiguracao(pathConfiguration, pathPastasRestritas);
 
             lblLastBackup.Text = configuration.UltimoBackup;
@@ -324,6 +330,9 @@ namespace BackupNuvemSBuild_Configuration
             lblLastBackupSize.Text = configuration.TamanhoUltimoBackup;
 
             //Restauração do menu Diretórios
+
+            cbxDataFull.SelectedItem = configuration.DayOfWeek;
+
             txbDrive.Text = configuration.PastaDrive;
             txbPastaDestino.Text = configuration.PastaBackup;
             if (!configuration.HabilitaPastaEspelho)
@@ -385,6 +394,7 @@ namespace BackupNuvemSBuild_Configuration
                 btnDesabilitadoBkpfull.Visible = false;
                 btnHabilitadoBkpfull.Visible = true;
                 dtpBkFull.Enabled = true;
+                cbxDataFull.Enabled = true;
 
             }
             else
@@ -392,6 +402,7 @@ namespace BackupNuvemSBuild_Configuration
                 btnDesabilitadoBkpfull.Visible = true;
                 btnHabilitadoBkpfull.Visible = false;
                 dtpBkFull.Enabled = false;
+                cbxDataFull.Enabled = false;
 
             }
 
@@ -407,6 +418,21 @@ namespace BackupNuvemSBuild_Configuration
             txbLimiteBkFull.Text = configuration.LimiteBackupsFull.ToString();
 
             SaveDesabilitado();
+        }
+
+        private void PopulaListaDiasdaSemana()
+        {
+            //CultureInfo ci = new CultureInfo("pt-BR");
+            cbxDataFull.Items.Clear();
+            cbxDataFull.Items.Add("");
+            cbxDataFull.Items.Add(DayOfWeek.Monday.ToString());
+            cbxDataFull.Items.Add(DayOfWeek.Tuesday.ToString());
+            cbxDataFull.Items.Add(DayOfWeek.Wednesday.ToString());
+            cbxDataFull.Items.Add(DayOfWeek.Thursday.ToString());
+            cbxDataFull.Items.Add(DayOfWeek.Friday.ToString());
+            cbxDataFull.Items.Add(DayOfWeek.Saturday.ToString());
+            cbxDataFull.Items.Add(DayOfWeek.Sunday.ToString());
+
         }
         #endregion
 
@@ -719,6 +745,7 @@ namespace BackupNuvemSBuild_Configuration
             btnOffBkpDif.Enabled = true;
             btnOnBkpDif.Enabled = true;
             dtpBkDif.Enabled = true;
+            cbxDataFull.Enabled = true;
 
             configuration.BackupFULLHabilitado = true;
             HabilitaSave();
@@ -737,6 +764,7 @@ namespace BackupNuvemSBuild_Configuration
             btnOffBkpDif.Visible = true;
             btnOnBkpDif.Visible = false;
             dtpBkDif.Enabled = false;
+            cbxDataFull.Enabled = false;
 
             configuration.BackupFULLHabilitado = false;
             HabilitaSave();
@@ -755,6 +783,11 @@ namespace BackupNuvemSBuild_Configuration
             HabilitaSave();
         }
 
+        private void cbxDataFull_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            configuration.DayOfWeek = cbxDataFull.SelectedItem.ToString();
+            HabilitaSave();
+        }
 
 
         #endregion
@@ -1325,22 +1358,42 @@ namespace BackupNuvemSBuild_Configuration
             //agendamento
             if (configuration.BackupFULLHabilitado && configuration.LimiteBackupsFull != 0 && configuration.IntervaloBackupsFull != 0)
             {
+                ptbCheckAgendamento.Image = Resources.Check;
                 ptbCheckAgendamento.Visible = true;
 
             }
+            else
+            {
+                ptbCheckAgendamento.Image = Resources._4075935_32;
+                ptbCheckAgendamento.Visible = true;
+            }
+
 
             //email
-            if (txtOrigem.Text != "" && txtSenha.Text != "" && ltvEmail.Items.Count > 0)
+            if (txtOrigem.Text != "" && txtSenha.Text != "" && ltvEmail.Items.Count >0)
             {
+                ptbCheckEmail.Image = Resources.Check;
                 ptbCheckEmail.Visible = true;
 
+            }
+            else
+            {
+                ptbCheckEmail.Image = Resources._4075935_32;
+                ptbCheckEmail.Visible = true;
             }
 
             //diretorios
             if (txbDrive.Text != "" && txbPastaDestino.Text != "")
             {
+                ptbCheckDiretorio.Image = Resources.Check;
                 ptbCheckDiretorio.Visible = true;
             }
+            else 
+            {
+                ptbCheckDiretorio.Image = Resources._4075935_32;
+                ptbCheckDiretorio.Visible = true;
+            }
+                
 
 
         }
@@ -1635,18 +1688,10 @@ namespace BackupNuvemSBuild_Configuration
         {
             comando = comandoSTART;
             AssyncCommandService();
+           
         }
 
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txbPastaEspelho_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
     }
     #endregion
 }
