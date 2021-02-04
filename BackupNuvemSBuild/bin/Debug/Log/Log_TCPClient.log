@@ -47529,3 +47529,71 @@
  | INFO |
  | Descrição: messageEnvioGlobal = Status
 
+05/02/2021 11:04:19
+ | INFO |
+ | Descrição: isAlive = False
+
+05/02/2021 11:04:20
+ | INFO |
+ | Descrição: isAlive = True
+
+04/02/2021 11:04:27
+ | INFO |
+ | Descrição: isAlive = True
+
+04/02/2021 11:04:27
+ | INFO |
+ | Descrição: messageRespostaGlobal = Erro 404
+
+04/02/2021 11:04:27
+ | INFO |
+ | Descrição: messageEnvioGlobal = Status
+
+04/02/2021 11:04:28
+ | INFO |
+ | Descrição: isAlive = False
+
+04/02/2021 11:04:29
+ | INFO |
+ | Descrição: isAlive = True
+
+04/02/2021 11:04:30
+ | INFO |
+ | Descrição: isAlive = True
+
+04/02/2021 11:04:30
+ | INFO |
+ | Descrição: messageRespostaGlobal = Erro 404
+
+04/02/2021 11:04:30
+ | INFO |
+ | Descrição: messageEnvioGlobal = Status
+
+04/02/2021 11:04:31
+ | INFO |
+ | Descrição: isAlive = False
+
+04/02/2021 11:04:32
+ | INFO |
+ | Descrição: isAlive = True
+
+04/02/2021 11:04:33
+ | INFO |
+ | Descrição: isAlive = True
+
+04/02/2021 11:04:33
+ | INFO |
+ | Descrição: messageRespostaGlobal = Erro 404
+
+04/02/2021 11:04:33
+ | INFO |
+ | Descrição: messageEnvioGlobal = Status
+
+04/02/2021 11:04:34
+ | INFO |
+ | Descrição: isAlive = False
+
+04/02/2021 11:04:35
+ | INFO |
+ | Descrição: isAlive = True
+

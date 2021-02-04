@@ -11693,3 +11693,32 @@ Nome do parâmetro: addresses
  | Método: System.String TcpClient(System.String)
  | Exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:8910
 
+05/02/2021 11:04:19
+ | ERROR |
+ | Descrição: Erro de criptografia
+ | Classe: Decrypto
+ | Método: System.String Decrypto(System.String)
+ | Exception: Dados inválidos.
+
+
+04/02/2021 11:04:27
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:8910
+
+04/02/2021 11:04:30
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:8910
+
+04/02/2021 11:04:33
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: TcpClient
+ | Método: System.String TcpClient(System.String)
+ | Exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:8910
+
