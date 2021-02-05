@@ -13,3 +13,4 @@ C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupN
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.dll
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.pdb
+D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Debug\BackupNuvemSBuild_Models.csprojAssemblyReference.cache

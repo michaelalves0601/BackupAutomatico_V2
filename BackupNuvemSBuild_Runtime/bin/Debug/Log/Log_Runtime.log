@@ -1247,3 +1247,576 @@
  | INFO |
  | Descrição: Iniciando Organização das pastas de Backup.
 
+04/02/2021 09:29:49
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 09:29:49
+
+04/02/2021 09:31:41
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 09:31:41
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 09:31:41
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 09:31:41
+ | ERROR |
+ | Descrição: Falha na Organização dos Backups Full, para o diretorio: \
+ | Classe: OrganizarPastasFull
+ | Método: Void OrganizarPastasFull(System.String)
+ | Exception: Valor não pode ser nulo.
+Nome do parâmetro: path
+
+04/02/2021 09:31:41
+ | ERROR |
+ | Descrição: Erro durante o Background Worker.
+ | Classe: <>c__DisplayClass50_0
+ | Método: Void <AssyncBackup>b__0(System.Object, System.ComponentModel.DoWorkEventArgs)
+ | Exception: Valor não pode ser nulo.
+Nome do parâmetro: path
+
+04/02/2021 09:31:41
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 09:32:15
+ | INFO |
+ | Descrição: Backup '\210204\FULL_210204\' já existe!
+
+04/02/2021 09:33:44
+ | INFO |
+ | Descrição: Backup '\210204\FULL_210204\' já existe!
+
+04/02/2021 09:35:33
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 09:35:33
+
+04/02/2021 09:37:36
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 09:37:36
+
+04/02/2021 09:37:36
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 09:37:36
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 09:37:36
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 09:38:46
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 09:39:37
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 09:39:37
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 09:39:37
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 09:41:38
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 09:41:38
+
+04/02/2021 09:41:38
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 09:41:38
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 09:41:38
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 09:42:28
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 09:42:32
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 09:42:32
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 09:42:32
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 09:45:07
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 09:45:07
+
+04/02/2021 09:45:08
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 09:45:08
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 09:45:08
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 09:46:09
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 09:46:12
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 09:46:12
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 09:46:12
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 09:46:35
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 09:46:35
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 09:46:35
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 09:47:37
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 09:47:37
+
+04/02/2021 09:48:00
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 09:48:00
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 09:48:00
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 09:49:43
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 09:49:46
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 09:49:46
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 09:49:46
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 09:54:50
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 09:54:50
+
+04/02/2021 09:55:15
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 09:55:15
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 09:55:15
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 09:56:36
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 09:56:39
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 09:56:39
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 09:56:39
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 10:01:20
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:01:20
+
+04/02/2021 10:01:39
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:01:39
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:01:39
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:03:00
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 10:03:03
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 10:03:03
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 10:03:03
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 10:08:46
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:08:46
+
+04/02/2021 10:08:49
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:08:49
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:08:49
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:09:22
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 10:09:26
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 10:09:26
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 10:09:26
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 10:11:54
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:11:54
+
+04/02/2021 10:12:18
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:12:18
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:12:18
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:12:49
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 10:12:52
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 10:12:52
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 10:12:52
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 10:14:11
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:14:11
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:14:11
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:14:40
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: Server_DataReceived
+ | Método: Void Server_DataReceived(System.Object, SimpleTCP.Message)
+ | Exception: Índice (baseado em zero) deve ser maior ou igual a zero e menor que o tamanho da lista de argumentos.
+
+04/02/2021 10:16:50
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:16:50
+
+04/02/2021 10:17:08
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:17:08
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:17:08
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:17:38
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: Server_DataReceived
+ | Método: Void Server_DataReceived(System.Object, SimpleTCP.Message)
+ | Exception: Índice (baseado em zero) deve ser maior ou igual a zero e menor que o tamanho da lista de argumentos.
+
+04/02/2021 10:17:39
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 10:17:43
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 10:17:43
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 10:17:43
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 10:18:40
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:18:40
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:18:40
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:24:13
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:24:13
+
+04/02/2021 10:24:34
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:24:34
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:24:34
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:25:16
+ | ERROR |
+ | Descrição: Erro na comunicação TCP
+ | Classe: Server_DataReceived
+ | Método: Void Server_DataReceived(System.Object, SimpleTCP.Message)
+ | Exception: Índice (baseado em zero) deve ser maior ou igual a zero e menor que o tamanho da lista de argumentos.
+
+04/02/2021 10:34:00
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:34:00
+
+04/02/2021 10:34:17
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:34:17
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:34:17
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:35:53
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:35:53
+
+04/02/2021 10:36:04
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:36:04
+
+04/02/2021 10:36:20
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:36:20
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:36:20
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:37:39
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:37:39
+
+04/02/2021 10:37:55
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:37:55
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:37:55
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:38:34
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 10:38:38
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 10:38:38
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 10:38:38
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 10:40:03
+ | INFO |
+ | Descrição: Starting Timer v2.0.0: 04/02/2021 10:40:03
+
+04/02/2021 10:40:27
+ | INFO |
+ | Descrição: Iniciando Backup: 20210204
+
+04/02/2021 10:40:27
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+04/02/2021 10:40:27
+ | INFO |
+ | Descrição: Iniciando Organização das pastas de Backup.
+
+04/02/2021 10:41:00
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+04/02/2021 10:41:03
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+04/02/2021 10:41:03
+ | INFO |
+ | Descrição: Finalizando Backup: 20210204
+
+04/02/2021 10:41:03
+ | INFO |
+ | Descrição: Finalizando Backup
+
+04/02/2021 10:41:52
+ | INFO |
+ | Descrição: Backup 'D:\TesteBackupSBUILD\210204\DIF_210204' já existe!
+
+05/02/2021 10:42:10
+ | INFO |
+ | Descrição: Iniciando Backup: 20210205
+
+05/02/2021 10:42:10
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+05/02/2021 10:42:16
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+05/02/2021 10:42:23
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+05/02/2021 10:42:23
+ | INFO |
+ | Descrição: Finalizando Backup: 20210205
+
+05/02/2021 10:42:23
+ | INFO |
+ | Descrição: Finalizando Backup
+
+05/02/2021 10:43:05
+ | INFO |
+ | Descrição: Iniciando Backup: 20210205
+
+05/02/2021 10:43:05
+ | INFO |
+ | Descrição: Iniciando Cópia do Drive.
+
+05/02/2021 10:43:13
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+05/02/2021 10:43:19
+ | INFO |
+ | Descrição: Encaminhando Email...
+
+05/02/2021 10:43:19
+ | INFO |
+ | Descrição: Finalizando Backup: 20210205
+
+05/02/2021 10:43:19
+ | INFO |
+ | Descrição: Finalizando Backup
+
+05/02/2021 10:43:35
+ | INFO |
+ | Descrição: Iniciando Sincronização com para Espelho.
+
+05/02/2021 10:43:41
+ | INFO |
+ | Descrição: Finalizando Sincronização: 20210205
+
+05/02/2021 10:43:41
+ | INFO |
+ | Descrição: Finalizando Backup
+
