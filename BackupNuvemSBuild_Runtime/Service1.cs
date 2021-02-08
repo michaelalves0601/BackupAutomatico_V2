@@ -31,16 +31,20 @@ namespace BackupNuvemSBuild_Runtime
         string pathConfiguration = AppDomain.CurrentDomain.BaseDirectory + @"\Config\Configuration.ini";
         string pathPastasRestritas = AppDomain.CurrentDomain.BaseDirectory + @"\Config\PastasRestritas.ini";
         string pathUltimoBackup = AppDomain.CurrentDomain.BaseDirectory + @"\Config\UltimoBackup.ini";
-
+        string machineName = "localhost";
+        string serviceName = "BackupNuvemSBuild_Runtime";
 
         string folderAtualStatus = ""; //pasta atual do backup
         int typeBackupStatus; //tipo de backup sendo executado 0 - nao executado, 1 - diferencial, 2 - full
         string timeEstimatedBackup = ""; //estado de tempo estimado de conclusao do backup
         bool pausedBackup = false; // estado do backup
         long quantidade = 0; //quantidade de arquivos para fazer backup
+        bool isAliveTemp = false;
 
         bool pause = false; //estado do pause
         bool abort = false; //estado do abort
+
+        double timeoutCommandService = 5000;
 
         double tamanho = 0; //tamanho passado no intervalo de 1s
         double restante = 0; // aux de quantidadeProgresso
@@ -62,6 +66,7 @@ namespace BackupNuvemSBuild_Runtime
 
         List<Tuple<string, string>> bufferArquivos = new List<Tuple<string, string>>();
         List<string> bufferPastas = new List<string>();
+        List<string> bufferErros = new List<string>();
 
         Log log = new Log("Runtime");
         Configuration configuration = new Configuration();
@@ -92,6 +97,20 @@ namespace BackupNuvemSBuild_Runtime
         {
             //ExecutaRotina();
             StartTime();
+        }
+
+        private void Cancel()
+        {
+            ServiceController[] services = ServiceController.GetServices(machineName);
+            var service = services.FirstOrDefault(s => s.ServiceName == serviceName);
+
+            TimeSpan timeout = TimeSpan.FromMilliseconds(timeoutCommandService);
+
+            service.Stop();
+            service.WaitForStatus(ServiceControllerStatus.Stopped, timeout);
+
+            service.Start();
+            service.WaitForStatus(ServiceControllerStatus.Running, timeout);
         }
 
         private void StartTime()
@@ -376,7 +395,7 @@ namespace BackupNuvemSBuild_Runtime
                     int minuto = 0;
 
 
-                    if (bkpDiferencial && configuration.BackupDiferencialHabilitado)
+                    if (bkpDiferencial && configuration.BackupDiferencialHabilitado && !isAliveTemp)
                     {
                         hora = Convert.ToInt32(configuration.HorarioDiferencial.Substring(0, 2));
                         minuto = Convert.ToInt32(configuration.HorarioDiferencial.Substring(3, 2));
@@ -386,6 +405,7 @@ namespace BackupNuvemSBuild_Runtime
                         if (DateTime.Now.Hour == dateTimeBackupDif.Hour
                                 && DateTime.Now.Minute == dateTimeBackupDif.Minute)
                         {
+                            isAliveTemp = true;
                             string[] listPastas = Directory.GetDirectories(configuration.PastaBackup, "*", SearchOption.TopDirectoryOnly);
 
                             string nomeBackupFull = listPastas[listPastas.Count() - 1];
@@ -401,9 +421,10 @@ namespace BackupNuvemSBuild_Runtime
                             else
                                 AssyncBackup(true, false, DateTime.Now, newPathDiario);
 
+                            isAliveTemp = false;
                         }
                     }
-                    else if (!bkpDiferencial)
+                    else if (!bkpDiferencial && !isAliveTemp)
                     {
                         hora = Convert.ToInt32(configuration.HorarioFull.Substring(0, 2));
                         minuto = Convert.ToInt32(configuration.HorarioFull.Substring(3, 2));
@@ -413,6 +434,7 @@ namespace BackupNuvemSBuild_Runtime
                         if (DateTime.Now.Hour == dateTimeBackupFULL.Hour
                                 && DateTime.Now.Minute == dateTimeBackupFULL.Minute)
                         {
+                            isAliveTemp = true;
                             this.pathFULL = configuration.PastaBackup + @"\";
                             // cria nome do backup Diferencial atual
                             string newPathDiario = pathFULL + DateTime.Now.ToString("yyMMdd") + @"\FULL_" + DateTime.Now.ToString("yyMMdd") + @"\";
@@ -421,7 +443,7 @@ namespace BackupNuvemSBuild_Runtime
                                 log.LogInfo("Backup '" + newPathDiario + "' já existe!");
                             else
                                 AssyncBackup(false, false, DateTime.Now, newPathDiario);
-
+                            isAliveTemp = false;
                         }
                     }
                 }
@@ -615,19 +637,33 @@ namespace BackupNuvemSBuild_Runtime
                             {
                                 typeBackupStatus = bkpDiferencialDoWork ? 2 : 1;
 
-
                                 folderAtualStatus = "Encaminhando Email...";
 
-                                NotificacaoEmail(dataNewBackupDoWork, true);
-
+                                try
+                                {
+                                    NotificacaoEmail(dataNewBackupDoWork, true);
+                                }
+                                catch(Exception e)
+                                {
+                                    log.LogError("Falha ao enviar email",
+                                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                        MethodBase.GetCurrentMethod().ToString(),
+                                                            e.Message);
+                                }
 
                                 log.LogInfo("Iniciando Backup: " + dataNewBackupDoWork.ToString("yyyyMMdd"));
                                 log.LogInfo("Iniciando Cópia do Drive.");
-
-
-                                Directory.CreateDirectory(newPathDiarioDoWork);
-
-
+                                try
+                                {
+                                    Directory.CreateDirectory(newPathDiarioDoWork);
+                                }
+                                catch (Exception e)
+                                {
+                                    log.LogError("Falha ao criar diretorio",
+                                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                        MethodBase.GetCurrentMethod().ToString(),
+                                                            e.Message);
+                                }
                                 if (!bkpDiferencialDoWork)
                                 {
                                     log.LogInfo("Iniciando Organização das pastas de Backup.");
@@ -638,100 +674,157 @@ namespace BackupNuvemSBuild_Runtime
                                 folderAtualStatus = "Calculando Arquivos e Pastas...";
 
                                 List<Tuple<string, long>> listFolders = SelecionaPastasDrive();
+                                
+                                while (pause)
+                                    Thread.Sleep(500);
+
+                                try
+                                {
+                                    CopiaArquivos(listFolders, newPathDiarioDoWork, bkpDiferencialDoWork);
+                                }
+                                catch (Exception e)
+                                {
+                                    log.LogError("Falha ao copiar arquivos",
+                                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                        MethodBase.GetCurrentMethod().ToString(),
+                                                            e.Message);
+                                }
 
                                 while (pause)
                                     Thread.Sleep(500);
 
-                                CopiaArquivos(listFolders, newPathDiarioDoWork, bkpDiferencialDoWork);
-
-
-                                while (pause)
-                                    Thread.Sleep(500);
-
-                                folderAtualStatus = "Copiando Buffer...";
-
-                                CopiaBuffer();
-
-                                if (abort)
-                                    return;
-
+                                try
+                                {
+                                    folderAtualStatus = "Copiando Buffer...";
+                                    CopiaBuffer();
+                                }
+                                catch (Exception e)
+                                {
+                                    log.LogError("Falha ao copiar buffer",
+                                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                        MethodBase.GetCurrentMethod().ToString(),
+                                                            e.Message);
+                                }
 
                                 Thread.Sleep(500);
 
-
                                 configuration.UltimoBackup = dataNewBackupDoWork.ToString("dd/MM/yyyy");
 
-                                if (bkpDiferencialDoWork)
-                                    configuration.TipoUltimoBackup = "DIFERENCIAL";
-                                else
-                                    configuration.TipoUltimoBackup = "FULL";
-
-                                double tamanhoBackupAux = 0;
-
-                                try //último backup 
+                                try
                                 {
-                                    if (tamanhoTransferido > 0)
+
+                                    if (bkpDiferencialDoWork)
+                                        configuration.TipoUltimoBackup = "DIFERENCIAL";
+                                    else
+                                        configuration.TipoUltimoBackup = "FULL";
+
+                                    double tamanhoBackupAux = 0;
+
+                                    try //último backup 
                                     {
-                                        //Convert Byte to GigaByte
-                                        tamanhoBackupAux = Math.Round((Convert.ToDouble(tamanhoTransferido) / Math.Pow(1024, 3)), 2);
-                                        tamanhoBackupAux = tamanhoBackupAux < 0 ? 0 : tamanhoBackupAux;
+                                        if (tamanhoTransferido > 0)
+                                        {
+                                            //Convert Byte to GigaByte
+                                            tamanhoBackupAux = Math.Round((Convert.ToDouble(tamanhoTransferido) / Math.Pow(1024, 3)), 2);
+                                            tamanhoBackupAux = tamanhoBackupAux < 0 ? 0 : tamanhoBackupAux;
+                                        }
                                     }
+                                    catch (Exception ex)
+                                    {
+                                        tamanhoBackupAux = 0;
+                                        log.LogError("Falha no cálculo do tamanho do último Backup.",
+                                                        MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                            MethodBase.GetCurrentMethod().ToString(),
+                                                                ex.Message);
+                                    }
+
+
+                                    configuration.TamanhoUltimoBackup = tamanhoBackupAux.ToString() + " GB";
+
+                                    totalTransferido = 0;
+
+                                    configuration.SalvaUltimoBackup(pathUltimoBackup);
                                 }
-                                catch (Exception ex)
+                                catch (Exception e)
                                 {
-                                    tamanhoBackupAux = 0;
-                                    log.LogError("Falha no cálculo do tamanho do último Backup.",
+                                    log.LogError("Falha ao salvar último backup",
                                                     MethodBase.GetCurrentMethod().DeclaringType.Name,
                                                         MethodBase.GetCurrentMethod().ToString(),
-                                                            ex.Message);
+                                                            e.Message);
                                 }
-
-
-                                configuration.TamanhoUltimoBackup = tamanhoBackupAux.ToString() + " GB";
-
-                                totalTransferido = 0;
-
-                                configuration.SalvaUltimoBackup(pathUltimoBackup);
-
-
 
                                 if (configuration.HabilitaPastaEspelho)
                                 {
+                                    try
+                                    {
+                                        typeBackupStatus = 3;
+                                        quantidadeProgresso = 0;
+
+                                        log.LogInfo("Iniciando Sincronização com para Espelho.");
+                                        folderAtualStatus = "Espelhando Backups...";
+
+                                        SyncPastaEspelho();
+
+                                        Thread.Sleep(500);
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        log.LogError("Falha ao sincronizar espelho",
+                                                        MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                            MethodBase.GetCurrentMethod().ToString(),
+                                                                e.Message);
+                                    }
+                                }
+
+                                try
+                                {
+                                    log.LogInfo("Encaminhando Email...");
+
+                                    NotificacaoEmail(dataNewBackupDoWork, false);
+
+                                    log.LogInfo("Finalizando Backup: " + dataNewBackupDoWork.ToString("yyyyMMdd"));
+                                }
+                                catch (Exception e)
+                                {
+                                    log.LogError("Falha ao enviar email",
+                                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                        MethodBase.GetCurrentMethod().ToString(),
+                                                            e.Message);
+                                }
+                            }
+                            else
+                            {
+                                try
+                                {
+                                    NotificacaoEmail(dataNewBackupDoWork, true);
+                                }
+                                catch (Exception e)
+                                {
+                                    log.LogError("Falha ao enviar email",
+                                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                        MethodBase.GetCurrentMethod().ToString(),
+                                                            e.Message);
+                                }
+
+                                try
+                                {
                                     typeBackupStatus = 3;
-                                    quantidadeProgresso = 0;
 
                                     log.LogInfo("Iniciando Sincronização com para Espelho.");
-                                    folderAtualStatus = "Espelhando Backups...";
 
                                     SyncPastaEspelho();
 
                                     Thread.Sleep(500);
+
+                                    log.LogInfo("Finalizando Sincronização: " + dataNewBackupDoWork.ToString("yyyyMMdd"));
                                 }
-
-
-
-
-                                log.LogInfo("Encaminhando Email...");
-                                NotificacaoEmail(dataNewBackupDoWork, false);
-
-
-                                log.LogInfo("Finalizando Backup: " + dataNewBackupDoWork.ToString("yyyyMMdd"));
-                            }
-                            else
-                            {
-                                NotificacaoEmail(dataNewBackupDoWork, true);
-
-
-                                typeBackupStatus = 3;
-
-                                log.LogInfo("Iniciando Sincronização com para Espelho.");
-
-                                SyncPastaEspelho();
-
-                                Thread.Sleep(500);
-
-
-                                log.LogInfo("Finalizando Sincronização: " + dataNewBackupDoWork.ToString("yyyyMMdd"));
+                                catch (Exception e)
+                                {
+                                    log.LogError("Falha ao sincronizar espelho",
+                                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                        MethodBase.GetCurrentMethod().ToString(),
+                                                            e.Message);
+                                }
                             }
 
 
@@ -742,6 +835,7 @@ namespace BackupNuvemSBuild_Runtime
                                     MethodBase.GetCurrentMethod().DeclaringType.Name,
                                         MethodBase.GetCurrentMethod().ToString(),
                                             ex.Message);
+
                         }
 
                     };
@@ -776,53 +870,82 @@ namespace BackupNuvemSBuild_Runtime
 
         private List<Tuple<string, long>> SelecionaPastasDrive()
         {
-            string[] listSubPastas = Directory.GetDirectories(configuration.PastaDrive, "*", SearchOption.TopDirectoryOnly);
 
             List<Tuple<string, long>> listFolders = new List<Tuple<string, long>>();
-
-            string folderAtual = "";
-            string[] allfiles1 = Directory.GetFiles(configuration.PastaDrive, "*", SearchOption.AllDirectories);
-
-
-
-            string[] allfolders1 = Directory.GetDirectories(configuration.PastaDrive, "*", SearchOption.AllDirectories);
-
-            totalQuantidade = allfolders1.Count();
-
-
-            while (pause)
-                Thread.Sleep(500);
-
-            quantidadeTotal = 0;
-            restante = 0;
-
-
-            foreach (string path in listSubPastas)
+            if(Directory.Exists(configuration.PastaBackup) && Directory.Exists(configuration.PastaDrive))
             {
-                DirectoryInfo directoryInfo = new DirectoryInfo(path);
-
-                parentPathDrive = directoryInfo.Parent.Name;
-
-                string[] allfiles = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
-
-                while (pause)
-                    Thread.Sleep(500);
+                try
+                {
+                    string[] listSubPastas = Directory.GetDirectories(configuration.PastaDrive, "*", SearchOption.TopDirectoryOnly);
 
 
-                string[] allfolders = Directory.GetDirectories(path, "*", SearchOption.AllDirectories);
+                    string folderAtual = "";
+                    string[] allfiles1 = Directory.GetFiles(configuration.PastaDrive, "*", SearchOption.AllDirectories);
 
-                quantidade = allfolders.Count() + allfiles.Count();
-                quantidadeTotal += quantidade;
 
-                listFolders.Add(new Tuple<string, long>(directoryInfo.Name, quantidade));
 
-                folderAtual = directoryInfo.Name + " - (" + quantidade + ")";
+                    string[] allfolders1 = Directory.GetDirectories(configuration.PastaDrive, "*", SearchOption.AllDirectories);
 
+                    totalQuantidade = allfolders1.Count();
+
+
+                    while (pause)
+                        Thread.Sleep(500);
+
+                    quantidadeTotal = 0;
+                    restante = 0;
+
+
+                    foreach (string path in listSubPastas)
+                    {
+                        DirectoryInfo directoryInfo = new DirectoryInfo(path);
+
+                        parentPathDrive = directoryInfo.Parent.Name;
+
+                        string[] allfiles = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
+
+                        while (pause)
+                            Thread.Sleep(500);
+
+
+                        string[] allfolders = Directory.GetDirectories(path, "*", SearchOption.AllDirectories);
+
+                        quantidade = allfolders.Count() + allfiles.Count();
+                        quantidadeTotal += quantidade;
+
+                        listFolders.Add(new Tuple<string, long>(directoryInfo.Name, quantidade));
+
+                        folderAtual = directoryInfo.Name + " - (" + quantidade + ")";
+
+                    }
+
+                    DirectoryInfo pastaDrive = new DirectoryInfo(configuration.PastaDrive);
+
+                    verificaTamanho(pastaDrive);
+                }
+                catch (Exception e)
+                {
+                    log.LogError("Falha ao calcular as pastas",
+                                    MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                        MethodBase.GetCurrentMethod().ToString(),
+                                            e.Message);
+                }
             }
-
-            DirectoryInfo pastaDrive = new DirectoryInfo(configuration.PastaDrive);
-
-            verificaTamanho(pastaDrive);
+            else
+            {
+                if (Directory.Exists(configuration.PastaBackup) && Directory.Exists(configuration.PastaDrive))
+                {
+                    if (!Directory.Exists(configuration.PastaDrive))
+                        bufferErros.Add("Erro ao encontrar a pasta do Drive");
+                    if (!Directory.Exists(configuration.PastaBackup))
+                        bufferErros.Add("Erro ao encontrar a pasta Backup");
+                    Cancel();
+                }
+                else if(!Directory.Exists(configuration.PastaEspelho))
+                {
+                    bufferErros.Add("Erro ao encontrar a pasta do espelho");
+                }
+            }
 
             return listFolders;
         }
@@ -859,8 +982,6 @@ namespace BackupNuvemSBuild_Runtime
             }
 
         }
-
-
 
         private void CopiaArquivos(List<Tuple<string, long>> listFolders, string newPathDiario, bool bkpDiferencial)
         {
@@ -1322,8 +1443,6 @@ namespace BackupNuvemSBuild_Runtime
 
                 copiado = CopyArquive(item.Item1, item.Item2);
 
-                if (abort)
-                    return;
 
                 if (copiado)
                     bufferArquivos.Remove(item);
@@ -1389,11 +1508,12 @@ namespace BackupNuvemSBuild_Runtime
                         email.CorpoEmail = "Backup Foi Inicializado!" + Environment.NewLine;
                     }
                     else
-                    {
-                        email.CorpoEmail = "Backup Foi Finalizado com Falhas:" + Environment.NewLine;
+                    {                        
 
-                        if (bufferArquivos.Count > 0 || bufferPastas.Count > 0)
+                        if (bufferArquivos.Count > 0 || bufferPastas.Count > 0 || bufferErros.Count > 0)
                         {
+                            email.CorpoEmail = "Backup Foi Finalizado com Falhas:" + Environment.NewLine;
+
                             if (bufferPastas.Count > 0)
                             {
                                 email.CorpoEmail += "As seguintes Pastas não foram criadas ou copiadas: " + Environment.NewLine;
@@ -1402,11 +1522,7 @@ namespace BackupNuvemSBuild_Runtime
                                     email.CorpoEmail += "   - " + item + Environment.NewLine;
                             }
 
-                            if (abort)
-                                return;
-
                             email.CorpoEmail += Environment.NewLine + Environment.NewLine;
-
 
                             while (pause)
                                 Thread.Sleep(500);
@@ -1417,6 +1533,16 @@ namespace BackupNuvemSBuild_Runtime
 
                                 foreach (Tuple<string, string> item in bufferArquivos)
                                     email.CorpoEmail += "   - " + item.Item2 + Environment.NewLine;
+                            }
+
+                            email.CorpoEmail += Environment.NewLine + Environment.NewLine;
+
+                            if (bufferErros.Count > 0)
+                            {
+                                email.CorpoEmail += "Os seguintes erros foram encontrados: " + Environment.NewLine;
+
+                                foreach (string item in bufferErros)
+                                    email.CorpoEmail += "   - " + item + Environment.NewLine;
                             }
 
                             email.CorpoEmail += Environment.NewLine + Environment.NewLine;
