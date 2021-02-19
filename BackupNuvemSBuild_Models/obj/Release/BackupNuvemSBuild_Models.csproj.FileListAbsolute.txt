@@ -14,3 +14,4 @@ C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupN
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.dll
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.pdb
 C:\Users\Administrator\Source\Repos\michaelalves0601\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.csprojAssemblyReference.cache
+D:\8.GitHub\VisualStudio\BackupAutomatico_V2\BackupNuvemSBuild_Models\obj\Release\BackupNuvemSBuild_Models.csprojAssemblyReference.cache
