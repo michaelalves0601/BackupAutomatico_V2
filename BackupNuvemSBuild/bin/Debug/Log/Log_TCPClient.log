@@ -7018,3 +7018,19 @@
  | INFO |
  | Descrição: messageEnvioGlobal = Status
 
+2/3/2021 9:47:04 AM
+ | INFO |
+ | Descrição: isAlive = False
+
+2/3/2021 9:47:05 AM
+ | INFO |
+ | Descrição: isAlive = True
+
+2/3/2021 9:47:06 AM
+ | INFO |
+ | Descrição: messageRespostaGlobal = Erro 404
+
+2/3/2021 9:47:06 AM
+ | INFO |
+ | Descrição: messageEnvioGlobal = Status
+

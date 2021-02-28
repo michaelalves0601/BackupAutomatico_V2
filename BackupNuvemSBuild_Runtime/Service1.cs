@@ -85,8 +85,8 @@ namespace BackupNuvemSBuild_Runtime
 
         protected override void OnStart(string[] args)
         {
-            ExecutaRotina();
-            //StartTime();
+            //ExecutaRotina();
+            StartTime();
         }
 
         private void StartTime()
@@ -116,7 +116,7 @@ namespace BackupNuvemSBuild_Runtime
 
                     TimeSpan tsInterval = new TimeSpan(0, 0, timerIntervalSecs);
 
-                    //rotina = new Timer(new TimerCallback(ExecutaRotina), null, tsInterval, tsInterval);
+                    rotina = new Timer(new TimerCallback(ExecutaRotina), null, tsInterval, tsInterval);
                 }
             }
             catch (Exception ex)
@@ -344,7 +344,7 @@ namespace BackupNuvemSBuild_Runtime
         #endregion
 
         #region Rotina
-        private void ExecutaRotina(/*object sender*/)
+        private void ExecutaRotina(object sender)
         {
             TESTE_LogTCP();
 
