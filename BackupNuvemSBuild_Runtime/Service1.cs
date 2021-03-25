@@ -871,6 +871,7 @@ namespace BackupNuvemSBuild_Runtime
         private List<Tuple<string, long>> SelecionaPastasDrive()
         {
             List<Tuple<string, long>> listFolders = new List<Tuple<string, long>>();
+            int lineError = 0;
 
             try
             {
@@ -881,15 +882,23 @@ namespace BackupNuvemSBuild_Runtime
                     {
                         string[] listSubPastas = Directory.GetDirectories(configuration.PastaDrive, "*", SearchOption.TopDirectoryOnly);
 
-
                         string folderAtual = "";
-                        string[] allfiles1 = Directory.GetFiles(configuration.PastaDrive, "*", SearchOption.AllDirectories);
 
 
+                        try
+                        {
+                            string[] allfolders1 = Directory.GetDirectories(configuration.PastaDrive, "*", SearchOption.AllDirectories);
+                            totalQuantidade = allfolders1.Count();
+                        }
+                        catch (Exception e)
+                        {
+                            totalQuantidade = 0;
 
-                        string[] allfolders1 = Directory.GetDirectories(configuration.PastaDrive, "*", SearchOption.AllDirectories);
-
-                        totalQuantidade = allfolders1.Count();
+                            log.LogError("Falha ao buscar todos os Diretórios do Drive.",
+                                            MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                MethodBase.GetCurrentMethod().ToString(),
+                                                    e.Message);
+                        }
 
 
                         quantidadeTotal = 0;
@@ -900,32 +909,46 @@ namespace BackupNuvemSBuild_Runtime
                         {
                             DirectoryInfo directoryInfo = new DirectoryInfo(path);
 
-                            parentPathDrive = directoryInfo.Parent.Name;
+                            try
+                            {
+                                parentPathDrive = directoryInfo.Parent.Name;
 
-                            string[] allfiles = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
+                                string[] allfiles = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
 
-                            while (pause)
-                                Thread.Sleep(500);
+                                while (pause)
+                                    Thread.Sleep(500);
 
 
-                            string[] allfolders = Directory.GetDirectories(path, "*", SearchOption.AllDirectories);
+                                string[] allfolders = Directory.GetDirectories(path, "*", SearchOption.AllDirectories);
 
-                            quantidade = allfolders.Count() + allfiles.Count();
-                            quantidadeTotal += quantidade;
+                                quantidade = allfolders.Count() + allfiles.Count();
+                                quantidadeTotal += quantidade;
+
+                            }
+                            catch (Exception e)
+                            {
+                                bufferErros.Add("Falha ao consultar os Arquivos e Pastas da SubPasta: " + path);
+
+                                log.LogError("Falha ao consultar os Arquivos e Pastas da SubPasta: " + path,
+                                                MethodBase.GetCurrentMethod().DeclaringType.Name,
+                                                    MethodBase.GetCurrentMethod().ToString(),
+                                                        e.Message);
+                            }
+
 
                             listFolders.Add(new Tuple<string, long>(directoryInfo.Name, quantidade));
 
                             folderAtual = directoryInfo.Name + " - (" + quantidade + ")";
-
                         }
 
                         DirectoryInfo pastaDrive = new DirectoryInfo(configuration.PastaDrive);
 
                         verificaTamanho(pastaDrive);
+
                     }
                     catch (Exception e)
                     {
-                        log.LogError("Falha ao calcular as pastas",
+                        log.LogError("Falha ao calcular as pastas = " + lineError.ToString(),
                                         MethodBase.GetCurrentMethod().DeclaringType.Name,
                                             MethodBase.GetCurrentMethod().ToString(),
                                                 e.Message);
@@ -958,7 +981,7 @@ namespace BackupNuvemSBuild_Runtime
 
             if (listFolders.Count() == 0)
             {
-                bufferErros.Add("Não foram encontradas pastas no diretório do Drive");
+                bufferErros.Add("Não foram encontradas pastas no diretório do Drive. Linha = " + lineError.ToString());
             }
 
             return listFolders;
@@ -1191,7 +1214,10 @@ namespace BackupNuvemSBuild_Runtime
 
                     restante++;
 
-                    quantidadeProgresso = (restante * 100) / quantidadeTotal;
+                    if (quantidadeTotal > 0)
+                        quantidadeProgresso = (restante * 100) / quantidadeTotal;
+                    else
+                        quantidadeProgresso = 0;
 
                     if (abort)
                         return;
