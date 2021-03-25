@@ -950,10 +950,15 @@ namespace BackupNuvemSBuild_Runtime
             {
                 bufferErros.Add("Falha ao calcular as pastas do Drive");
 
-                log.LogError("Falha ao calcular as pastas",
+                log.LogError("Falha ao calcular as pastas do Drive",
                                 MethodBase.GetCurrentMethod().DeclaringType.Name,
                                     MethodBase.GetCurrentMethod().ToString(),
                                         e.Message);
+            }
+
+            if (listFolders.Count() == 0)
+            {
+                bufferErros.Add("Não foram encontradas pastas no diretório do Drive");
             }
 
             return listFolders;
