@@ -65,6 +65,7 @@ namespace BackupNuvemSBuild_Models
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(Origem, Password);
                 SmtpServer.EnableSsl = true;
+                SmtpServer.Timeout = 600000;
 
                 SmtpServer.Send(mail);
 
